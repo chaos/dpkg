@@ -1,0 +1,702 @@
+2006-11-24  Tomas Pospisek  <tpo_deb@sourcepole.ch>
+
+	* C/update-alternatives.8: Document that it requires cooperation from
+	all packages dealing with the same file.
+
+2006-10-07  Nicolas Francois  <nicolas.francois@centraliens.net>
+
+	* po4a/dpkg-deb.1/dpkg-deb.1.cfg: The PO are now in UTF-8, specify the
+	encoding of the generated manpages (and addenda) in the config file.
+	* po4a/deb-control.5/deb-control.5.cfg: Likewise.
+	* po4a/dselect.cfg.5/dselect.cfg.5.cfg: Likewise.
+	* po4a/dpkg.cfg.5/dpkg.cfg.5.cfg: Likewise.
+	* po4a/dpkg.cfg.5/dpkg.cfg.5.cfg: Activate the French translation.
+	* po4a/add_fr/dpkg.cfg.5.fr.add: Add the missing French addendum.
+	* po4a/822-date.1/po/fr.po: New translation.
+	* po4a/dpkg-scansources.1/po/fr.po: Likewise.
+	* po4a/add_fr/822-date.1.fr.add: Addendum for the new translation.
+	* po4a/add_fr/dpkg-scansources.1.fr.add: Likewise.
+	* po4a/822-date.1/822-date.1.cfg: Add the `fr' language.
+	* po4a/dpkg-scansources.1/dpkg-scansources.1.cfg: Likewise.
+
+2006-10-06  SZERVÁC Attila  <sas@321.hu>
+
+	* po4a/dpkg.cfg.5/po/hu.po: Updated and switch to UTF-8.
+	* po4a/dselect.cfg.5/po/hu.po: Likewise.
+	* po4a/deb-control.5/po/hu.po: Likewise.
+	* po4a/dpkg-deb.1/po/hu.po: Likewise.
+
+2006-09-30  Helge Kreutzmann  <debian@helgefjell.de>
+
+	* po4a/dpkg-scansources.1/po/de.po: Updated translation.
+
+2006-09-29  Nicolas Francois  <nicolas.francois@centraliens.net>
+
+	* C/dpkg-scansources.1: Fix a typo.
+	* po4a/dpkg-scansources.1/po/dpkg-scansources.1.pot: Regenerated.
+	* po4a/dpkg-scansources.1/po/*.po: Merge with pot file.
+
+2006-09-27  Nicolas Francois  <nicolas.francois@centraliens.net>
+
+	* po4a/dpkg-scansources.1/po/de.po: Fix a typo.
+
+2006-09-23  Nicolas Francois  <nicolas.francois@centraliens.net>
+
+	* po4a/start-stop-daemon.8/po/fr.po: Updated translation.
+	And taking over the French translation of the dpkg manpages (with
+	the previous maintainer agreement).
+
+2006-09-23  KISE Hiroshi  <kise@fuyuneko.jp>
+
+	* po4a/dpkg-query.1/po/ja.po: Fix typos.
+	* po4a/dpkg.1/po/ja.po: Likewise.
+	* po4a/update-alternatives.8/po/ja.po: Likewise.
+	* po4a/dselect.1/po/ja.po: Fix a typo in the header.
+	* po4a/822-date.1/po/ja.po: Likewise.
+	* po4a/cleanup-info.8/po/ja.po: Likewise.
+	* po4a/start-stop-daemon.8/po/ja.po: Likewise.
+	* po4a/dpkg-checkbuilddeps.1/po/ja.po: Likewise.
+	* po4a/dpkg-name.1/po/ja.po: Likewise.
+	* po4a/dpkg-scanpackages.1/po/ja.po: Likewise.
+	* po4a/dpkg-divert.8/po/ja.po: Likewise.
+	* po4a/deb.5/po/ja.po: Likewise.
+	* po4a/dpkg-statoverride.8/po/ja.po: Likewise.
+	* po4a/install-info.8/po/ja.po: Likewise.
+	* po4a/deb-old.5/po/ja.po: Likewise.
+
+2006-09-11  KISE Hiroshi  <kise@fuyuneko.jp>
+
+	* po4a/add_ja/dpkg.1.ja.add: Recode the addendum in UTF-8.
+	* po4a/add_ja/dselect.1.ja.add: Likewise.
+	* po4a/add_ja/update-alternatives.8.ja.add: Likewise.
+	* po4a/add_ja/dpkg-deb.1.ja.add: Updated.
+	* po4a/dpkg.1/dpkg.1.cfg: Specify the po4a options for the Japanese
+	translation.
+	* po4a/dselect.1/dselect.1.cfg: Likewise.
+	* po4a/update-alternatives.8/update-alternatives.8.cfg: Likewise.
+	* po4a/dpkg.1/po/ja.po: Updated translation.
+	* po4a/dselect.1/po/ja.po: Likewise.
+	* po4a/update-alternatives.8/po/ja.po: Likewise.
+	* po4a/deb-control.5/po/ja.po: Likewise.
+	* po4a/dpkg-deb.1/po/ja.po: Likewise.
+	* po4a/start-stop-daemon.8/po/ja.po: Likewise.
+
+2006-09-02  KISE Hiroshi  <kise@fuyuneko.jp>
+
+	* po4a/add_ja/deb-control.5.ja.add: Recode the addendum in UTF-8.
+	* po4a/add_ja/dpkg-deb.1.ja.add: Likewise.
+	* po4a/add_ja/install-info.8.ja.add: Likewise.
+	* po4a/add_ja/start-stop-daemon.8.ja.add: Likewise.
+	* po4a/deb-control.5/deb-control.5.cfg: Specify the po4a options
+	for the Japanese translation.
+	* po4a/dpkg-deb.1/dpkg-deb.1.cfg: Likewise.
+	* po4a/install-info.8/install-info.8.cfg: Likewise.
+	* po4a/start-stop-daemon.8/start-stop-daemon.8.cfg: Likewise.
+	* po4a/deb-control.5/po/ja.po: Updated translation.
+	* po4a/dpkg-deb.1/po/ja.po: Likewise.
+	* po4a/install-info.8/po/ja.po: Likewise.
+	* po4a/start-stop-daemon.8/po/ja.po: Likewise.
+
+2006-08-26  KISE Hiroshi  <kise@fuyuneko.jp>
+
+	* po4a/add_ja/dpkg-divert.8.ja.add: Recode the addendum in UTF-8.
+	* po4a/add_ja/dpkg-query.1.ja.add: Likewise.
+	* po4a/dpkg-divert.8/dpkg-divert.8.cfg: Specify the po4a options
+	for the Japanese translation.
+	* po4a/dpkg-query.1/dpkg-query.1.cfg: Likewise.
+	* po4a/dpkg-divert.8/po/ja.po: Updated translation.
+	* po4a/dpkg-query.1/po/ja.po: Likewise.
+	* po4a/dpkg-statoverride.8/po/ja.po: Likewise.
+	* po4a/deb-old.5/po/ja.po: Likewise.
+	* po4a/822-date.1/po/ja.po: Likewise.
+	* po4a/cleanup-info.8/po/ja.po: Likewise.
+	* po4a/dpkg-checkbuilddeps.1/po/ja.po: Likewise.
+	* po4a/dpkg-name.1/po/ja.po: Likewise.
+	* po4a/dpkg-scanpackages.1/po/ja.po: Likewise.
+	* po4a/deb.5/po/ja.po: Likewise.
+
+2006-08-17  Philippe Batailler  <philippe.batailler@free.fr>
+
+	* po4a/dpkg-statoverride.8/po/fr.po: Updated translation.
+	* po4a/dpkg-name.1/po/fr.po: Likewise.
+	* po4a/update-alternatives.8/po/fr.po: Likewise.
+	* po4a/start-stop-daemon.8/po/fr.po: Likewise.
+	* po4a/dpkg-source.1/po/fr.po: Likewise.
+	* po4a/dpkg-divert.8/po/fr.po: Likewise.
+	* po4a/deb-control.5/po/fr.po: Likewise.
+	* po4a/dpkg.1/po/fr.po: Likewise.
+
+2006-08-07  KISE Hiroshi  <kise@fuyuneko.jp>
+
+	* po4a/add_ja/dpkg-name.1.ja.add: Recode the addendum in UTF-8.
+	* po4a/add_ja/dpkg-statoverride.8.ja.add: Likewise.
+	* po4a/add_ja/dpkg-scanpackages.1.ja.add: Likewise.
+	* po4a/add_ja/cleanup-info.8.ja.add: Likewise.
+	* po4a/dpkg-name.1/dpkg-name.1.cfg: Specify the po4a options for
+	the Japanese translation.
+	* po4a/dpkg-statoverride.8/dpkg-statoverride.8.cfg: Likewise.
+	* po4a/dpkg-scanpackages.1/dpkg-scanpackages.1.cfg: Likewise.
+	* po4a/cleanup-info.8/cleanup-info.8.cfg: Likewise.
+	* po4a/dpkg-name.1/po/ja.po: Updated translation.
+	* po4a/dpkg-statoverride.8/po/ja.po: Likewise.
+	* po4a/dpkg-scanpackages.1/po/ja.po: Likewise.
+	* po4a/cleanup-info.8/po/ja.po: Likewise.
+
+2006-08-05  Nicolas Francois  <nicolas.francois@centraliens.net>
+
+	* C/dpkg-architecture.1: Remove linux-alpha from the architecture
+	wildcard examples, and fix a formatting issue.
+	* po4a/dpkg-architecture.1/po/dpkg-architecture.1.pot: Regenerated.
+	* po4a/dpkg-architecture.1/po/*.po: Merge with pot file.
+	* po4a/dpkg-architecture.1/po/fr.po: Update to 116t.
+
+2006-08-05  Helge Kreutzmann  <debian@helgefjell.de>
+
+	* po4a/dpkg-architecture.1/po/de.po: New translation.
+	* po4a/dselect.1/po/de.po: Initialisation of the German
+	translation. 44t84u.
+	* po4a/dpkg-source.1/po/de.po: Likewise. 70t3f140u.
+	* po4a/dpkg-query.1/po/de.po: Likewise. 18t40u.
+	* po4a/install-info.8/po/de.po: Likewise. 22t47u.
+	* po4a/dpkg-deb.1/po/de.po: Likewise. 30t48u.
+	* po4a/dpkg-split.1/po/de.po: Likewise. 30t51u.
+	* po4a/add_de/dpkg-architecture.1.de.add: Addendum for the new
+	translation.
+	* po4a/dpkg-architecture.1/dpkg-architecture.1.cfg: Add the `de'
+	language.
+	* po4a/dselect.1/dselect.1.cfg: Likewise.
+	* po4a/dpkg-source.1/dpkg-source.1.cfg: Likewise.
+	* po4a/dpkg-query.1/dpkg-query.1.cfg: Likewise.
+	* po4a/install-info.8/install-info.8.cfg: Likewise.
+	* po4a/dpkg-deb.1/dpkg-deb.1.cfg: Likewise.
+	* po4a/dpkg-split.1/dpkg-split.1.cfg: Likewise.
+
+2006-08-05  Nicolas Francois  <nicolas.francois@centraliens.net>
+
+	* po4a/dpkg-architecture.1/po/fr.po: New translation.
+	* po4a/add_fr/dpkg-architecture.1.fr.add: Addendum for the new
+	translation.
+	* po4a/dpkg-architecture.1/dpkg-architecture.1.cfg: Add the `fr'
+	language.
+	* C/dpkg-source.1: Typo fix.
+	* C/dpkg-architecture.1: Likewise.
+	* po4a/dpkg-source.1/po/dpkg-source.1.pot: Regenerated.
+	* po4a/dpkg-architecture.1/po/dpkg-architecture.1.pot: Likewise.
+	* po4a/dpkg-source.1/po/*.po: Merge with pot file.
+	* po4a/dpkg-architecture.1/po/*.po: Likewise.
+
+2006-08-02  Helge Kreutzmann  <debian@helgefjell.de>
+
+	* po4a/dpkg.1/dpkg.1.cfg: Add the `de' language.
+	* po4a/deb-control.5/deb-control.5.cfg: Likewise.
+	* po4a/dpkg-divert.8/dpkg-divert.8.cfg: Likewise.
+	* po4a/dpkg.1/po/de.po: New translation.
+	* po4a/deb-control.5/po/de.po: Likewise.
+	* po4a/dpkg-divert.8/po/de.po: Likewise.
+	* po4a/add_de/dpkg.1.de.add: Addendum for the new translation.
+	* po4a/add_de/deb-control.5.de.add: Likewise.
+	* po4a/add_de/dpkg-divert.8.de.add: Likewise.
+
+2006-08-02  Nicolas Francois  <nicolas.francois@centraliens.net>
+
+	* C/dpkg.1: Typo fix.
+	* C/dpkg-divert.8: Likewise.
+	* C/deb-control.5: Likewise.
+	* po4a/dpkg.1/po/dpkg.1.pot: Regenerated.
+	* po4a/dpkg-divert.8/po/dpkg-divert.8.pot: Likewise.
+	* po4a/deb-control.5/po/deb-control.5.pot: Likewise.
+	* po4a/dpkg.1/po/*.po: Merge with pot file.
+	Former completed translations become 199t15f
+	* po4a/dpkg-divert.8/po/*.po: Likewise.
+	Former completed translations become 46t7f1u.
+	* po4a/deb-control.5/po/*.po: Likewise.
+	Former completed translations become 49t4f.
+
+2006-08-02  KISE Hiroshi  <kise@fuyuneko.jp>
+
+	* po4a/add_ja/deb.5.ja.add: Recode the addendum in UTF-8.
+	* po4a/add_ja/deb-old.5.ja.add: Likewise.
+	* po4a/add_ja/822-date.1.ja.add: Likewise.
+	* po4a/add_ja/dpkg-checkbuilddeps.1.ja.add: Likewise.
+	* po4a/deb.5/deb.5.cfg: Specify the po4a options for the Japanese
+	translation.
+	* po4a/deb-old.5/deb-old.5.cfg: Likewise.
+	* po4a/822-date.1/822-date.1.cfg: Likewise.
+	* po4a/dpkg-checkbuilddeps.1/dpkg-checkbuilddeps.1.cfg: Likewise.
+	* po4a/deb.5/po/ja.po: Updated translation.
+	* po4a/deb-old.5/po/ja.po: Likewise.
+	* po4a/822-date.1/po/ja.po: Likewise.
+	* po4a/dpkg-checkbuilddeps.1/po/ja.po: Likewise.
+
+2006-07-29  Helge Kreutzmann  <debian@helgefjell.de>
+
+	* po4a/dpkg-statoverride.8/dpkg-statoverride.8.cfg: Add the `de'
+	language.
+	* po4a/dpkg-statoverride.8/po/de.po: New translation.
+	* po4a/add_de/dpkg-statoverride.8.de.add: Addendum for the new
+	translation.
+
+2006-07-29  Nicolas Francois  <nicolas.francois@centraliens.net>
+
+	* po4a/add_fr/*.add: Fix the Debian French translation team address.
+	* C/dpkg-architecture.1: Typo fix.
+	* C/dpkg-statoverride.8: Likewise.
+	* po4a/dpkg-architecture.1/po/dpkg-architecture.1.pot: Regenerated.
+	* po4a/dpkg-statoverride.8/po/dpkg-statoverride.8.pot: Likewise.
+	* po4a/dpkg-statoverride.8/po/*.po: Merge with pot file.
+	Former completed translations become 42t2f.
+	* po4a/dpkg-source.1/po/fr.po: Merge strings used in multiple POs.
+	* po4a/dpkg.cfg.5/po/fr.po: Likewise.
+	* po4a/cleanup-info.8/po/fr.po: Likewise.
+	* po4a/dpkg-query.1/po/fr.po: Likewise.
+	* po4a/dpkg-checkbuilddeps.1/po/fr.po: Likewise.
+	* po4a/dpkg-scanpackages.1/po/fr.po: Likewise.
+	* po4a/dpkg-divert.8/po/fr.po: Likewise.
+	* po4a/update-alternatives.8/po/fr.po: Likewise.
+	* po4a/dpkg-statoverride.8/po/fr.po: Likewise.
+	* po4a/deb-control.5/po/fr.po: Likewise.
+	* po4a/dpkg-deb.1/po/fr.po: Likewise.
+
+2006-07-29  Helge Kreutzmann  <debian@helgefjell.de>
+
+	* po4a/dpkg-name.1/dpkg-name.1.cfg: Add the `de' language.
+	* po4a/dpkg-name.1/po/de.po: New translation.
+	* po4a/add_de/dpkg-name.1.de.add: Addendum for the new translation.
+
+2006-07-29  Nicolas Francois  <nicolas.francois@centraliens.net>
+
+	* C/dpkg-name.1: Typo fix.
+	* po4a/dpkg-name.1/po/dpkg-name.1.pot: Regenerated.
+	* po4a/dpkg-name.1/po/*.po: Merge with pot file.
+	Former completed translations become 39t3f.
+
+2006-07-28  Helge Kreutzmann  <debian@helgefjell.de>
+
+	* po4a/cleanup-info.8/po/de.po: Updated translation.
+	* po4a/dpkg-scanpackages.1/po/de.po: Likewise.
+
+2006-07-27  Nicolas Francois  <nicolas.francois@centraliens.net>
+
+	* po4a/add_de/dpkg-scanpackages.1.de.add: Install the addendum
+	before the SEE ALSO section, not at the end.
+	* po4a/add_de/deb-old.5.de.add: Likewise.
+	* po4a/add_de/deb.5.de.add: Likewise.
+	* C/cleanup-info.8: Typo fix.
+	* C/deb.5: Likewise.
+	* C/dpkg-scanpackages.1: Likewise.
+	* C/dpkg-scansources.1: Likewise.
+	* po4a/cleanup-info.8/po/cleanup-info.8.pot: Regenerated.
+	* po4a/deb.5/po/deb.5.pot: Likewise.
+	* po4a/dpkg-scanpackages.1/po/dpkg-scanpackages.1.pot: Likewise.
+	* po4a/dpkg-scansources.1/po/dpkg-scansources.1.pot: Likewise.
+	* po4a/cleanup-info.8/po/*.po: Merge with pot file.
+	Former completed translations become 29t2f.
+	* po4a/deb.5/po/*.po: Likewise.
+	Typo unfuzzied.
+	* po4a/dpkg-scanpackages.1/po/*.po: Likewise.
+	Former completed translations become 27t2f.
+	* po4a/dpkg-scansources.1/po/*.po: Likewise.
+	Typo unfuzzied.
+	* po4a/deb-old.5/po/de.po: Rewrap lines.
+
+2006-07-25  Helge Kreutzmann  <debian@helgefjell.de>
+
+	* po4a/deb.5/po/de.po: New translation.
+	* po4a/dpkg-checkbuilddeps.1/po/de.po: Likewise.
+	* po4a/dpkg-scanpackages.1/po/de.po: Likewise.
+	* po4a/dpkg-scansources.1/po/de.po: Likewise.
+	* po4a/cleanup-info.8/po/de.po: Likewise.
+	* po4a/deb.5/deb.5.cfg: Addendum for the new translation.
+	* po4a/dpkg-scanpackages.1/dpkg-scanpackages.1.cfg: Likewise.
+	* po4a/dpkg-checkbuilddeps.1/dpkg-checkbuilddeps.1.cfg: Likewise.
+	* po4a/dpkg-scansources.1/dpkg-scansources.1.cfg: Likewise.
+	* po4a/cleanup-info.8/cleanup-info.8.cfg: Likewise.
+	* po4a/add_de/deb.5.de.add: Add the `de' language.
+	* po4a/add_de/dpkg-checkbuilddeps.1.de.add: Likewise.
+	* po4a/add_de/dpkg-scanpackages.1.de.add: Likewise.
+	* po4a/add_de/dpkg-scansources.1.de.add: Likewise.
+	* po4a/add_de/cleanup-info.8.de.add: Likewise.
+
+2006-07-25  Nicolas Francois  <nicolas.francois@centraliens.net>
+
+	* po4a/822-date.1/po/822-date.1.pot: Regenerated.
+	* po4a/822-date.1/po/*.po: Merge with pot file, and unfuzzy the
+	typos.
+	* po4a.mk: Update the help information in the header. Mostly, the
+	po4a_translate_options variable is no more used.
+
+2006-07-23  Helge Kreutzmann  <debian@helgefjell.de>
+
+	* po4a/start-stop-daemon.8/po/de.po: Updated translation (65t).
+	* po4a/update-alternatives.8/po/de.po: Likewise (116t).
+	* po4a/822-date.1/po/de.po: New translation.
+	* po4a/deb-old.5/po/de.po: Likewise.
+	* po4a/add_de/822-date.1.de.add: Addendum for the new translation.
+	* po4a/add_de/deb-old.5.de.add: Likewise.
+	* po4a/822-date.1/822-date.1.cfg: Add the `de' language.
+	* po4a/deb-old.5/deb-old.5.cfg: Likewise.
+	* po4a/add_de/start-stop-daemon.8.de.add: The previous addendum
+	was empty.
+	* C/822-date.1: Fix the manpage's modification date.
+
+2006-07-23  Nicolas Francois  <nicolas.francois@centraliens.net>
+
+	* C/start-stop-daemon.8: Typo fix.
+	* po4a/start-stop-daemon.8/po/start-stop-daemon.8.pot: Regenerated.
+	* po4a/start-stop-daemon.8/po/*.po: Merge with pot file.
+
+2006-07-22  Nicolas Francois  <nicolas.francois@centraliens.net>
+
+	* po4a/start-stop-daemon.8/po/start-stop-daemon.8.pot: Regenerated.
+	Former completed translations become 62t3f.
+	* po4a/update-alternatives.8/po/update-alternatives.8.pot:
+	Likewise.
+	Former completed translations become 112t4f.
+	* po4a/start-stop-daemon.8/po/*.po: Merge with pot file.
+	* po4a/update-alternatives.8/po/*.po: Likewise.
+	* po4a/dselect.cfg.5/po/de.po: Regenerated.
+	* po4a/dpkg.cfg.5/po/de.po: Likewise.
+
+2006-07-22  Helge Kreutzmann  <debian@helgefjell.de>
+
+	* C/start-stop-daemon.8: Typo fix.
+	* C/update-alternatives.8: Likewise.
+	* po4a/start-stop-daemon.8/po/de.po: Updated translation.
+	* po4a/update-alternatives.8/po/de.po: Likewise.
+	* po4a/dpkg.cfg.5/po/de.po: New translation.
+	* po4a/dselect.cfg.5/po/de.po: Likewise.
+	* po4a/add_de/dpkg.cfg.5.de.add: Addendum for the new translation.
+	* po4a/add_de/dselect.cfg.5.de.add: Likewise.
+	* po4a/add_de/update-alternatives.8.de.add: Updated addendum.
+	* po4a/dpkg.cfg.5/dpkg.cfg.5.cfg: Add the `de' language.
+	* po4a/dselect.cfg.5/dselect.cfg.5.cfg: Likewise.
+
+2006-05-24  Philippe Batailler  <philippe.batailler@free.fr>
+
+	* po4a/install-info.8/po/fr.po: Updated translation.
+	* po4a/dpkg-statoverride.8/po/fr.po: likewise.
+	* po4a/update-alternatives.8/po/fr.po: likewise.
+	* po4a/start-stop-daemon.8/po/fr.po: likewise.
+	* po4a/dpkg-source.1/po/fr.po: likewise.
+	* po4a/dpkg-divert.8/po/fr.po: likewise.
+	* po4a/dpkg-query.1/po/fr.po: likewise.
+	* po4a/dpkg-checkbuilddeps.1/po/fr.po: likewise.
+	* po4a/dpkg-deb.1/po/fr.po: likewise
+	* po4a/dpkg-cfg.5/po/fr.po: New translation.
+	* po4a/add_fr/dpkg-cfg.5.fr.add: addendum.
+	
+2006-06-21  Guillem Jover  <guillem@debian.org>
+
+	* C/start-stop-daemon.8: Document the new '--umask' option.
+	* po4a/start-stop-daemon.8/po/start-stop-daemon.8.pot: Regenerated.
+	Former completed translations become 63t2f.
+	* po4a/start-stop-daemon.8/po/*.po: Merge with pot file.
+
+2006-06-20  Nicolas Francois  <nicolas.francois@centraliens.net>
+
+	* po4a/*/po/*.pot: Regenerated.
+	The stats of the up to date languages become:
+	dpkg-checkbuilddeps.1 18t2f1u
+	dpkg-deb.1            77t1f
+	dpkg-divert.8         52t2f
+	dpkg-query.1          57t1f
+	dpkg-source.1         207t6f
+	dpkg-statoverride.8   40t2f2u
+	install-info.8        68t1f
+	update-alternatives.8 113t2f1u
+	The paths of the references were also modified (for all files).
+	* po4a/*/po/*.po: Merged with the pot files.
+
+2006-06-17  Guillem Jover  <guillem@debian.org>
+
+	* C/dpkg-architecture.1: Clarify new -e and -i options, give backward
+	compatibility information and add some examples.
+
+2006-06-16  Robert Luberda  <robert@debian.org>
+
+	* C/dpkg-deb.1: Fix typo ("--show-format" -> "--showformat").
+
+2006-06-16  Robert Luberda  <robert@debian.org>
+
+	* pl/dpkg-deb.1/po/pl.po: Update to 78t.
+
+2006-06-11  Peter Karlsson  <peterk@debian.org>
+
+	* sv/dselect.1/po/sv.po: Updated translation.
+	* sv/dpkg-query.1/po/sv.po: Updated translation.
+
+2006-06-09  Peter Karlsson  <peterk@debian.org>
+
+	* sv/dselect.1/po/sv.po: Updated translation.
+
+2006-05-14  sas-guest  <sas@321.hu>
+
+	* hu/deb-control.5.hu.po: Updated translation.
+	* hu/dpkg-deb.1.hu.po: Updated translation.
+	* hu/dpkg.cfg.5.hu.po: Updated translation.
+	* hu/dselect.cfg.5.hu.po: Updated translation.
+
+2006-05-25  Ben Pfaff  <blp@cs.stanford.edu>
+
+	* C/install-info.8: Correct default info directory for '--infodir'.
+
+2006-05-23  Guillem Jover  <guillem@debian.org>
+
+	* C/dpkg-source.1: Document that the source:Upstream-Version substvar
+	can have an epoch.
+
+2006-05-23  Guillem Jover  <guillem@debian.org>
+
+	* C/dpkg-source.1: Add '--help' and '--version' options.
+	* C/dpkg-architecture.1: Likewise.
+	* C/dpkg-checkbuilddeps.1: Add '-h' option.
+	* C/dpkg-divert.8: Option '--help' does not print the version anymore.
+	* C/update-alternatives.8: Likewise.
+	* C/dpkg-statoverride.8: Likewise. Add '--version' option.
+
+2006-05-21  Nicolas Francois  <nicolas.francois@centraliens.net>
+
+	* */*.po, C/po/*.pot, po4a/: Ease the work of i18n robots: make a
+	directory for every manpage and move the POT and POs for a page in the
+	same directory.
+
+2006-05-18  Frank Lichtenheld  <djpig@debian.org>
+
+	* C/dpkg-query.1: Document that user defined
+	fields can also be printed with --showformat.
+
+2006-05-17  Frank Lichtenheld  <djpig@debian.org>
+
+	* C/dpkg.1: We don't actually set
+	DPKG_OLD_CONFFILE and DPKG_NEW_CONFFILE on subshells,
+	so we shouldn't claim to do so.
+
+2006-05-16  Peter Karlsson  <peterk@debian.org>
+
+	* sv/deb-old.5.sv.po, sv/dpkg.1.sv.po: Partial updates.
+
+2006-05-14  Peter Karlsson  <peterk@debian.org>
+
+	* sv/822-date.1.sv.po: Began updating the Swedish translation.
+	* sv/deb.5.sv.po: Likewise.
+	* sv/deb-control.5.sv.po: Likewise.
+	* sv/deb-old.5.sv.po: Likewise.
+	* sv/dpkg.1.sv.po: Likewise.
+	* sv/dpkg.cfg.5.sv.po: Likewise.
+	* sv/dpkg-deb.1.sv.po: Likewise.
+	* sv/dpkg-query.1.sv.po: Likewise.
+	* sv/dpkg-split.1.sv.po: Likewise.
+	* sv/dselect.1.sv.po: Likewise.
+	* sv/dselect.cfg.5.sv.po: Likewise.
+	* sv/start-stop-daemon.8.sv.po: Likewise.
+
+2006-05-14  Philippe Batailler  <philippe.batailler@free.fr>
+
+	* fr/dpkg-name.1.fr.po: Updated translation.
+	* fr/install-info.8.fr.po: likewise.
+	* fr/dpkg-statoverride.8.fr.po: likewise.
+	* fr/deb-control.5.fr.po: likewise.
+	* fr/dpkg-scanpackages.1.fr.po: likewise.
+	* fr/dpkg-source.1.fr.po: likewise.
+	* fr/dpkg.1.fr.po: likewise.
+	* fr/dpkg-divert.8.fr.po: likewise.
+	* fr/dpkg-query.1.fr.po: likewise.
+	* fr/dpkg-checkbuilddeps.1.fr.po: likewise.
+	* fr/dpkg-deb.1.fr.po: likewise
+
+2006-05-11  Frank Lichtenheld  <djpig@debian.org>
+
+	* C/po/*.pot: Update.
+	* */*.po: Merge with .pot files.
+
+2006-05-10  Frank Lichtenheld  <djpig@debian.org>
+
+	* C/dpkg-deb.1: Mention the --show-format option also
+	seperatly, not just in the description of --show.
+	Point the reader to the explanation of --show-format
+	in dpkg-query.1 to avoid having to duplicate it.
+
+	* C/dpkg-scanpackages.1: Add remark that apt ignores
+	uncompressed Packages files on non-local access.
+	* C/dpkg-scansources.1: Likewise (with Sources instead of
+	Packages files of course).
+
+2006-05-10  Stepan Golosunov  <stepan@golosunov.pp.ru>
+
+	* ru/dpkg.1.ru.po: Typo fix ("|<" -> "I<").
+	* ru/dpkg-checkbuilddeps.1.ru.po: Likewise.
+
+2006-05-04  Robert Luberda  <robert@debian.org>
+
+	* pl/dpkg.1.pl.po: Updated to 218t (after locally update the POT file).
+	* pl/dpkg-statoverride.8.pl.po: Updated to 42t (likewise).
+	* pl/dpkg-query.1.pl.po: Updated to 58t (likewise).
+
+2006-05-04  Guillem Jover  <guillem@debian.org>
+
+	* C/dpkg-divert.8: Escape hyphens used in command line.
+	* C/dpkg-architecture.1: Likewise.
+	* C/dpkg-statoverride.8: Likewise.
+
+2006-05-02  Guillem Jover  <guillem@debian.org>
+
+	* C/dpkg-source.1: Rename dpkg:UpstreamVersion to
+	dpkg:Upstream-Version.
+
+2006-05-02  Guillem Jover  <guillem@debian.org>
+
+	* C/dpkg-source.1: Document new source:Version,
+	source:Upstream-Version and binary:Version substvars.
+
+2006-04-19  Nicolas Francois  <nicolas.francois@centraliens.net>
+
+	* C/install-info.8: Add a missing quote arround the date.
+	* C/dpkg-source.1: Add a reference to the Debian Policy Manual for
+	a detailed description of the shlibs format. Thanks to Russ
+	Allbery.
+
+2006-04-16  Nicolas Francois  <nicolas.francois@centraliens.net>
+
+	* C/dpkg-source.1: Document the shlibs.local format.
+
+2006-04-11  Nicolas Francois  <nicolas.francois@centraliens.net>
+
+	* po4a.mk: Add a $(po4a_translate_options) variable to allow
+	languages to add options to po4a-translate.
+	* ru/Makefile.am: Specify that the Russian manpages must be
+	generated in the KOI8-R charset and that the Russian addenda are
+	already encoded in KOI8-R.
+	* fr/dpkg-statoverride.8.fr.po: Fix an unmatched ">" or "<".
+	* ru/dpkg.1.ru.po: Likewise.
+
+2006-04-10  Guillem Jover  <guillem@debian.org>
+
+	* C/dpkg.1: Document the new way to replicate the package status to
+	another installation by using '--clear-selections'.
+
+2006-04-10  Andrew Suffield  <asuffield@debian.org>
+
+	* C/dpkg.1: Document the new '--clear-selections' option.
+
+2006-04-10  Guillem Jover  <guillem@debian.org>
+
+	* C/dpkg.1: Remove mention of obsolete force/refuse 'auto-select'
+	option.
+
+2006-04-09  Guillem Jover  <guillem@debian.org>
+
+	* C/dpkg.1: Document that '--get-selections' without a pattern will
+	not list packages in state purge.
+	* C/dpkg-query.1: Document that '-l' without a pattern will not list
+	packages in state purge.
+
+2006-04-08  Yuri Kozlov  <kozlov.y@gmail.com>
+
+	* ru/822-date.1.ru.po: 20t.
+	* ru/deb-control.5.ru.po: 19t.
+	* ru/dpkg-checkbuilddeps.1.ru.po: 19t.
+	* ru/dpkg.1.ru.po: 217t.
+	* ru/start-stop-daemon.8.ru.po: 63t.
+
+2006-03-26  Christian Perrier  <bubulle@debian.org>
+
+	* fr/dpkg-source.1.fr.po.addendum: Typo corrected, thanks
+	to Nicolas Bonifas who spotted it.
+	* fr/dpkg-source.1.fr.po: Typo corrected, thanks
+	to Nicolas Bonifas who spotted it.
+
+2006-03-04  Christian Perrier  <bubulle@debian.org>
+
+	* C/dpkg-architecture.1: Typos corrections.
+	* C/dpkg-checkbuilddeps.1: Likewise.
+	* C/dpkg-name.1: Likewise.
+	* C/dpkg-source.1: Likewise.
+	* C/deb-control.5: Likewise.
+
+2006-03-04  Philippe Batailler  <philippe.batailler@free.fr>
+
+	* fr/*: Applied Guillem's work to french.
+
+2006-02-28  Guillem Jover  <guillem@debian.org>
+
+	* C/dpkg.1 (SEE ALSO): Add dpkg-query(1).
+
+2006-02-28  Guillem Jover  <guillem@debian.org>
+
+	* C/822-date.1: Lower case title header. Put options in bold, files
+	and arguments to options in italic. Escape hyphens used un command
+	line. Unescape dashes. Remove spaces after full stops and after end
+	of line. Separete sections with a dot. Do not put the manpage section
+	number in bold.
+	* C/cleanup-info.8: Likewise.
+	* C/deb.5: Likewise.
+	* C/deb-control.5: Likewise.
+	* C/deb-old.5: Likewise.
+	* C/dpkg.1: Likewise.
+	* C/dpkg.cfg.5: Likewise.
+	* C/dpkg-checkbuilddeps.1: Likewise.
+	* C/dpkg-deb.1: Likewise.
+	* C/dpkg-divert.8: Likewise.
+	* C/dpkg-name.1: Likewise.
+	* C/dpkg-query.1: Likewise.
+	* C/dpkg-scanpackages.1: Likewise.
+	* C/dpkg-source.1: Likewise.
+	* C/dpkg-split.1: Likewise.
+	* C/dpkg-statoverride.8: Likewise.
+	* C/dselect.1: Likewise.
+	* C/dselect.cfg.5: Likewise.
+	* C/install-info.8: Likewise.
+	* C/start-stop-daemon.8: Likewise.
+	* C/update-alternatives.8: Likewise.
+	* C/dpkg-scansources.1: Likewise. Remove `.IX' entries.
+	* C/dpkg-architecture.1: Likewise. Split most of the body of the
+	section DESCRIPTION into OPTIONS and ACTIONS.
+
+	* C/po/*.pot: Update.
+	* */*.po: Merge with .pot files.
+
+2006-02-21  Robert Luberda  <robert@debian.org>
+
+	* pl/*: Updated.
+
+2006-02-20  Matt Kraai  <kraai@ftbfs.org>
+
+	* C/dpkg-source.1: Add missing parentheses around manpage section
+	number.
+	* C/po/dpkg-source.1.pot: Update.
+	* es/dpkg-source.1.es.po: Likewise.
+	* fr/dpkg-source.1.fr.po: Likewise.
+
+2006-02-19  Philippe Batailler  <philippe.batailler@free.fr>
+
+	* fr/dpkg-source.1.fr.po: Updated.
+	* fr/dpkg.1.fr.po: Likewise.
+	* fr/dpkg-query.1.fr.po: Likewise.
+	* fr/dpkg-name.1.fr.po: Likewise.
+
+2006-02-18  Frank Lichtenheld  <djpig@debian.org>
+
+	* C/po/*.pot: Update.
+	* */*.po: Unfuzzy strings fuzzied due to the
+	typo fixes.
+
+2006-02-18  A. Costa  <agcosta@gis.net>
+
+	* C/dpkg-deb.1: Typo fix.
+	* C/dpkg-statoverride.8: Typo fix.
+	* C/install-info.8: Typo fix.
+	* C/start-stop-daemon.8: Typo fix.
+	* C/update-alternatives.8: Typo fix.
+	* C/dpkg.1: Typo fix.
+	* C/dpkg.cfg.5: Typo fix.
+
+2006-02-17  Frank Lichtenheld  <djpig@debian.org>
+
+	* C/po/*.pot: Update.
+	* */*.po: Merge with .pot files.
+
+	* Makefile.am (updatepo): New target that calls
+	`make updatepo' in all subdirectories.
+
+
+Older changes are documented in the top-level ChangeLog

@@ -1,0 +1,51 @@
+Index: dpkg+chaos/man/Makefile.am
+===================================================================
+--- dpkg+chaos.orig/man/Makefile.am
++++ dpkg+chaos/man/Makefile.am
+@@ -1,7 +1,7 @@
+ ## Process this file with automake to produce Makefile.in
+ 
+ # po4a must be the first sub-directory because it generates the translations.
+-SUBDIRS = C po4a de es fr hu ja pl pt_BR ru sv
++SUBDIRS = C #po4a de es fr hu ja pl pt_BR ru sv
+ 
+ .PHONY: updatepo
+ updatepo:
+Index: dpkg+chaos/scripts/Makefile.am
+===================================================================
+--- dpkg+chaos.orig/scripts/Makefile.am
++++ dpkg+chaos/scripts/Makefile.am
+@@ -1,6 +1,6 @@
+ ## Process this file with automake to produce Makefile.in
+ 
+-SUBDIRS = po
++#SUBDIRS = po
+ 
+ bin_SCRIPTS = \
+ 	822-date \
+Index: dpkg+chaos/man/Makefile.in
+===================================================================
+--- dpkg+chaos.orig/man/Makefile.in
++++ dpkg+chaos/man/Makefile.in
+@@ -214,7 +214,7 @@ target_os = @target_os@
+ target_vendor = @target_vendor@
+ 
+ # po4a must be the first sub-directory because it generates the translations.
+-SUBDIRS = C po4a de es fr hu ja pl pt_BR ru sv
++SUBDIRS = C # po4a de es fr hu ja pl pt_BR ru sv
+ all: all-recursive
+ 
+ .SUFFIXES:
+Index: dpkg+chaos/scripts/Makefile.in
+===================================================================
+--- dpkg+chaos.orig/scripts/Makefile.in
++++ dpkg+chaos/scripts/Makefile.in
+@@ -222,7 +222,7 @@ target_alias = @target_alias@
+ target_cpu = @target_cpu@
+ target_os = @target_os@
+ target_vendor = @target_vendor@
+-SUBDIRS = po
++#SUBDIRS = po
+ bin_SCRIPTS = \
+ 	822-date \
+ 	dpkg-architecture \

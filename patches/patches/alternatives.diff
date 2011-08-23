@@ -1,0 +1,296 @@
+Index: dpkg+chaos/scripts/update-alternatives.pl
+===================================================================
+--- dpkg+chaos.orig/scripts/update-alternatives.pl
++++ dpkg+chaos/scripts/update-alternatives.pl
+@@ -64,7 +64,7 @@ Commands:
+   --set <name> <path>      set <path> as alternative for <name>.
+   --all                    call --config on all alternatives.
+ 
+-<link> is the symlink pointing to /etc/alternatives/<name>.
++<link> is the symlink pointing to /usr/local/etc/alternatives/<name>.
+   (e.g. /usr/bin/pager)
+ <name> is the master name for this link group.
+   (e.g. pager)
+@@ -97,7 +97,7 @@ sub badusage
+     exit(2);
+ }
+ 
+-$altdir= '/etc/alternatives';
++$altdir= '/usr/local/etc/alternatives';
+ $admindir= $admindir . '/alternatives';
+ $testmode= 0;
+ $verbosemode= 0;
+@@ -430,7 +430,7 @@ for ($j=0; $j<=$#slavenames; $j++) {
+ if ($manual eq 'manual') {
+     &pr(sprintf(_g("Automatic updates of %s are disabled, leaving it alone."), "$altdir/$name"))
+       if $verbosemode > 0;
+-    &pr(sprintf(_g("To return to automatic updates use \`update-alternatives --auto %s'."), $name))
++    &pr(sprintf(_g("To return to automatic updates use \`dpkg-update-alternatives --auto %s'."), $name))
+       if $verbosemode > 0;
+ } else {
+     if ($state eq 'expected-inprogress') {
+@@ -649,7 +649,7 @@ sub set_alternatives {
+ 
+ sub pr { print(STDOUT "@_\n") || &quit(sprintf(_g("error writing stdout: %s"), $!)); }
+ sub paf {
+-    $_[0] =~ m/\n/ && &quit(sprintf(_g("newlines prohibited in update-alternatives files (%s)"), $_[0]));
++    $_[0] =~ m/\n/ && &quit(sprintf(_g("newlines prohibited in dpkg-update-alternatives files (%s)"), $_[0]));
+     print(AF "$_[0]\n") || &quit(sprintf(_g("error writing stdout: %s"), $!));
+ }
+ sub gl {
+Index: dpkg+chaos/man/C/update-alternatives.8
+===================================================================
+--- dpkg+chaos.orig/man/C/update-alternatives.8
++++ dpkg+chaos/man/C/update-alternatives.8
+@@ -5,12 +5,12 @@
+ .\" by the Free Software Foundation; either version 2 of the License, or
+ .\" (at your option) any later version.  There is NO WARRANTY.  You can
+ .\" find the GNU GPL in /usr/share/common-licenses/GPL on any Debian system.
+-.TH update\-alternatives 8 "2006-11-24" "Debian Project" "dpkg utilities"
++.TH dpkg\-update\-alternatives 8 "2006-11-24" "Debian Project" "dpkg utilities"
+ .SH NAME
+-update\-alternatives - maintain symbolic links determining default commands
++dpkg\-update\-alternatives - maintain symbolic links determining default commands
+ .
+ .SH SYNOPSIS
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ .RI [ options ]
+ .B \-\-install
+ .I genname symlink altern priority
+@@ -18,47 +18,47 @@ update\-alternatives - maintain symbolic
+ .I genname symlink
+ .IR altern ]...
+ .PP
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ .RI [ options ]
+ .B \-\-remove
+ .I name path
+ .PP
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ .RI [ options ]
+ .B \-\-remove\-all
+ .I name
+ .PP
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ .RI [ options ]
+ .B \-\-all
+ .PP
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ .RI [ options ]
+ .B \-\-auto
+ .I name
+ .PP
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ .RI [ options ]
+ .B \-\-display
+ .I name
+ .PP
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ .RI [ options ]
+ .B \-\-list
+ .I name
+ .PP
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ .RI [ options ]
+ .B \-\-config
+ .I name
+ .PP
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ .RI [ options ]
+ .B \-\-set
+ .I name path
+ .
+ .SH DESCRIPTION
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ creates, removes, maintains and displays information about the symbolic
+ links comprising the Debian alternatives system.
+ .PP
+@@ -99,15 +99,15 @@ Instead, it is a symbolic link to a name
+ which in turn is a symbolic link to the actual file referenced.
+ This is done so that the system administrator's changes can be confined
+ within the
+-.I /etc
++.I /usr/local/etc
+ directory: the FHS (q.v.) gives reasons why this is a Good Thing.
+ .PP
+ When each package
+ providing a file with a particular functionality is
+ installed, changed or removed,
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ is called to update information about that file in the alternatives system.
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ is usually called from the
+ .B postinst
+ or
+@@ -122,7 +122,7 @@ editor are installed, the man page refer
+ .I /usr/share/man/man1/vi.1
+ should correspond to the executable referenced by
+ .IR /usr/bin/vi .
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ handles this by means of
+ .I master
+ and
+@@ -146,7 +146,7 @@ the system.
+ If the system administrator makes changes to the system's
+ automatic settings,
+ this will be noticed the next time
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ is run on the changed link's group,
+ and the group will automatically be switched to manual mode.
+ .PP
+@@ -160,7 +160,7 @@ will be those which have the highest pri
+ When using the
+ .I \-\-config
+ option,
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ will list all of the choices for the link group
+ of which given
+ .I name
+@@ -180,17 +180,17 @@ option instead (see below).
+ Different packages providing the same file need to do so
+ .BR cooperatively .
+ That is - the usage of
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ is
+ .B mandatory
+ for all involved packages in such case - it is not possible to
+ override some file in a package that does not employ the
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ mechanism.
+ .
+ .SH TERMINOLOGY
+ Since the activities of
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ are quite involved, some specific terms will help to explain its
+ operation.
+ .TP
+@@ -211,14 +211,14 @@ accessible via a generic name using the 
+ .TP
+ alternatives directory
+ A directory, by default
+-.IR /etc/alternatives ,
++.IR /usr/local/etc/alternatives ,
+ containing the symlinks.
+ .TP
+ administrative directory
+ A directory, by default
+-.IR /var/lib/dpkg/alternatives ,
++.IR /usr/local/dpkg-db/alternatives ,
+ containing
+-.BR update\-alternatives '
++.BR dpkg\-update\-alternatives '
+ state information.
+ .TP
+ link group
+@@ -262,7 +262,7 @@ and the current setting for it, use the
+ action:
+ .RS
+ .PP
+-update\-alternatives \-\-display vi
++dpkg\-update\-alternatives \-\-display vi
+ .RE
+ .PP
+ To choose a particular
+@@ -271,7 +271,7 @@ implementation, use this command as root
+ from the list:
+ .RS
+ .PP
+-update\-alternatives \-\-config vi
++dpkg\-update\-alternatives \-\-config vi
+ .RE
+ .PP
+ To go back to having the
+@@ -279,19 +279,19 @@ To go back to having the
+ implementation chosen automatically, do this as root:
+ .RS
+ .PP
+-update\-alternatives \-\-auto vi
++dpkg\-update\-alternatives \-\-auto vi
+ .RE
+ .
+ .SH OPTIONS
+ Exactly one action must be specified if
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ is to perform any meaningful task.
+ Any number of the common options may be specified together with any action.
+ .SS "COMMON OPTIONS"
+ .TP
+ .B \-\-verbose
+ Generate more comments about what
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ is doing.
+ .TP
+ .B \-\-quiet
+@@ -307,7 +307,7 @@ Give some usage information.
+ .TP
+ .B \-\-version
+ Tell which version of
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ this is.
+ .TP
+ \fB\-\-altdir\fR \fIdirectory\fR
+@@ -414,13 +414,13 @@ mode.
+ .
+ .SH FILES
+ .TP
+-.I /etc/alternatives/
++.I /usr/local/etc/alternatives/
+ The default alternatives directory.
+ Can be overridden by the
+ .B \-\-altdir
+ option.
+ .TP
+-.I /var/lib/dpkg/alternatives/
++.I /usr/local/dpkg-db/alternatives/
+ The default administration directory.
+ Can be overridden by the
+ .B \-\-admindir
+@@ -434,10 +434,10 @@ Problems were encountered whilst parsing
+ or performing the action.
+ .
+ .SH DIAGNOSTICS
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ chatters incessantly about its activities on its standard output channel.
+ If problems occur,
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ outputs error messages on its standard error channel and
+ returns an exit status of 2.
+ These diagnostics should be self-explanatory;
+@@ -448,12 +448,12 @@ If you find a bug, please report it usin
+ or, if that is not possible, email the author directly.
+ .PP
+ If you find any discrepancy between the operation of
+-.B update\-alternatives
++.B dpkg\-update\-alternatives
+ and this manual page, it is a bug,
+ either in the implementation or the documentation; please report it.
+ .
+ .SH AUTHOR
+-Debian update\-alternatives is copyright 1995
++Debian dpkg\-update\-alternatives is copyright 1995
+ Ian Jackson. It is free software; see the GNU General Public Licence
+ version 2 or later for copying conditions. There is NO warranty.
+ .PP

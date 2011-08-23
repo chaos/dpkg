@@ -1,0 +1,29 @@
+Index: dpkg+chaos/src/archives.c
+===================================================================
+--- dpkg+chaos.orig/src/archives.c
++++ dpkg+chaos/src/archives.c
+@@ -380,6 +380,10 @@ int tarobject(struct TarInfo *ti) {
+ 
+   usename= namenodetouse(nifd->namenode,tc->pkg)->name + 1; /* Skip the leading `/' */
+ 
++  if (strncmp(usename, "usr/local/", strlen("usr/local/")) != 0) {
++    ohshit(_("package contains file(s) outside of /usr/local: %s"), usename);
++  }
++
+   if (nifd->namenode->flags & fnnf_new_conff) {
+     /* If it's a conffile we have to extract it next to the installed
+      * version (ie, we do the usual link-following).
+Index: dpkg+chaos/dpkg-deb/build.c
+===================================================================
+--- dpkg+chaos.orig/dpkg-deb/build.c
++++ dpkg+chaos/dpkg-deb/build.c
+@@ -415,7 +415,8 @@ void do_build(const char *const *argv) {
+   if (!(c3= m_fork())) {
+     m_dup2(p3[1],1); close(p3[0]); close(p3[1]);
+     if (chdir(directory)) ohshite(_("failed to chdir to `%.255s'"),directory);
+-    execlp(FIND,"find",".","-path","./" BUILDCONTROLDIR,"-prune","-o","-print0",(char*)0);
++    //execlp(FIND,"find",".","-path","./" BUILDCONTROLDIR,"-prune","-o","-print0",(char*)0);
++    execlp(FIND,"find","./usr/local","-mindepth","1","-print0",(char*)0);
+     ohshite(_("failed to exec find"));
+   }
+   close(p3[1]);

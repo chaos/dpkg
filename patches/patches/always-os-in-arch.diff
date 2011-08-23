@@ -1,0 +1,17 @@
+Index: x/scripts/controllib.pl
+===================================================================
+--- x/scripts/controllib.pl	(.../tags/1.13.22-0/dpkg)	(revision 218)
++++ y/scripts/controllib.pl	(.../trunk/dpkg)	(revision 218)
+@@ -88,11 +88,7 @@
+ {
+     local ($os, $cpu) = @_;
+ 
+-    if ($os eq "linux") {
+-	return $cpu;
+-    } else {
+-	return "$os-$cpu";
+-    }
++    return "$os-$cpu";
+ }
+ 
+ sub debian_arch_split {

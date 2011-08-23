@@ -1,0 +1,187 @@
+2008-02-01 Jim Garlick <garlick@llnl.gov>
+
+	* : tag 1.13.22-10
+
+	* [disable-scripts.diff] : Disable maintainer scripts to make
+	running dpkg under sudo more secure.  We don't use them in /usr/local
+	anyway.
+
+	* ReleaseNotes : Removed, this was out of date.
+
+2008-01-11 Jim Garlick <garlick@llnl.gov>
+
+	* : tag 1.13.22-9
+
+	* [no-chown.diff] : Extract archives with tar -o.  This addresses
+	dpkg-db/info files that were being installed with ownership of
+	the packager.
+
+2008-01-09 Jim Garlick <garlick@llnl.gov>
+
+	* scripts/dpkg-initialize.sh : Don't create alternatives directories.
+
+	* dpkg.spec : Remove dpkg-update-alternatives and man page from RPM.
+
+2007-11-15 Jim Garlick <garlick@llnl.gov>
+
+	* : tag 1.13.22-8
+
+	* [bootstrap-arch.diff] : Allow configure to deterimine build
+	architecture if dpkg is not already installed.  It is a mystery
+	how we ever got dpkg to work in the first place, but it seems we 
+	have been leveraging the previous version of dpkg every time we
+	build a new one.  Under mock this dependency becomes apparent.
+
+
+2007-11-13 Jim Garlick <garlick@llnl.gov>
+
+	* [no-translation.diff] : Include Makefile.in changes along with
+	Makefile.am so we don't have to rerun automake when building rpms.
+
+2007-09-28 Jim Garlick <garlick@llnl.gov>
+
+	* : tag 1.13.22-7chaos
+
+2007-09-26 Jim Garlick <garlick@llnl.gov>
+
+	* [alternatives.diff] : Install update-alternatives as 
+	dpkg-update-alternatives, operating on /usr/local/etc/alternatives.
+
+	* dpkg.spec : Install dpkg-update-alternatives and man page.
+
+2007-09-20 Jim Garlick <garlick@llnl.gov>
+
+	* : tag 1.13.22-6chaos
+
+	* : Moved patches to patches/patches dir.
+
+	* [list-format.diff] : Widen name (+10) and shorten version (-4) 
+	and description (-6) in default 80-column dpkg -l output.
+
+	* scripts/distro.sh : Removed.
+
+	* scripts/build.sh : Removed in favor of dynamic svn checkout.
+
+	* scripts/build-preexec.sh : Added to pre-quilt package.
+
+	* scripts/quilt.sh : Updated.
+
+	* scripts/configopts.sh : Added to avoid duplicating config opts
+	in spec file and Makefile.
+
+2007-05-06 Jim Garlick <garlick@llnl.gov>
+
+	* : Restructured as a quilt project.
+
+	* dpkg : Update to (clean) version 1.13.25.
+
+	* [always-] : Drop m4/arch.m4 hunk.
+
+2007-01-14 Jim Garlick <garlick@llnl.gov>
+
+	* : tag 1.13.22-5chaos
+
+	* META, dpkg.spec, dpkg-initialize.sh : New.
+
+	* package.conf, firstinstall.sh, firstbuild.sh, package.postinst : 
+	Removed.
+
+	* dpkg/src/main.c : Revert append of /usr/local/bin to PATH.
+
+2007-01-07 Jim Garlick <garlick@llnl.gov>
+
+	* dpkg/dpkg/lib/compression.c : Handle missing Z_ERRNO on SLES 9.
+
+2006-12-22 Jim Garlick <garlick@llnl.gov>
+
+	* : tag 1.13.22-4
+
+	* package.conf, firstinstall.sh, firstbuild.sh : 
+	- Eliminate PKG_RELEASE.
+	- Use prefix dir macro.  
+	- Add PKG_SECTION=root.
+	- Include dselect.
+
+2006-12-07 Jim Garlick <garlick@llnl.gov>
+
+	* : tag 1.13.22-3
+
+	* dpkg/src/main.c : Append /usr/local/bin to PATH.
+
+2006-12-06 Jim Garlick <garlick@llnl.gov>
+
+	* firstbuild.sh : Use ar and tar to build the archive, not dpkg-deb.
+
+	* firstinstall.sh : Untar data in temp directory, chown to root,
+	  then copy to destination.
+
+2006-12-05 Jim Garlick <garlick@llnl.gov>
+
+	* firstbuild.sh : New.
+
+2006-12-04 Jim Garlick <garlick@llnl.gov>
+
+	* : tag 1.13.22-2
+
+	* package.conf : Create /usr/local/etc/dpkg/dpkg.cfg with pointer
+	  to /usr/local/var/log/dpkg.log.  Create conffiles listing dpkg.cfg 
+	  as a config file.  In postinst, touch /usr/local/var/log/dpkg.log 
+	  if it doesn't exist.
+
+2006-12-01 Jim Garlick <garlick@llnl.gov>
+
+	* dpkg/scripts/controllib.pl : Make debian_arch_fix() a no-op to
+	  stop suppressing "linux" in arch name in dpkg-architecture.
+
+2006-12-01 Jim Garlick <garlick@llnl.gov>
+
+	* : tag 1.13.22-1
+
+	* dpkg/src/archives.c : Skip file mode update (leave default 0:0).
+	  Abort installation if there are files outside of /usr/local.
+	  Abort installation if any files have mode bits 07000 set.  
+	  Mode overrides are allowed to set these bits.
+
+	* dpkg/dpkg-deb/build.c : Fix tar command to only pick up files
+	  in /usr/local.
+
+	* dpkg/lib/dpkg.h : Define TAR as gtar, FIND as gfind on solaris.
+	  Change hard coded DEBSIGVERIFY path from /usr/bin to /usr/local/bin.
+
+	* dpkg/src/help.c : Comment out ldconfig on solaris.
+
+	* m4/arch.m4 : Remove logic to suppress "linux" in arch name.
+
+	* scripts/Makefile.am, man/Makefile.am : Comment out stuff in 
+	  SUBDIRS to avoid dealing with portability of translation utils.
+
+	* src/help.c : Change #ifdef WITH_START_STOP_DAEMON to #if.
+	  Comment out update-rc.d.
+
+	* ostable : Add aix and solaris.
+
+	* dpkg-deb/extract.c, dpkg-split/info.c : Defs for AIX archive format.
+
+	* dpkg-deb/Makefile.am, dpkg-split/Makefile.am : 
+	  Link in ../getopt/libopt.a for obstack.o on AIX.
+
+	* lib/Makefile.am : Add ../getopt to INCLUDES for obstack.h.
+
+	* src/Makefile.am : Add ../getopt to INCLUDES for obstack.h,
+	  Link in ../getopt/libopt.a for obstack.o on AIX.
+
+	* lib/tarfn.c : Provide missing strnlen() function on Solaris, AIX.
+
+	* src/query.c, src/configure.c, src/enquiry.c, src/query.c : Change 
+	  termios.h include path on AIX.
+
+	* : Reran automake (1.9.6-2) and autoconf (2.59-7) on FC5 system
+	  and checked in the resulting Makefile.in's and configure script.
+
+	* package.conf, firstinstall.sh : New.
+
+2006-12-01 Jim Garlick <garlick@llnl.gov>
+
+	* : tag 1.13.22-0
+
+	* : import clean dpkg 1.13.22

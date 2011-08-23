@@ -1,0 +1,46 @@
+2006-12-04  Jordi Mallach  <jordi@debian.org>
+
+	* ca.po: Fix typo.
+
+2006-10-11  Nicolas Francois  <nicolas.francois@centraliens.net>
+
+	* LINGUAS: Activate the Catalan translation.
+
+2006-10-11  Jordi Mallach  <jordi@debian.org>
+
+	* ca.po: New Catalan translation (24t406u).
+
+2006-07-08  Philippe Batailler  <philippe.batailler@free.fr>
+
+	* fr.po: Typos fixed.
+
+2006-07-01  Philippe Batailler  <philippe.batailler@free.fr>
+
+	* fr.po: First translation.
+	* LINGUAS: New language: French.
+
+2006-06-21  Guillem Jover  <guillem@debian.org>
+
+	* dpkg-dev.pot: Regenerated.
+
+2006-06-04  Guillem Jover  <guillem@debian.org>
+
+	* dpkg-dev.pot: Regenerated.
+
+2006-05-31  Guillem Jover  <guillem@debian.org>
+
+	* dpkg-dev.pot: Regenerated.
+
+2006-05-23  Guillem Jover  <guillem@debian.org>
+
+	* dpkg-dev.pot: Regenerated.
+
+2006-05-13  Frank Lichtenheld  <djpig@debian.org>
+
+	* LINGUAS: New file.
+	* POTFILES.in: Likewise.
+	* Makefile.in.in: Likewise.
+	* Makevars: Likewise.
+	* remove-potcdate.sin: Likewise.
+	* dpkg-dev.pot: Likewise.
+

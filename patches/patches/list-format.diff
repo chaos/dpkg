@@ -1,0 +1,17 @@
+Index: dpkg+chaos/src/query.c
+===================================================================
+--- dpkg+chaos.orig/src/query.c
++++ dpkg+chaos/src/query.c
+@@ -153,9 +153,9 @@ static void list1package(struct pkginfo 
+       w-=80;
+       if (w<0) w=0;		/* lets not try to deal with terminals that are too small */
+       w>>=2;		/* halve that so we can add that to the both the name and description */
+-      nw=(14+w);		/* name width */
+-      vw=(14+w);		/* version width */
+-      dw=(44+(2*w));	/* description width */
++      nw=(24+w);		/* name width */
++      vw=(10+w);		/* version width */
++      dw=(38+(2*w));	/* description width */
+     }
+     sprintf(format,"%%c%%c%%c %%-%d.%ds %%-%d.%ds %%.*s\n", nw, nw, vw, vw);
+   }

@@ -1,0 +1,54 @@
+Index: x/src/archives.c
+===================================================================
+--- x/src/archives.c	(.../tags/1.13.22-0/dpkg)	(revision 218)
++++ y/src/archives.c	(.../trunk/dpkg)	(revision 218)
+@@ -266,11 +266,16 @@
+ }
+ 
+ static void newtarobject_allmodes(const char *path, struct TarInfo *ti, struct filestatoverride* statoverride) {
++  mode_t am = (statoverride ? statoverride->mode : ti->Mode) & ~S_IFMT;
++#if 0
+   if (chown(path,
+ 	    statoverride ? statoverride->uid : ti->UserID,
+ 	    statoverride ? statoverride->gid : ti->GroupID))
+     ohshite(_("error setting ownership of `%.255s'"),ti->Name);
+-  if (chmod(path,(statoverride ? statoverride->mode : ti->Mode) & ~S_IFMT))
++#endif
++  if (!statoverride && (am & 07000))
++    ohshit(_("`%.255s' has illegal mode bits (%o)"),ti->Name,am);
++  if (chmod(path,am))
+     ohshite(_("error setting permissions of `%.255s'"),ti->Name);
+   newtarobject_utime(path,ti);
+ }
+@@ -611,11 +620,15 @@
+ 			  nifd->namenode->statoverride->uid,
+ 			  nifd->namenode->statoverride->gid,
+ 			  nifd->namenode->statoverride->mode);
++#if 0
+     if (fchown(fd,
+ 	    nifd->namenode->statoverride ? nifd->namenode->statoverride->uid : ti->UserID,
+ 	    nifd->namenode->statoverride ? nifd->namenode->statoverride->gid : ti->GroupID))
+       ohshite(_("error setting ownership of `%.255s'"),ti->Name);
++#endif
+     am=(nifd->namenode->statoverride ? nifd->namenode->statoverride->mode : ti->Mode) & ~S_IFMT;
++    if (!nifd->namenode->statoverride && (am & 07000))
++      ohshit(_("`%.255s' has illegal mode bits (%o)"),ti->Name,am);
+     if (fchmod(fd,am))
+       ohshite(_("error setting permissions of `%.255s'"),ti->Name);
+     pop_cleanup(ehflag_normaltidy); /* fd= open(fnamenewvb.buf) */
+@@ -655,6 +668,7 @@
+     if (symlink(ti->LinkName,fnamenewvb.buf))
+       ohshite(_("error creating symbolic link `%.255s'"),ti->Name);
+     debug(dbg_eachfiledetail,"tarobject SymbolicLink creating");
++#if 0
+ #ifdef HAVE_LCHOWN
+     if (lchown(fnamenewvb.buf,
+ 	    nifd->namenode->statoverride ? nifd->namenode->statoverride->uid : ti->UserID,
+@@ -666,6 +680,7 @@
+ 	    nifd->namenode->statoverride ? nifd->namenode->statoverride->gid : ti->GroupID))
+       ohshite(_("error setting ownership of symlink `%.255s'"),ti->Name);
+ #endif
++#endif
+     break;
+   case Directory:
+     /* We've already checked for an existing directory. */

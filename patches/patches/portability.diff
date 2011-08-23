@@ -1,0 +1,248 @@
+Index: dpkg+chaos/src/query.c
+===================================================================
+--- dpkg+chaos.orig/src/query.c
++++ dpkg+chaos/src/query.c
+@@ -33,7 +33,11 @@
+ #include <sys/types.h>
+ #include <sys/stat.h>
+ #include <sys/ioctl.h>
++#ifdef _AIX
++#include <termios.h>
++#else
+ #include <sys/termios.h>
++#endif
+ #include <fcntl.h>
+ 
+ #include <dpkg.h>
+Index: dpkg+chaos/src/configure.c
+===================================================================
+--- dpkg+chaos.orig/src/configure.c
++++ dpkg+chaos/src/configure.c
+@@ -37,7 +37,11 @@
+ #include <assert.h>
+ #include <sys/wait.h>
+ #include <time.h>
++#ifdef _AIX
++#include <termios.h>
++#else
+ #include <sys/termios.h>
++#endif
+ 
+ #include <dpkg.h>
+ #include <dpkg-db.h>
+Index: dpkg+chaos/src/help.c
+===================================================================
+--- dpkg+chaos.orig/src/help.c
++++ dpkg+chaos/src/help.c
+@@ -69,11 +69,18 @@ struct filenamenode *namenodetouse(struc
+ 
+ void checkpath(void) {
+ /* Verify that some programs can be found in the PATH. */
+-  static const char *const checklist[]= { "ldconfig", 
+-#ifdef WITH_START_STOP_DAEMON
++  static const char *const checklist[]= { 
++#if !defined(__sun) && !defined(__APPLE__)
++    "ldconfig", 
++#endif
++#if WITH_START_STOP_DAEMON
+     "start-stop-daemon",
+ #endif    
+-    "install-info", "update-rc.d", 0
++    "install-info", 
++#if 0
++    "update-rc.d",
++#endif
++    0
+   };
+ 
+   struct stat stab;
+Index: dpkg+chaos/src/Makefile.am
+===================================================================
+--- dpkg+chaos.orig/src/Makefile.am
++++ dpkg+chaos/src/Makefile.am
+@@ -4,7 +4,7 @@ localedir = $(datadir)/locale
+ INCLUDES = \
+ 	-DLOCALEDIR=\"$(localedir)\" -I$(top_srcdir)/intl \
+ 	-DADMINDIR=\"$(admindir)\" \
+-	-I$(top_srcdir)/lib
++	-I$(top_srcdir)/lib -I$(top_srcdir)/getopt
+ 
+ 
+ bin_PROGRAMS = dpkg dpkg-query
+@@ -26,15 +26,14 @@ dpkg_SOURCES = \
+ 	update.c
+ 
+ dpkg_LDADD = \
+-	$(LIBINTL) ../lib/libdpkg.a $(ZLIB_LIBS) $(BZ2_LIBS) $(SELINUX_LIBS)
++	$(LIBINTL) ../lib/libdpkg.a ../getopt/libopt.a $(ZLIB_LIBS) $(BZ2_LIBS) $(SELINUX_LIBS) 
+ 
+ dpkg_query_SOURCES = \
+ 	errors.c \
+ 	filesdb.c filesdb.h \
+ 	query.c
+ 
+-dpkg_query_LDADD = $(LIBINTL) ../lib/libdpkg.a
+-
++dpkg_query_LDADD = $(LIBINTL) ../lib/libdpkg.a ../getopt/libopt.a 
+ 
+ install-data-local:
+ 	$(mkdir_p) $(DESTDIR)$(admindir)/alternatives
+Index: dpkg+chaos/src/enquiry.c
+===================================================================
+--- dpkg+chaos.orig/src/enquiry.c
++++ dpkg+chaos/src/enquiry.c
+@@ -31,7 +31,11 @@
+ #include <sys/types.h>
+ #include <sys/stat.h>
+ #include <sys/ioctl.h>
++#ifdef _AIX
++#include <termios.h>
++#else
+ #include <sys/termios.h>
++#endif
+ #include <fcntl.h>
+ 
+ #include <dpkg.h>
+Index: dpkg+chaos/lib/compression.c
+===================================================================
+--- dpkg+chaos.orig/lib/compression.c
++++ dpkg+chaos/lib/compression.c
+@@ -69,6 +69,9 @@ void decompress_cat(enum compression_typ
+           if (actualread < 0 ) {
+             int err = 0;
+             const char *errmsg = BZ2_bzerror(bzfile, &err);
++#ifndef Z_ERRNO
++#define Z_ERRNO (-1) /* needed on SLES9 bzip2-1.0.2-346.1 */
++#endif
+             if (err == Z_ERRNO) {
+               if (errno == EINTR) continue;
+               errmsg= strerror(errno);
+Index: dpkg+chaos/lib/tarfn.c
+===================================================================
+--- dpkg+chaos.orig/lib/tarfn.c
++++ dpkg+chaos/lib/tarfn.c
+@@ -53,6 +53,20 @@ OtoL(const char * s, int size)
+ 	return n;
+ }
+ 
++#if defined(__sun) || defined(__APPLE__)
++static size_t
++strnlen(const char *s, size_t maxlen)
++{
++	size_t len = 0;
++
++	while (len < maxlen && s[len] != '\0')
++		len++;
++
++	return len;
++}
++#endif
++
++
+ /* String block to C null-terminated string */
+ char *
+ StoC(const char *s, int size)
+Index: dpkg+chaos/lib/Makefile.am
+===================================================================
+--- dpkg+chaos.orig/lib/Makefile.am
++++ dpkg+chaos/lib/Makefile.am
+@@ -5,7 +5,8 @@ pkgconfdir = $(sysconfdir)/@PACKAGE@
+ INCLUDES = \
+ 	-DLOCALEDIR=\"$(localedir)\" -I$(top_srcdir)/intl \
+ 	-DCONFIGDIR=\"$(pkgconfdir)\" \
+-	-DCOPYINGFILE=\"$(datadir)/common-licenses/GPL-2\"
++	-DCOPYINGFILE=\"$(datadir)/common-licenses/GPL-2\" \
++	-I$(top_srcdir)/getopt
+ 
+ 
+ noinst_LIBRARIES = libdpkg.a
+Index: dpkg+chaos/lib/dpkg.h
+===================================================================
+--- dpkg+chaos.orig/lib/dpkg.h
++++ dpkg+chaos/lib/dpkg.h
+@@ -136,12 +136,18 @@
+ #define DPKG		"dpkg"
+ #define DEBSIGVERIFY	"/usr/bin/debsig-verify"
+ 
++#ifdef __sun
++#define TAR		"gtar"
++#define FIND		"gfind"
++#else
+ #define TAR		"tar"
++#define FIND		"find"
++#endif
++#define GZIP		"gzip"
+ #define GZIP		"gzip"
+ #define BZIP2		"bzip2"
+ #define LZMA		"lzma"
+ #define RM		"rm"
+-#define FIND		"find"
+ #define SHELL		"sh"
+ #define DIFF		"diff"
+ 
+Index: dpkg+chaos/dpkg-deb/Makefile.am
+===================================================================
+--- dpkg+chaos.orig/dpkg-deb/Makefile.am
++++ dpkg+chaos/dpkg-deb/Makefile.am
+@@ -15,4 +15,4 @@ dpkg_deb_SOURCES = \
+ 	main.c
+ 
+ dpkg_deb_LDADD = \
+-	$(LIBINTL) ../lib/libdpkg.a $(ZLIB_LIBS) $(BZ2_LIBS) $(SELINUX_LIBS)
++	$(LIBINTL) ../lib/libdpkg.a ../getopt/libopt.a $(ZLIB_LIBS) $(BZ2_LIBS) $(SELINUX_LIBS)
+Index: dpkg+chaos/dpkg-deb/extract.c
+===================================================================
+--- dpkg+chaos.orig/dpkg-deb/extract.c
++++ dpkg+chaos/dpkg-deb/extract.c
+@@ -34,6 +34,11 @@
+ #include <ctype.h>
+ #include <assert.h>
+ #include <ar.h>
++#ifdef _AIX
++#define ar_name	_ar_name.ar_name
++#define ar_fmag	_ar_name.ar_fmag
++#define ARFMAG AIAFMAG
++#endif
+ #ifdef WITH_ZLIB
+ #include <zlib.h>
+ #endif
+Index: dpkg+chaos/dpkg-split/Makefile.am
+===================================================================
+--- dpkg+chaos.orig/dpkg-split/Makefile.am
++++ dpkg+chaos/dpkg-split/Makefile.am
+@@ -17,7 +17,7 @@ dpkg_split_SOURCES = \
+ 	queue.c \
+ 	split.c
+ 
+-dpkg_split_LDADD = $(LIBINTL) ../lib/libdpkg.a
++dpkg_split_LDADD = $(LIBINTL) ../lib/libdpkg.a ../getopt/libopt.a
+ 
+ 
+ pkglib_SCRIPTS = mksplit
+Index: dpkg+chaos/dpkg-split/info.c
+===================================================================
+--- dpkg+chaos.orig/dpkg-split/info.c
++++ dpkg+chaos/dpkg-split/info.c
+@@ -28,6 +28,12 @@
+ #include <unistd.h>
+ #include <sys/stat.h>
+ #include <ar.h>
++#ifdef _AIX
++#define ar_name _ar_name.ar_name
++#define ar_fmag _ar_name.ar_fmag
++#define ARFMAG AIAFMAG
++#define SARMAG SAIAMAG
++#endif
+ #include <ctype.h>
+ 
+ #include <dpkg.h>
+Index: dpkg+chaos/ostable
+===================================================================
+--- dpkg+chaos.orig/ostable
++++ dpkg+chaos/ostable
+@@ -21,3 +21,5 @@ knetbsd		knetbsd-gnu	knetbsd[^-]*(-gnu.*
+ netbsd		netbsd		netbsd[^-]*
+ openbsd		openbsd		openbsd[^-]*
+ hurd		gnu		gnu[^-]*
++solaris		solaris		solaris[^-]*
++aix		aix		aix[^-]*

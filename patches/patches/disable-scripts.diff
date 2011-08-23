@@ -1,0 +1,22 @@
+Index: dpkg+chaos/src/help.c
+===================================================================
+--- dpkg+chaos.orig/src/help.c
++++ dpkg+chaos/src/help.c
+@@ -261,6 +261,7 @@ static void setexecute(const char *path,
+   ohshite(_("unable to set execute permissions on `%.250s'"),path);
+ }
+ static int do_script(const char *pkg, const char *scriptname, const char *scriptpath, struct stat *stab, char *const arglist[], const char *desc, const char *name, int warn) {
++#if 0
+   const char *scriptexec;
+   int c1, r;
+   setexecute(scriptpath,stab);
+@@ -281,6 +282,9 @@ static int do_script(const char *pkg, co
+   r= waitsubproc(c1,name,warn);
+   pop_cleanup(ehflag_normaltidy);
+   return r;
++#else
++  return 0; /* maintainer scripts are disabled */
++#endif
+ }
+ 
+ int maintainer_script_installed(struct pkginfo *pkg, const char *scriptname,

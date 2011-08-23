@@ -1,0 +1,29 @@
+Index: dpkg+chaos/scripts/dpkg-architecture.pl
+===================================================================
+--- dpkg+chaos.orig/scripts/dpkg-architecture.pl
++++ dpkg+chaos/scripts/dpkg-architecture.pl
+@@ -156,10 +156,6 @@ if (grep { m/^-L$/ } @ARGV) {
+ 
+ # Set default values:
+ 
+-chomp ($deb_build_arch = `dpkg --print-architecture`);
+-&syserr("dpkg --print-architecture failed") if $?>>8;
+-$deb_build_gnu_type = &debian_to_gnu($deb_build_arch);
+-
+ # Default host: Current gcc.
+ $gcc = `\${CC:-gcc} -dumpmachine`;
+ if ($?>>8) {
+@@ -169,6 +165,13 @@ if ($?>>8) {
+     chomp $gcc;
+ }
+ 
++chomp ($deb_build_arch = `dpkg --print-architecture`);
++if ($?>>8) {
++    #&syserr("dpkg --print-architecture failed") if $?>>8;
++    $deb_build_arch = &gnu_to_debian($gcc);
++}
++$deb_build_gnu_type = &debian_to_gnu($deb_build_arch);
++
+ if ($gcc ne '') {
+     $deb_host_arch = &gnu_to_debian($gcc);
+     unless (defined $deb_host_arch) {

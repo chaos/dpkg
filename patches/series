@@ -1,0 +1,10 @@
+always-os-in-arch.diff
+no-translation.diff
+portability.diff
+usr-local.diff
+list-format.diff
+alternatives.diff
+bootstrap-arch.diff
+no-setuid.diff
+no-chown.diff
+disable-scripts.diff

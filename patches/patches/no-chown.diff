@@ -1,0 +1,17 @@
+Index: dpkg+chaos/dpkg-deb/extract.c
+===================================================================
+--- dpkg+chaos.orig/dpkg-deb/extract.c
++++ dpkg+chaos/dpkg-deb/extract.c
+@@ -349,9 +349,9 @@ void do_fsystarfile(const char *const *a
+   extracthalf(debar,0,0,0);
+ }
+    
+-void do_control(const char *const *argv) { controlextractvextract(1, "x", argv); }
+-void do_extract(const char *const *argv) { controlextractvextract(0, "xp", argv); }
+-void do_vextract(const char *const *argv) { controlextractvextract(0, "xpv", argv); }
++void do_control(const char *const *argv) { controlextractvextract(1, "xo", argv); }
++void do_extract(const char *const *argv) { controlextractvextract(0, "xpo", argv); }
++void do_vextract(const char *const *argv) { controlextractvextract(0, "xpvo", argv); }
+ 
+ 
+ 

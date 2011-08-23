@@ -1,0 +1,5594 @@
+# dpkg.pl.po
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Piotr Roszatycki <dexter@debian.org>, 1999.
+# Bartosz Feñski <fenio@debian.org>, 2004-2005
+# Robert Luberda <robert@debian.org>, 2006
+msgid ""
+msgstr ""
+"Project-Id-Version: dpkg 1.13.22\n"
+"Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
+"POT-Creation-Date: 2006-08-17 16:02+0200\n"
+"PO-Revision-Date: 2006-06-19 18:48+0200\n"
+"Last-Translator: Robert Luberda <robert@debian.org>\n"
+"Language-Team: Polish <pddp@debian.linux.org.pl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-2\n"
+"Content-Transfer-Encoding: 8-bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+
+#: lib/compat.c:46
+msgid "unable to open tmpfile for vsnprintf"
+msgstr "nie mo¿na otworzyæ pliku tymczasowego dla vsnprintf"
+
+#: lib/compat.c:48
+msgid "unable to rewind at start of vsnprintf"
+msgstr "nie mo¿na cofn±æ siê do pocz±tku dla vsnprintf"
+
+#: lib/compat.c:49
+msgid "unable to truncate in vsnprintf"
+msgstr "nie mo¿na uci±æ pliku dla vsnprintf"
+
+#: lib/compat.c:51
+msgid "write error in vsnprintf"
+msgstr "b³±d zapisu dla vsnprintf"
+
+#: lib/compat.c:52
+msgid "unable to flush in vsnprintf"
+msgstr "nie mo¿na opró¿niæ buforów dla vsnprintf"
+
+#: lib/compat.c:53
+msgid "unable to stat in vsnprintf"
+msgstr "nie mo¿na ustaliæ stanu pliku dla vsnprintf"
+
+#: lib/compat.c:54
+msgid "unable to rewind in vsnprintf"
+msgstr "nie mo¿na przewin±æ pliku dla vsnprintf"
+
+#: lib/compat.c:62
+msgid "read error in vsnprintf truncated"
+msgstr "b³±d odczytu dla vsnprintf"
+
+#: lib/compat.c:89
+#, c-format
+msgid "System error no.%d"
+msgstr "B³±d systemowy nr %d"
+
+#: lib/compat.c:99
+#, c-format
+msgid "Signal no.%d"
+msgstr "Sygna³ nr %d"
+
+#: lib/compression.c:45
+#, c-format
+msgid "%s: internal gzip error: `%s'"
+msgstr "%s: wewnêtrzny b³±d gzip: `%s'"
+
+#: lib/compression.c:60
+#, c-format
+msgid "%s: failed to exec gzip -dc"
+msgstr "%s: nie mo¿na wywo³aæ gzip -dc"
+
+#: lib/compression.c:76
+#, c-format
+msgid "%s: internal bzip2 error: `%s'"
+msgstr "%s: wewnêtrzny b³±d bzip2: `%s'"
+
+#: lib/compression.c:91
+#, c-format
+msgid "%s: failed to exec bzip2 -dc"
+msgstr "%s: nie mo¿na wywo³aæ bzip2 -dc"
+
+#: lib/compression.c:94
+#, c-format
+msgid "%s: decompression"
+msgstr "%s: dekompresja"
+
+#: lib/compression.c:128
+#, c-format
+msgid "%s: internal gzip error: read: `%s'"
+msgstr "%s: wewnêtrzny b³±d gzip: czytanie: `%s'"
+
+#: lib/compression.c:138
+#, c-format
+msgid "%s: internal gzip error: write: `%s'"
+msgstr "%s: wewnêtrzny b³±d gzip: zapis: `%s'"
+
+#: lib/compression.c:141
+#, c-format
+msgid "%s: internal gzip error: read(%i) != write(%i)"
+msgstr "%s: wewnêtrzny b³±d gzip: read(%i) != write(%i)"
+
+#: lib/compression.c:157
+#, c-format
+msgid "%s: failed to exec gzip %s"
+msgstr "%s: nie mo¿na wykonaæ `gzip %s'"
+
+#: lib/compression.c:171
+#, c-format
+msgid "%s: internal bzip2 error: read: `%s'"
+msgstr "%s: wewnêtrzny b³±d bzip2: czytanie: `%s'"
+
+#: lib/compression.c:181
+#, c-format
+msgid "%s: internal bzip2 error: write: `%s'"
+msgstr "%s: wewnêtrzny b³±d bzip2: zapis: `%s'"
+
+#: lib/compression.c:184
+#, c-format
+msgid "%s: internal bzip2 error: read(%i) != write(%i)"
+msgstr "%s: wewnêtrzny b³±d bzip2: read(%i) != write(%i)"
+
+#: lib/compression.c:200
+#, c-format
+msgid "%s: failed to exec bzip2 %s"
+msgstr "%s: nie mo¿na wykonaæ bzip2 %s"
+
+#: lib/compression.c:203
+#, c-format
+msgid "%s: compression"
+msgstr "%s: kompresja"
+
+#: lib/database.c:124
+#, c-format
+msgid "couldn't allocate memory for strdup in findpackage(%s)"
+msgstr "nie uda³o siê przydzieliæ pamiêci dla strdup w findpackage(%s)"
+
+#: lib/database.c:194
+#, c-format
+msgid "size %7d occurs %5d times\n"
+msgstr "rozmiar %7d pojawi³ siê %5d razy\n"
+
+#: lib/database.c:195
+msgid "failed write during hashreport"
+msgstr "b³±d zapisu podczas wykonania funkcji hashreport"
+
+#: lib/dbmodify.c:59
+#, c-format
+msgid ""
+"updates directory contains file `%.250s' whose name is too long (length=%d, "
+"max=%d)"
+msgstr ""
+"katalog updates zawiera plik `%.250s' o zbyt d³ugiej nazwie (d³ugo¶æ=%d, "
+"maksymalnie=%d)"
+
+#: lib/dbmodify.c:63
+#, c-format
+msgid ""
+"updates directory contains files with different length names (both %d and %d)"
+msgstr "katalog updates zawiera pliki o ró¿nej wielko¶ci (%d oraz %d)"
+
+#: lib/dbmodify.c:77
+#, c-format
+msgid "cannot scan updates directory `%.255s'"
+msgstr "nie mo¿na przeszukaæ katalogu `updates' %.255s"
+
+#: lib/dbmodify.c:93
+#, c-format
+msgid "failed to remove incorporated update file %.255s"
+msgstr "nie mo¿na usun±æ pliku %.255s z katalogu `updates'"
+
+#: lib/dbmodify.c:111 src/archives.c:600 dpkg-deb/build.c:317
+#, c-format
+msgid "unable to create `%.255s'"
+msgstr "nie mo¿na utworzyæ `%.255s'"
+
+#: lib/dbmodify.c:115
+#, c-format
+msgid "unable to fill %.250s with padding"
+msgstr "nie mo¿na wype³niæ pliku %.250s"
+
+#: lib/dbmodify.c:117
+#, c-format
+msgid "unable to flush %.250s after padding"
+msgstr "nie mo¿na od¶wie¿yæ pliku %.250s tu¿ po jego wype³nieniu"
+
+#: lib/dbmodify.c:119
+#, c-format
+msgid "unable to seek to start of %.250s after padding"
+msgstr "nie mo¿na przewin±æ na pocz±tek pliku %.250s tu¿ po jego wype³nieniu"
+
+#: lib/dbmodify.c:150
+msgid "requested operation requires superuser privilege"
+msgstr "¿±dana operacja wymaga uprawnieñ administratora"
+
+#: lib/dbmodify.c:155
+msgid "unable to access dpkg status area"
+msgstr "brak dostêpu do pliku status"
+
+#: lib/dbmodify.c:157
+msgid "operation requires read/write access to dpkg status area"
+msgstr "¿±dana operacja wymaga uprawnieñ zapisu/odczytu pliku status"
+
+#: lib/dbmodify.c:205
+#, c-format
+msgid "failed to remove my own update file %.255s"
+msgstr "nie mo¿na usun±æ uaktualnionego pliku %.255s"
+
+#: lib/dbmodify.c:262
+#, c-format
+msgid "unable to write updated status of `%.250s'"
+msgstr "nie mo¿na zapisaæ uaktualnionego pliku `%.250s'"
+
+#: lib/dbmodify.c:264
+#, c-format
+msgid "unable to flush updated status of `%.250s'"
+msgstr "nie mo¿na od¶wie¿yæ uaktualnionego pliku `%.250s'"
+
+#: lib/dbmodify.c:266
+#, c-format
+msgid "unable to truncate for updated status of `%.250s'"
+msgstr "nie mo¿na obci±æ uaktualnionego pliku `%.250s'"
+
+#: lib/dbmodify.c:268
+#, c-format
+msgid "unable to fsync updated status of `%.250s'"
+msgstr "nie mo¿na zsynchronizowaæ uaktualnionego pliku `%.250s'"
+
+#: lib/dbmodify.c:270
+#, c-format
+msgid "unable to close updated status of `%.250s'"
+msgstr "nie mo¿na zamkn±æ uaktualnionego pliku `%.250s'"
+
+#: lib/dbmodify.c:273
+#, c-format
+msgid "unable to install updated status of `%.250s'"
+msgstr "nie mo¿na zainstalowaæ uaktualnionego pliku `%.250s'"
+
+#: lib/dbmodify.c:303
+#, c-format
+msgid "couldn't open log `%s': %s\n"
+msgstr "nie mo¿na otworzyæ pliku dziennika `%s': %s\n"
+
+#: lib/dump.c:266
+#, c-format
+msgid "failed to write details of `%.50s' to `%.250s'"
+msgstr "nie mo¿na zapisaæ szczegó³ów o `%.50s' w `%.250s'"
+
+#: lib/dump.c:293
+#, c-format
+msgid "failed to open `%s' for writing %s information"
+msgstr "nie mo¿na otworzyæ `%.250s' w celu zapisania informacji %s"
+
+#: lib/dump.c:296
+msgid "unable to set buffering on status file"
+msgstr "nie mo¿na ustawiæ buforowania pliku status"
+
+#: lib/dump.c:307
+#, c-format
+msgid "failed to write %s record about `%.50s' to `%.250s'"
+msgstr "nie mo¿na zapisaæ %s rekordów o `%.50s' w `%.250s'"
+
+#: lib/dump.c:315
+#, c-format
+msgid "failed to flush %s information to `%.250s'"
+msgstr "nie mo¿na od¶wie¿yæ informacji %s w `%.250s'"
+
+#: lib/dump.c:317
+#, c-format
+msgid "failed to fsync %s information to `%.250s'"
+msgstr "nie mo¿na zsynchronizowaæ informacji %s w `%.250s'"
+
+#: lib/dump.c:319
+#, c-format
+msgid "failed to close `%.250s' after writing %s information"
+msgstr "nie mo¿na zamkn±æ `%.250s' po zapisaniu informacji %s"
+
+#: lib/dump.c:323
+#, c-format
+msgid "failed to link `%.250s' to `%.250s' for backup of %s info"
+msgstr ""
+"nie mo¿na utworzyæ dowi±zania z `%.250s' do `%.250s', aby przechowaæ "
+"informacjê %s"
+
+#: lib/dump.c:326
+#, c-format
+msgid "failed to install `%.250s' as `%.250s' containing %s info"
+msgstr ""
+"nie mo¿na b³±d zainstalowaæ `%.250s' jako `%.250s' o zawartej informacji %s"
+
+#: lib/ehandle.c:81
+msgid "out of memory pushing error handler: "
+msgstr "brak pamiêci podczas obs³ugiwania b³êdu: "
+
+#: lib/ehandle.c:96
+#, c-format
+msgid ""
+"%s: error while cleaning up:\n"
+" %s\n"
+msgstr ""
+"%s: b³±d podczas czyszczenia ¶rodowiska:\n"
+" %s\n"
+
+#: lib/ehandle.c:111
+#, c-format
+msgid "dpkg: too many nested errors during error recovery !!\n"
+msgstr "dpkg: za du¿o osadzonych b³êdów podczas obs³ugi b³êdu!!\n"
+
+#: lib/ehandle.c:186
+msgid "out of memory for new cleanup entry with many arguments"
+msgstr "brak pamiêci na obs³ugê czyszczenia ¶rodowiska"
+
+#: lib/ehandle.c:198
+msgid "out of memory for new cleanup entry"
+msgstr "brak pamiêci na now± pozycjê dla obs³ugi czyszczenia ¶rodowiska"
+
+#: lib/ehandle.c:284
+#, c-format
+msgid "error writing `%s'"
+msgstr "b³±d zapisu `%s'"
+
+#: lib/ehandle.c:288
+#, c-format
+msgid "%s:%d: internal error `%s'\n"
+msgstr "%s:%d: wewnêtrzny b³±d `%s'\n"
+
+#: lib/fields.c:44
+#, c-format
+msgid "%s is missing"
+msgstr "brak %s"
+
+#: lib/fields.c:57
+#, c-format
+msgid "`%.*s' is not allowed for %s"
+msgstr "`%.*s' jest niedozwolony dla %s"
+
+#: lib/fields.c:64
+#, c-format
+msgid "junk after %s"
+msgstr "¶mieci po %s"
+
+#: lib/fields.c:74
+#, c-format
+msgid "invalid package name (%.250s)"
+msgstr "niepoprawna nazwa pakietu (%.250s)"
+
+#: lib/fields.c:91
+#, c-format
+msgid "empty file details field `%s'"
+msgstr "puste pole opisu pliku `%s'"
+
+#: lib/fields.c:94
+#, c-format
+msgid "file details field `%s' not allowed in status file"
+msgstr "pole opisu pliku `%s' jest niedozwolone w pliku status"
+
+#: lib/fields.c:104
+#, c-format
+msgid "too many values in file details field `%s' (compared to others)"
+msgstr "za du¿o danych w polu opisu pliku `%s'"
+
+#: lib/fields.c:117
+#, c-format
+msgid "too few values in file details field `%s' (compared to others)"
+msgstr "za ma³o danych w polu opisu pliku `%s'"
+
+#: lib/fields.c:133
+msgid "yes/no in boolean field"
+msgstr "yes/no w polu boolean"
+
+#: lib/fields.c:152
+msgid "word in `priority' field"
+msgstr "s³owo w polu `priority'"
+
+#: lib/fields.c:166
+msgid "value for `status' field not allowed in this context"
+msgstr "niedozwolona warto¶æ w tym kontek¶cie dla pola `status'"
+
+#: lib/fields.c:170
+msgid "first (want) word in `status' field"
+msgstr "pierwsze (want) s³owo w polu `status'"
+
+#: lib/fields.c:173
+msgid "second (error) word in `status' field"
+msgstr "drugie (error) s³owo w polu `status'"
+
+#: lib/fields.c:179
+msgid "third (status) word in `status' field"
+msgstr "trzecie (status) s³owo w polu `status'"
+
+#: lib/fields.c:190
+#, c-format
+msgid "error in Version string `%.250s': %.250s"
+msgstr "b³±d w polu Version `%.250s': %.250s"
+
+#: lib/fields.c:201
+msgid "obsolete `Revision' or `Package-Revision' field used"
+msgstr "u¿yto niewykorzystywanego ju¿ pola `Revision' lub `Package-Revision'"
+
+#: lib/fields.c:219
+msgid "value for `config-version' field not allowed in this context"
+msgstr "warto¶æ dla pola `config-version' jest niedozwolona w tym kontek¶cie"
+
+#: lib/fields.c:223
+#, c-format
+msgid "error in Config-Version string `%.250s': %.250s"
+msgstr "b³±d w polu Config-Version `%.250s': %.250s"
+
+#: lib/fields.c:247
+#, c-format
+msgid "value for `conffiles' has malformatted line `%.*s'"
+msgstr "warto¶æ dla `conffiles' ma niepoprawn± liniê `%.*s'"
+
+#: lib/fields.c:265
+#, c-format
+msgid "value for `conffiles' has line starting with non-space `%c'"
+msgstr ""
+"warto¶æ dla `conffiles' ma liniê rozpoczêt± od znaku niebêd±cego spacj± `%c'"
+
+#: lib/fields.c:281
+msgid "root or null directory is listed as a conffile"
+msgstr "katalog g³ówny lub pusty jest u¿yty jako `conffile'"
+
+#: lib/fields.c:337
+#, c-format
+msgid ""
+"`%s' field, missing package name, or garbage where package name expected"
+msgstr ""
+"znaleziono pole `%s', brak nazwy pakietu lub ¶mieci, tam gdzie spodziewano "
+"siê nazwy pakietu"
+
+#: lib/fields.c:340
+#, c-format
+msgid "`%s' field, invalid package name `%.255s': %s"
+msgstr "pole `%s', b³êdna nazwa pakietu `%.255s': %s"
+
+#: lib/fields.c:371
+#, c-format
+msgid ""
+"`%s' field, reference to `%.255s':\n"
+" bad version relationship %c%c"
+msgstr ""
+"pole `%s', relacja do `%.255s':\n"
+" z³y numer wersji relacji %c%c"
+
+#: lib/fields.c:377
+#, c-format
+msgid ""
+"`%s' field, reference to `%.255s':\n"
+" `%c' is obsolete, use `%c=' or `%c%c' instead"
+msgstr ""
+"pole `%s', w relacji do `%.255s':\n"
+" `%c' jest ju¿ niewykorzystywane, nale¿y u¿yæ w zamian `%c=' lub `%c%c'"
+
+#: lib/fields.c:387
+#, c-format
+msgid ""
+"`%s' field, reference to `%.255s':\n"
+" implicit exact match on version number, suggest using `=' instead"
+msgstr ""
+"pole `%s', w relacji do `%.255s':\n"
+" wykorzystany jest konkretny numer wersji przy porównywaniu, nale¿y u¿yæ w "
+"zamian `='"
+
+#: lib/fields.c:394
+msgid "Only exact versions may be used for Provides"
+msgstr "W polu Provides mo¿na u¿ywaæ wy³±cznie dok³adnych wersji"
+
+#: lib/fields.c:398
+#, c-format
+msgid ""
+"`%s' field, reference to `%.255s':\n"
+" version value starts with non-alphanumeric, suggest adding a space"
+msgstr ""
+"pole `%s', w relacji do `%.255s':\n"
+" numer wersji nie rozpoczyna siê od znaku alfanumerycznego, nale¿y dodaæ "
+"spacjê"
+
+#: lib/fields.c:413 lib/fields.c:416
+#, fuzzy, c-format
+msgid "`%s' field, reference to `%.255s': version contains `%c'"
+msgstr "pole `%s', w odniesieniu do `%.255s': numer wersji zawiera `('"
+
+#: lib/fields.c:419
+#, c-format
+msgid "`%s' field, reference to `%.255s': version unterminated"
+msgstr "pole `%s', w odniesieniu do `%.255s': numer wersji niezakoñczony"
+
+#: lib/fields.c:429
+#, c-format
+msgid "`%s' field, reference to `%.255s': error in version: %.255s"
+msgstr "pole `%s', w odniesieniu do `%.255s': b³±d w numerze wersji: %.255s"
+
+#: lib/fields.c:438
+#, c-format
+msgid "`%s' field, syntax error after reference to package `%.255s'"
+msgstr "pole `%s', b³±d sk³adni po relacji do pakietu `%.255s'"
+
+#: lib/fields.c:446
+#, c-format
+msgid "alternatives (`|') not allowed in %s field"
+msgstr "wybór (`|') nie dozwolony dla pola %s"
+
+#: lib/lock.c:45
+msgid "unable to unlock dpkg status database"
+msgstr "nie mo¿na odblokowaæ bazy danych stanu dpkg"
+
+#: lib/lock.c:65
+msgid "you do not have permission to lock the dpkg status database"
+msgstr "brak praw do zablokowania bazy danych stanu dpkg"
+
+#: lib/lock.c:66
+msgid "unable to open/create status database lockfile"
+msgstr "nie mo¿na otworzyæ/utworzyæ pliku blokuj±cego bazê danych stanu dpkg"
+
+#: lib/lock.c:75
+msgid "status database area is locked by another process"
+msgstr "baza danych stanu jest zablokowana przez inny proces"
+
+#: lib/lock.c:76
+msgid "unable to lock dpkg status database"
+msgstr "nie mo¿na zablokowaæ bazy danych stanu"
+
+#: lib/mlib.c:51
+#, c-format
+msgid "malloc failed (%ld bytes)"
+msgstr "nie mo¿na wykonaæ funkcji `malloc' (%ld bytes)"
+
+#: lib/mlib.c:64 dpkg-deb/info.c:98
+#, c-format
+msgid "realloc failed (%ld bytes)"
+msgstr "nie mo¿na wykonaæ funkcji `realloc' (%ld bytes)"
+
+#: lib/mlib.c:71
+#, c-format
+msgid "%s (subprocess): %s\n"
+msgstr "%s (podproces): %s\n"
+
+#: lib/mlib.c:85
+msgid "fork failed"
+msgstr "nie mo¿na wykonaæ funkcji `fork'"
+
+#: lib/mlib.c:98
+#, c-format
+msgid "failed to dup for std%s"
+msgstr "nie mo¿na wykonaæ funkcji `dup' dla std%s"
+
+#: lib/mlib.c:99
+#, c-format
+msgid "failed to dup for fd %d"
+msgstr "nie mo¿na wykonaæ funkcji `dup' dla fd %d"
+
+#: lib/mlib.c:105
+msgid "failed to create pipe"
+msgstr "nie mo¿na utworzyæ potoku"
+
+#: lib/mlib.c:114
+#, c-format
+msgid "dpkg: warning - %s returned error exit status %d\n"
+msgstr "dpkg: ostrze¿enie - %s zwróci³ kod b³êdu %d\n"
+
+#: lib/mlib.c:116
+#, c-format
+msgid "subprocess %s returned error exit status %d"
+msgstr "podproces %s zwróci³ kod b³êdu %d"
+
+#: lib/mlib.c:121
+#, c-format
+msgid "dpkg: warning - %s killed by signal (%s)%s\n"
+msgstr "dpkg: ostrze¿enie - %s zabity sygna³em (%s)%s\n"
+
+#: lib/mlib.c:122 lib/mlib.c:125
+msgid ", core dumped"
+msgstr ", zrzut pamiêci"
+
+#: lib/mlib.c:124
+#, c-format
+msgid "subprocess %s killed by signal (%s)%s"
+msgstr "podproces %s zosta³ zabity sygna³em (%s)%s"
+
+#: lib/mlib.c:127
+#, c-format
+msgid "subprocess %s failed with wait status code %d"
+msgstr "podproces %s zg³osi³ b³±d poprzez kod funkcji `wait' %d"
+
+#: lib/mlib.c:137
+#, c-format
+msgid "wait for %s failed"
+msgstr "b³±d funkcji `wait' dla %s"
+
+#: lib/mlib.c:145
+#, c-format
+msgid "unable to read filedescriptor flags for %.250s"
+msgstr "nie mo¿na odczytaæ flag filedescriptor dla `%.250s'"
+
+#: lib/mlib.c:147
+#, c-format
+msgid "unable to set close-on-exec flag for %.250s"
+msgstr "nie mo¿na ustawiæ flagi close-on-exec dla `%.250s'"
+
+#: lib/mlib.c:199
+#, c-format
+msgid "failed in buffer_write(fd) (%i, ret=%li): %s"
+msgstr "b³±d w buffer_write(fd) (%i, ret=%li): %s)"
+
+#: lib/mlib.c:206
+#, c-format
+msgid "eof in buffer_write(stream): %s"
+msgstr "koniec pliku w buffer_write(stream): %s"
+
+#: lib/mlib.c:208
+#, c-format
+msgid "error in buffer_write(stream): %s"
+msgstr "b³±d w buffer_write(stream): %s"
+
+#: lib/mlib.c:214
+#, c-format
+msgid "unknown data type `%i' in buffer_write\n"
+msgstr "nieznany typ danych `%i' w buffer_write\n"
+
+#: lib/mlib.c:230
+#, c-format
+msgid "failed in buffer_read(fd): %s"
+msgstr "b³±d w buffer_read(fd): %s"
+
+#: lib/mlib.c:237
+#, c-format
+msgid "error in buffer_read(stream): %s"
+msgstr "b³±d w buffer_read(stream): %s"
+
+#: lib/mlib.c:240
+#, c-format
+msgid "unknown data type `%i' in buffer_read\n"
+msgstr "nieznany typ danych %i' w buffer_read\n"
+
+#: lib/mlib.c:306
+#, c-format
+msgid "failed to allocate buffer in buffer_copy (%s)"
+msgstr "nie mo¿na zarezerwowaæ bufora w buffer_copy (%s)"
+
+#: lib/mlib.c:337
+#, c-format
+msgid "failed in buffer_copy (%s)"
+msgstr "b³±d w buffer_copy (%s)"
+
+#: lib/mlib.c:338
+#, c-format
+msgid "short read in buffer_copy (%s)"
+msgstr "krótki odczyt w buffer_copy (%s)"
+
+#: lib/myopt.c:40
+#, c-format
+msgid "failed to open configuration file `%.255s' for reading"
+msgstr "nie mo¿na otworzyæ do odczytu pliku konfiguracyjnego `%.255s'"
+
+#: lib/myopt.c:73
+#, c-format
+msgid "configuration error: unknown option %s"
+msgstr "b³±d konfiguracji: nieznana opcja %s"
+
+#: lib/myopt.c:76
+#, c-format
+msgid "configuration error: %s needs a value"
+msgstr "b³±d konfiguracji: %s wymaga warto¶ci"
+
+#: lib/myopt.c:80
+#, c-format
+msgid "configuration error: %s does not take a value"
+msgstr "b³±d konfiguracji: %s wymaga niepodawania warto¶ci"
+
+#: lib/myopt.c:85
+#, c-format
+msgid "read error in configuration file `%.255s'"
+msgstr "b³±d odczytu pliku konfiguracyjnego `%.250s'"
+
+#: lib/myopt.c:86
+#, c-format
+msgid "error closing configuration file `%.255s'"
+msgstr "b³±d zamkniêcia pliku konfiguracyjnego `%.250s'"
+
+#: lib/myopt.c:94 lib/myopt.c:102
+msgid "Error allocating memory for cfgfilename"
+msgstr "B³±d przydzielania pamiêci dla cfgfilename"
+
+#: lib/myopt.c:130
+#, c-format
+msgid "unknown option --%s"
+msgstr "nieznana opcja --%s"
+
+#: lib/myopt.c:134
+#, c-format
+msgid "--%s option takes a value"
+msgstr "opcja --%s wymaga podania warto¶ci"
+
+#: lib/myopt.c:139
+#, c-format
+msgid "--%s option does not take a value"
+msgstr "opcja --%s wymaga niepodawania warto¶ci"
+
+#: lib/myopt.c:146
+#, c-format
+msgid "unknown option -%c"
+msgstr "nieznana opcja -%c"
+
+#: lib/myopt.c:151
+#, c-format
+msgid "-%c option takes a value"
+msgstr "opcja -%c wymaga podania warto¶ci"
+
+#: lib/myopt.c:159
+#, c-format
+msgid "-%c option does not take a value"
+msgstr "opcja -%c wymaga niepodawania warto¶ci"
+
+#: lib/parse.c:106
+#, c-format
+msgid "failed to open package info file `%.255s' for reading"
+msgstr ""
+"nie mo¿na otworzyæ do odczytu pliku `%.255s' zawieraj±cego informacje o "
+"pakiecie"
+
+#: lib/parse.c:111
+#, c-format
+msgid "can't stat package info file `%.255s'"
+msgstr ""
+"nie mo¿na wykonaæ funkcji 'stat' na pliku informacji o pakiecie `%.255s'"
+
+#: lib/parse.c:116
+#, c-format
+msgid "can't mmap package info file `%.255s'"
+msgstr ""
+"nie mo¿na wykonaæ funkcji 'mmap' na pliku informacji o pakiecie `%.255s'"
+
+#: lib/parse.c:119
+#, c-format
+msgid "failed to malloc for info file `%.255s'"
+msgstr "nie mo¿na zaalokowaæ pamiêci dla pliku informacji `%.255s'"
+
+#: lib/parse.c:121
+#, c-format
+msgid "copy info file `%.255s'"
+msgstr "kopiowanie pliku informacji `%.250s'"
+
+#: lib/parse.c:153
+#, c-format
+msgid "EOF after field name `%.*s'"
+msgstr "EOF po nazwie pola `%.*s'"
+
+#: lib/parse.c:156
+#, c-format
+msgid "newline in field name `%.*s'"
+msgstr "koniec linii w nazwie pola `%.*s'"
+
+#: lib/parse.c:159
+#, c-format
+msgid "MSDOS EOF (^Z) in field name `%.*s'"
+msgstr "MSDOS EOF (^Z) w nazwie pola `%.*s'"
+
+#: lib/parse.c:162
+#, c-format
+msgid "field name `%.*s' must be followed by colon"
+msgstr "po nazwie pola `%.*s' musi wyst±piæ dwukropek"
+
+#: lib/parse.c:170
+#, c-format
+msgid "EOF before value of field `%.*s' (missing final newline)"
+msgstr "EOF przed warto¶ci± pola `%.*s' (brak koñca linii)"
+
+#: lib/parse.c:174
+#, c-format
+msgid "MSDOS EOF char in value of field `%.*s' (missing newline?)"
+msgstr "MSDOS EOF w warto¶ci pola `%.*s' (brak koñca linii?)"
+
+#: lib/parse.c:188
+#, c-format
+msgid "EOF during value of field `%.*s' (missing final newline)"
+msgstr "EOF w warto¶ci pola `%.*s' (brak koñca linii)"
+
+#: lib/parse.c:211
+#, c-format
+msgid "duplicate value for `%s' field"
+msgstr "podwójna warto¶æ pola `%s'"
+
+#: lib/parse.c:216
+#, c-format
+msgid "user-defined field name `%.*s' too short"
+msgstr "pole definiowane przez u¿ytkownika ma za krótk± nazwê `%.*s'"
+
+#: lib/parse.c:221
+#, c-format
+msgid "duplicate value for user-defined field `%.*s'"
+msgstr "podwójna warto¶æ pola definiowanego przez u¿ytkownika `%.*s'"
+
+#: lib/parse.c:234
+msgid "several package info entries found, only one allowed"
+msgstr ""
+"odnaleziono kilka kopii informacji o pakiecie, tylko jedna jest dozwolona"
+
+#: lib/parse.c:260
+msgid "Configured-Version for package with inappropriate Status"
+msgstr "odnaleziono `Configured-Version' dla pakietu z nieprawid³owym `Status'"
+
+#: lib/parse.c:274
+msgid "Package which in state not-installed has conffiles, forgetting them"
+msgstr ""
+"Niezainstalowany pakiet ma pliki konfiguracyjne, informacje o nich zostaj± "
+"usuniête"
+
+#: lib/parse.c:331
+#, c-format
+msgid "failed to close after read: `%.255s'"
+msgstr "nie mo¿na zamkn±æ `%.255s'"
+
+#: lib/parse.c:332
+#, c-format
+msgid "no package information in `%.255s'"
+msgstr "brak informacji o pakiecie w `%.255s'"
+
+#: lib/parsehelp.c:38
+#, c-format
+msgid "failed to read `%s' at line %d"
+msgstr "nie mo¿na odczytaæ `%s' w linii %d"
+
+#: lib/parsehelp.c:39
+#, c-format
+msgid "%s, in file `%.255s' near line %d"
+msgstr "%s, w linii `%.255s' niedaleko linii %d"
+
+#: lib/parsehelp.c:40
+msgid "warning"
+msgstr "ostrze¿enie"
+
+#: lib/parsehelp.c:40
+msgid "parse error"
+msgstr "b³±d sk³adni"
+
+#: lib/parsehelp.c:42
+#, c-format
+msgid " package `%.255s'"
+msgstr " pakiet `%.255s'"
+
+#: lib/parsehelp.c:53
+msgid "failed to write parsing warning"
+msgstr "nie mo¿na zapisaæ ostrze¿enia o b³êdzie sk³adni"
+
+#: lib/parsehelp.c:113
+msgid "may not be empty string"
+msgstr "nie mo¿na u¿yæ pustego ci±gu znaków"
+
+#: lib/parsehelp.c:114
+msgid "must start with an alphanumeric"
+msgstr "musi siê znaczynaæ od litery lub cyfry"
+
+#: lib/parsehelp.c:123
+#, c-format
+msgid "character `%c' not allowed (only letters, digits and characters `%s')"
+msgstr "znak `%c' jest niedozwolony (mo¿na u¿yæ tylko liter, cyfr i` %s')"
+
+#: lib/parsehelp.c:178
+msgid "<none>"
+msgstr "<brak>"
+
+#: lib/parsehelp.c:193
+msgid "version string is empty"
+msgstr "ci±g znaków dla numeru wersji jest pusty"
+
+#: lib/parsehelp.c:204
+msgid "version string has embedded spaces"
+msgstr "ci±g znaków dla numeru wersji zawiera spacje"
+
+#: lib/parsehelp.c:209
+msgid "epoch in version is not number"
+msgstr "epoka w numerze wersji nie jest liczb±"
+
+#: lib/parsehelp.c:210
+msgid "nothing after colon in version number"
+msgstr "brak znaków po dwukropku w numerze wersji"
+
+#: lib/parsehelp.c:232
+#, c-format
+msgid "missing %s"
+msgstr "brakuj±cy %s"
+
+#: lib/parsehelp.c:236
+#, c-format
+msgid "empty value for %s"
+msgstr "brak warto¶ci dla %s"
+
+#: lib/showcright.c:34
+msgid "cannot open GPL file"
+msgstr "nie mo¿na otworzyæ pliku GPL"
+
+#: lib/showpkg.c:70
+#, c-format
+msgid "invalid character `%c' in field width\n"
+msgstr "nieprawid³owy znak `%c' w polu szeroko¶ci\n"
+
+#: lib/showpkg.c:157
+#, c-format
+msgid "Closing brace missing in format\n"
+msgstr "W formacie brakuje nawiasu zamykaj±cego\n"
+
+#: lib/varbuf.c:105
+msgid "failed to realloc for variable buffer"
+msgstr "nie mo¿na wykonaæ funkcji `realloc' dla zmiennej bufora"
+
+#: src/archives.c:208
+msgid "process_archive ...  already disappeared !"
+msgstr "process_archive ...  znikn±³!"
+
+#: src/archives.c:228
+msgid "error reading from dpkg-deb pipe"
+msgstr "nie mo¿na odczytaæ potoku z `dpkg-deb'"
+
+#: src/archives.c:265
+#, c-format
+msgid "error setting timestamps of `%.255s'"
+msgstr "nie mo¿na zaktualizowaæ czasu dla `%.255s'"
+
+#: src/archives.c:272 src/archives.c:617
+#, c-format
+msgid "error setting ownership of `%.255s'"
+msgstr "nie mo¿na zmieniæ w³a¶ciciela `%.255s'"
+
+#: src/archives.c:274 src/archives.c:620
+#, c-format
+msgid "error setting permissions of `%.255s'"
+msgstr "nie mo¿na zmieniæ uprawnieñ `%.255s'"
+
+#: src/archives.c:367
+#, c-format
+msgid ""
+"trying to overwrite `%.250s', which is the diverted version of `%.250s'%.10s"
+"%.100s%.10s"
+msgstr ""
+"próba nadpisania `%.250s', który jest ominiêciem `%.250s'%.10s%.100s%.10s"
+
+#: src/archives.c:371
+msgid " (package: "
+msgstr " (pakiet: "
+
+#: src/archives.c:393
+#, c-format
+msgid "unable to stat `%.255s' (which I was about to install)"
+msgstr "nie mo¿na ustaliæ stanu `%.255s'"
+
+#: src/archives.c:401
+#, c-format
+msgid ""
+"unable to clean up mess surrounding `%.255s' before installing another "
+"version"
+msgstr ""
+"nie mo¿na wyczy¶ciæ `%.255s' dopóki nie zostanie zainstalowana inna jego "
+"wersja"
+
+#: src/archives.c:407
+#, c-format
+msgid "unable to stat restored `%.255s' before installing another version"
+msgstr ""
+"nie mo¿na ustaliæ stanu `%.255s' dopóki nie zostanie zainstalowana inna jego "
+"wersja"
+
+#: src/archives.c:439
+#, c-format
+msgid "archive contained object `%.255s' of unknown type 0x%x"
+msgstr "archiwum zawiera obiekt `%.255s' nieznanego typu 0x%x"
+
+#: src/archives.c:499
+#, c-format
+msgid "Replacing files in old package %s ...\n"
+msgstr "Zast±pienie plików z poprzedniego pakietu %s ...\n"
+
+#: src/archives.c:502
+#, c-format
+msgid "Replaced by files in installed package %s ...\n"
+msgstr "Zast±pienie przez pliki z instalowanego pakietu %s ...\n"
+
+#: src/archives.c:508
+#, c-format
+msgid ""
+"trying to overwrite directory `%.250s' in package %.250s with nondirectory"
+msgstr ""
+"próba nadpisania katalogu `%.250s' przez obiekt nie bêd±cy katalogiem z "
+"pakietu %.250s"
+
+#: src/archives.c:518
+#, c-format
+msgid "trying to overwrite `%.250s', which is also in package %.250s"
+msgstr "próba nadpisania `%.250s', który istnieje tak¿e w pakiecie %.250s"
+
+#: src/archives.c:543
+#, c-format
+msgid "gobble replaced file `%.255s'"
+msgstr "pominiêcie zast±pionego pliku `%.255s'"
+
+#: src/archives.c:605
+#, c-format
+msgid "backend dpkg-deb during `%.255s'"
+msgstr "uruchomiony dpkg-deb podczas `%.255s'"
+
+#: src/archives.c:623
+#, c-format
+msgid "error closing/writing `%.255s'"
+msgstr "nie mo¿na zamkn±æ/zapisaæ `%.255s'"
+
+#: src/archives.c:628
+#, c-format
+msgid "error creating pipe `%.255s'"
+msgstr "nie mo¿na utworzyæ potoku `%.255s'"
+
+#: src/archives.c:634 src/archives.c:640
+#, c-format
+msgid "error creating device `%.255s'"
+msgstr "nie mo¿na utworzyæ urz±dzenia `%.255s'"
+
+#: src/archives.c:649
+#, c-format
+msgid "error creating hard link `%.255s'"
+msgstr "nie mo¿na utworzyæ dowi±zania `%.255s'"
+
+#: src/archives.c:656
+#, c-format
+msgid "error creating symbolic link `%.255s'"
+msgstr "nie mo¿na utworzyæ symbolicznego dowi±zania `%.255s'"
+
+#: src/archives.c:662 src/archives.c:667
+#, c-format
+msgid "error setting ownership of symlink `%.255s'"
+msgstr "nie mo¿na zmieniæ w³a¶ciciela symbolicznego dowi±zania `%.255s'"
+
+#: src/archives.c:673
+#, c-format
+msgid "error creating directory `%.255s'"
+msgstr "nie mo¿na utworzyæ katalogu `%.255s'"
+
+#: src/archives.c:708
+#, c-format
+msgid "unable to move aside `%.255s' to install new version"
+msgstr "nie mo¿na przenie¶æ `%.255s', aby zainstalowaæ now± wersjê"
+
+#: src/archives.c:717
+#, c-format
+msgid "unable to read link `%.255s'"
+msgstr "nie mo¿na odczytaæ dowi±zania `%.255s'"
+
+#: src/archives.c:721
+#, c-format
+msgid "unable to make backup symlink for `%.255s'"
+msgstr "nie mo¿na zrobiæ kopii symbolicznego dowi±zania dla `%.255s'"
+
+#: src/archives.c:724 src/archives.c:727
+#, c-format
+msgid "unable to chown backup symlink for `%.255s'"
+msgstr ""
+"nie mo¿na zmieniæ w³a¶ciciela kopii symbolicznego dowi±zania dla `%.255s'"
+
+#: src/archives.c:732
+#, c-format
+msgid "unable to make backup link of `%.255s' before installing new version"
+msgstr ""
+"nie mo¿na zrobiæ kopii dowi±zania dla `%.255s' dopóki nie zostanie "
+"zainstalowana inna jego wersja"
+
+#: src/archives.c:756
+#, c-format
+msgid "unable to install new version of `%.255s'"
+msgstr "nie mo¿na zainstalowaæ nowej wersji `%.255s'"
+
+#: src/archives.c:788
+#, c-format
+msgid ""
+"dpkg: warning - ignoring dependency problem with removal of %s:\n"
+"%s"
+msgstr ""
+"dpkg: ostrze¿enie - zignorowanie problemu z zale¿no¶ciami przy usuwaniu %s:\n"
+"%s"
+
+#: src/archives.c:795
+#, c-format
+msgid ""
+"dpkg: warning - considering deconfiguration of essential\n"
+" package %s, to enable removal of %s.\n"
+msgstr ""
+"dpkg: ostrze¿enie - dekonfiguracja istotnego pakietu %s,\n"
+" aby usun±æ %s.\n"
+
+#: src/archives.c:799
+#, c-format
+msgid ""
+"dpkg: no, %s is essential, will not deconfigure\n"
+" it in order to enable removal of %s.\n"
+msgstr ""
+"dpkg: niestety, %s jest istotnym pakietem, który nie zostanie\n"
+" zdekonfigurowany, aby usun±æ %s.\n"
+
+#: src/archives.c:812
+#, c-format
+msgid ""
+"dpkg: no, cannot remove %s (--auto-deconfigure will help):\n"
+"%s"
+msgstr ""
+"dpkg: niestety, nie mo¿na usun±æ %s (--auto-deconfigure mo¿e pomóc):\n"
+"%s"
+
+#: src/archives.c:846
+#, c-format
+msgid "dpkg: considering removing %s in favour of %s ...\n"
+msgstr "dpkg: usuwanie %s w zamian za %s ...\n"
+
+#: src/archives.c:850
+#, c-format
+msgid "%s is not properly installed - ignoring any dependencies on it.\n"
+msgstr ""
+"%s nie jest poprawnie zainstalowany - ignorowanie zale¿no¶ci od niego.\n"
+
+#: src/archives.c:877
+#, c-format
+msgid "dpkg: may have trouble removing %s, as it provides %s ...\n"
+msgstr ""
+"dpkg: mog± wyst±piæ problemy przy usuwaniu %s, jako ¿e dostarcza %s ...\n"
+
+#: src/archives.c:892
+#, c-format
+msgid ""
+"dpkg: package %s requires reinstallation, but will remove anyway as you "
+"request.\n"
+msgstr ""
+"dpkg: pakiet %s wymaga reinstalacji, ale zostanie usuniêty wed³ug ¿±dania.\n"
+
+#: src/archives.c:895
+#, c-format
+msgid "dpkg: package %s requires reinstallation, will not remove.\n"
+msgstr "dpkg: pakiet %s wymaga reinstalacji i nie zostanie usuniêty.\n"
+
+#: src/archives.c:908
+#, c-format
+msgid "dpkg: yes, will remove %s in favour of %s.\n"
+msgstr "dpkg: tak, %s zostanie usuniêty w zamian za %s.\n"
+
+#: src/archives.c:916
+#, c-format
+msgid ""
+"dpkg: regarding %s containing %s:\n"
+"%s"
+msgstr ""
+"dpkg: w odniesieniu do %s zawieraj±cego %s:\n"
+"%s"
+
+#: src/archives.c:919
+#, c-format
+msgid "conflicting packages - not installing %.250s"
+msgstr "konflikt pakietów - nie bêdzie instalowany %.250s"
+
+#: src/archives.c:920
+#, c-format
+msgid "dpkg: warning - ignoring conflict, may proceed anyway !\n"
+msgstr "dpkg: ostrze¿enie - zignorowanie konfliktu, dalsze przetwarzanie!\n"
+
+#: src/archives.c:958
+#, c-format
+msgid "--%s --recursive needs at least one path argument"
+msgstr "--%s --recursive wymaga co najmniej jednego argumentu bêd±cego ¶cie¿k±"
+
+#: src/archives.c:988
+msgid "failed to exec find for --recursive"
+msgstr "nie mo¿na wykonaæ polecenia `find' dla --recursive"
+
+#: src/archives.c:993
+msgid "failed to fdopen find's pipe"
+msgstr "nie mo¿na utworzyæ potoku dla `find'"
+
+#: src/archives.c:999
+msgid "error reading find's pipe"
+msgstr "nie mo¿na odczytaæ z potoku z `find'"
+
+#: src/archives.c:1000
+msgid "error closing find's pipe"
+msgstr "nie mo¿na zamkn±æ potoku z `find'"
+
+#: src/archives.c:1003
+#, c-format
+msgid "find for --recursive returned unhandled error %i"
+msgstr "wyszukiwanie --recursive zwróci³o nieobs³ugiwany b³±d %i"
+
+#: src/archives.c:1006
+msgid "searched, but found no packages (files matching *.deb)"
+msgstr "przeszukane, ale nie znaleziono ¿adnych pakietów (plików *.deb)"
+
+#: src/archives.c:1022
+#, c-format
+msgid "--%s needs at least one package archive file argument"
+msgstr "--%s wymaga co najmniej jednego argumentu bêd±cego plikiem archiwum"
+
+#: src/archives.c:1092
+#, c-format
+msgid "Selecting previously deselected package %s.\n"
+msgstr "Zaznaczenie poprzednio niezaznaczonego pakietu %s.\n"
+
+#: src/archives.c:1097
+#, c-format
+msgid "Skipping deselected package %s.\n"
+msgstr "Pominiêcie niezaznaczonego pakietu %s.\n"
+
+#: src/archives.c:1111
+#, c-format
+msgid "Version %.250s of %.250s already installed, skipping.\n"
+msgstr "Wersja %.250s pakietu %.250s jest ju¿ zainstalowana.\n"
+
+#: src/archives.c:1123
+#, c-format
+msgid "%s - warning: downgrading %.250s from %.250s to %.250s.\n"
+msgstr ""
+"%s - ostrze¿enie: zast±pienie %.250s w wersji %.250s wcze¶niejsz± wersj± "
+"%.250s.\n"
+
+#: src/archives.c:1129
+#, c-format
+msgid "Will not downgrade %.250s from version %.250s to %.250s, skipping.\n"
+msgstr ""
+"Pakiet %.250s w wersji %.250s nie bêdzie zast±piony wcze¶niejsz± wersj± "
+"%.250s.\n"
+
+#: src/cleanup.c:83
+#, c-format
+msgid ""
+"unable to remove newly-installed version of `%.250s' to allow reinstallation "
+"of backup copy"
+msgstr ""
+"nie mo¿na usun±æ zainstalowanej nowej wersji `%.250s', aby umo¿liwiæ "
+"reinstalacjê kopii zapasowej"
+
+#: src/cleanup.c:90
+#, c-format
+msgid "unable to restore backup version of `%.250s'"
+msgstr "nie mo¿na odtworzyæ kopii zapasowej `%.250s'"
+
+#: src/cleanup.c:94
+#, c-format
+msgid "unable to remove newly-installed version of `%.250s'"
+msgstr "nie mo¿na usun±æ nowo zainstalowanej wersji `%.250s'"
+
+#: src/cleanup.c:101
+#, c-format
+msgid "unable to remove newly-extracted version of `%.250s'"
+msgstr "nie mo¿na usun±æ zainstalowanej nowej wersji `%.250s'"
+
+#: src/configure.c:92
+#, c-format
+msgid "no package named `%s' is installed, cannot configure"
+msgstr "pakiet `%s' nie jest zainstalowany, nie mo¿na go skonfigurowaæ"
+
+#: src/configure.c:94
+#, c-format
+msgid "package %.250s is already installed and configured"
+msgstr "pakiet %.250s jest ju¿ zainstalowany i skonfigurowany"
+
+#: src/configure.c:96
+#, c-format
+msgid ""
+"package %.250s is not ready for configuration\n"
+" cannot configure (current status `%.250s')"
+msgstr ""
+"pakiet %.250s jest nie gotowy do skonfigurowania\n"
+" nie mo¿na go skonfigurowaæ (bie¿±cy stan `%.250s')"
+
+#: src/configure.c:115
+#, c-format
+msgid ""
+"dpkg: dependency problems prevent configuration of %s:\n"
+"%s"
+msgstr ""
+"dpkg: problemy z zale¿no¶ciami uniemo¿liwiaj± skonfigurowanie %s:\n"
+"%s"
+
+#: src/configure.c:118
+msgid "dependency problems - leaving unconfigured"
+msgstr "problemy z zale¿no¶ciami - pozostawiony nieskonfigurowany"
+
+#: src/configure.c:122
+#, c-format
+msgid ""
+"dpkg: %s: dependency problems, but configuring anyway as you request:\n"
+"%s"
+msgstr ""
+"dpkg: %s: problemy z zale¿no¶ciami, ale zostanie skonfigurowany wed³ug "
+"¿±dania:\n"
+"%s"
+
+#: src/configure.c:130
+msgid ""
+"Package is in a very bad inconsistent state - you should\n"
+" reinstall it before attempting configuration."
+msgstr ""
+"Pakiet jest w z³ym stanie - powinien zostaæ przeinstalowany\n"
+" przed prób± jego skonfigurowania."
+
+#: src/configure.c:133
+#, c-format
+msgid "Setting up %s (%s) ...\n"
+msgstr "Konfigurowanie %s (%s) ...\n"
+
+#: src/configure.c:180
+#, c-format
+msgid "unable to stat new dist conffile `%.250s'"
+msgstr "nie mo¿na zbadaæ stanu nowego pliku konfiguracyjnego `%.250s'"
+
+#: src/configure.c:190 src/configure.c:431
+#, c-format
+msgid "unable to stat current installed conffile `%.250s'"
+msgstr "nie mo¿na zbadaæ stanu aktualnego pliku konfiguracyjnego `%.250s'"
+
+#: src/configure.c:199
+#, c-format
+msgid ""
+"\n"
+"Configuration file `%s', does not exist on system.\n"
+"Installing new config file as you request.\n"
+msgstr ""
+"\n"
+"Plik konfiguracyjny `%s' nie istnieje w systemie.\n"
+"Instalowanie nowego pliku konfiguracyjnego wed³ug ¿±dania.\n"
+
+#: src/configure.c:233
+#, c-format
+msgid "dpkg: %s: warning - failed to remove old backup `%.250s': %s\n"
+msgstr ""
+"dpkg: %s: ostrze¿enie - nie mo¿na usun±æ poprzedniej kopii `%.250s': %s\n"
+
+#: src/configure.c:241
+#, c-format
+msgid "dpkg: %s: warning - failed to rename `%.250s' to `%.250s': %s\n"
+msgstr ""
+"dpkg: %s: ostrze¿enie - nie mo¿na zmieniæ nazwy `%.250s' na `%.250s': %s\n"
+
+#: src/configure.c:249
+#, c-format
+msgid "dpkg: %s: warning - failed to remove `%.250s': %s\n"
+msgstr "dpkg: %s: ostrze¿enie - nie mo¿na usun±æ `%.250s': %s\n"
+
+#: src/configure.c:257
+#, c-format
+msgid "dpkg: %s: warning - failed to remove old distrib version `%.250s': %s\n"
+msgstr ""
+"dpkg: %s: ostrze¿enie - nie mo¿na usun±æ poprzedniej wersji `%.250s': %s\n"
+
+#: src/configure.c:262
+#, c-format
+msgid "dpkg: %s: warning - failed to remove `%.250s' (before overwrite): %s\n"
+msgstr ""
+"dpkg: %s: ostrze¿enie - nie mo¿na usun±æ `%.250s' (przed nadpisaniem): %s\n"
+
+#: src/configure.c:267
+#, c-format
+msgid "dpkg: %s: warning - failed to link `%.250s' to `%.250s': %s\n"
+msgstr ""
+"dpkg: %s: ostrze¿enie - nie mo¿na utworzyæ dowi±zania `%.250s' do `%.250s': %"
+"s\n"
+
+#: src/configure.c:271
+#, c-format
+msgid "Installing new version of config file %s ...\n"
+msgstr "Instalowanie nowej wersji pliku konfiguracyjnego %s ...\n"
+
+#: src/configure.c:275
+#, c-format
+msgid "unable to install `%.250s' as `%.250s'"
+msgstr "nie mo¿na zainstalowaæ `%.250s' jako `%.250s'"
+
+#: src/configure.c:336
+#, c-format
+msgid ""
+"dpkg: %s: warning - unable to stat config file `%s'\n"
+" (= `%s'): %s\n"
+msgstr ""
+"dpkg: %s: ostrze¿enie - nie mo¿na sprawdziæ stanu pliku konfiguracyjnego `%"
+"s'\n"
+" (= `%s'): %s\n"
+
+#: src/configure.c:347
+#, c-format
+msgid ""
+"dpkg: %s: warning - config file `%s' is a circular link\n"
+" (= `%s')\n"
+msgstr ""
+"dpkg: %s: ostrze¿enie - plik konfiguracyjny `%s' jest zapêtlonym "
+"dowi±zaniem\n"
+" (= `%s')\n"
+
+#: src/configure.c:360
+#, c-format
+msgid ""
+"dpkg: %s: warning - unable to readlink conffile `%s'\n"
+" (= `%s'): %s\n"
+msgstr ""
+"dpkg: %s: ostrze¿enie - nie mo¿na okre¶liæ dowi±zania do pliku "
+"konfiguracyjnego `%s'\n"
+" (= `%s'): %s\n"
+
+#: src/configure.c:380
+#, c-format
+msgid ""
+"dpkg: %s: warning - conffile `%.250s' resolves to degenerate filename\n"
+" (`%s' is a symlink to `%s')\n"
+msgstr ""
+"dpkg: %s: ostrze¿enie - plik konfiguracyjny `%.250s' jest dowi±zaniem do "
+"b³êdnego pliku\n"
+" (`%s' jest dowi±zaniem do `%s')\n"
+
+#: src/configure.c:393
+#, c-format
+msgid ""
+"dpkg: %s: warning - conffile `%.250s' is not a plain file or symlink (= `%"
+"s')\n"
+msgstr ""
+"dpkg: %s: ostrze¿enie - plik konfiguracyjny `%.250s' nie jest plikiem ani "
+"dowi±zaniem (= `%s')\n"
+
+#: src/configure.c:411
+msgid "md5hash"
+msgstr "skrót md5"
+
+#: src/configure.c:417
+#, c-format
+msgid "dpkg: %s: warning - unable to open conffile %s for hash: %s\n"
+msgstr ""
+"dpkg: %s: ostrze¿enie - nie mo¿na otworzyæ pliku konfiguracyjnego %s dla "
+"sprawdzenia sumy kontrolnej: %s\n"
+
+#: src/configure.c:435
+#, c-format
+msgid "unable to change ownership of new dist conffile `%.250s'"
+msgstr "nie mo¿na zmieniæ w³a¶ciciela nowego pliku konfiguracyjnego `%.250s'"
+
+#: src/configure.c:438
+#, c-format
+msgid "unable to set mode of new dist conffile `%.250s'"
+msgstr ""
+"nie mo¿na zmieniæ praw dostêpu do nowego pliku konfiguracyjnego `%.250s'"
+
+#: src/configure.c:468
+#, c-format
+msgid "failed to run %s (%.250s)"
+msgstr "nie powiod³o siê wykonanie polecenia %s (%.250s)"
+
+#: src/configure.c:477 src/configure.c:515
+msgid "wait for shell failed"
+msgstr "nie mo¿na wykonaæ funkcji `wait' dla pow³oki"
+
+#: src/configure.c:497
+msgid "Type `exit' when you're done.\n"
+msgstr "Nale¿y wpisaæ `exit' po zakoñczeniu pracy.\n"
+
+#: src/configure.c:506
+#, c-format
+msgid "failed to exec shell (%.250s)"
+msgstr "nie mo¿na wywo³aæ pow³oki (%.250s)"
+
+#: src/configure.c:518
+msgid "Don't forget to foreground (`fg') this process when you're done !\n"
+msgstr "Po zakoñczeniu pracy nale¿y przywo³aæ g³ówny proces poleceniem `fg'!\n"
+
+#: src/configure.c:561
+#, c-format
+msgid ""
+"\n"
+"Configuration file `%s'"
+msgstr ""
+"\n"
+"Plik konfiguracyjny `%s'"
+
+#: src/configure.c:563
+#, c-format
+msgid " (actually `%s')"
+msgstr " (aktualnie `%s')"
+
+#: src/configure.c:567
+#, c-format
+msgid ""
+"\n"
+" ==> File on system created by you or by a script.\n"
+" ==> File also in package provided by package maintainer.\n"
+msgstr ""
+"\n"
+" ==> Plik w systemie utworzony przez administratora lub skrypt.\n"
+" ==> Plik w pakiecie dostarczony przez opiekuna pakietu.\n"
+
+#: src/configure.c:572
+#, c-format
+msgid ""
+"\n"
+"     Not modified since installation.\n"
+msgstr ""
+"\n"
+"     Nie zmodyfikowany po zainstalowaniu.\n"
+
+#: src/configure.c:574
+#, c-format
+msgid ""
+"\n"
+" ==> Modified (by you or by a script) since installation.\n"
+msgstr ""
+"\n"
+" ==> Zmodyfikowany (przez administratora lub skrypt) po zainstalowaniu.\n"
+
+#: src/configure.c:575
+#, c-format
+msgid ""
+"\n"
+" ==> Deleted (by you or by a script) since installation.\n"
+msgstr ""
+"\n"
+" ==> Usuniêty (przez administratora lub skrypt) po zainstalowaniu.\n"
+
+#: src/configure.c:578
+#, c-format
+msgid " ==> Package distributor has shipped an updated version.\n"
+msgstr " ==> Twórca pakietu zamie¶ci³ zaktualizowan± wersjê.\n"
+
+#: src/configure.c:579
+#, c-format
+msgid "     Version in package is the same as at last installation.\n"
+msgstr "     Wersja w pakiecie jest taka sama jak przy ostatniej instalacji.\n"
+
+#: src/configure.c:586
+#, c-format
+msgid " ==> Using new file as you requested.\n"
+msgstr " ==> Wykorzystany zostanie nowy plik wed³ug ¿±dania.\n"
+
+#: src/configure.c:590
+#, c-format
+msgid " ==> Using current old file as you requested.\n"
+msgstr " ==> Wykorzystany zostanie aktualny plik wed³ug ¿±dania.\n"
+
+#: src/configure.c:600
+#, c-format
+msgid " ==> Keeping old config file as default.\n"
+msgstr " ==> Domy¶lnie zostanie zachowany poprzedni plik konfiguracyjny.\n"
+
+#: src/configure.c:604
+#, c-format
+msgid " ==> Using new config file as default.\n"
+msgstr " ==> Domy¶lnie zostanie zainstalowany nowy plik konfiguracyjny.\n"
+
+#: src/configure.c:612
+#, c-format
+msgid ""
+"   What would you like to do about it ?  Your options are:\n"
+"    Y or I  : install the package maintainer's version\n"
+"    N or O  : keep your currently-installed version\n"
+"      D     : show the differences between the versions\n"
+"      Z     : background this process to examine the situation\n"
+msgstr ""
+"   Nale¿y wybraæ jedno z po¶ród wymienionych poni¿ej dzia³añ:\n"
+"    Y lub I  : zainstalowanie nowej wersji z pakietu\n"
+"    N lub O  : zachowanie bie¿±cej wersji\n"
+"      D      : pokazanie ró¿nic pomiêdzy wersjami pliku\n"
+"      Z      : zatrzymanie tego procesu w celu rozeznania sytuacji\n"
+
+#: src/configure.c:619
+#, c-format
+msgid " The default action is to keep your current version.\n"
+msgstr " Domy¶lnym dzia³aniem jest zachowanie bie¿±cej wersji.\n"
+
+#: src/configure.c:621
+#, c-format
+msgid " The default action is to install the new version.\n"
+msgstr " Domy¶lnym dzia³aniem jest zainstalowanie nowej wersji.\n"
+
+#: src/configure.c:627
+msgid "[default=N]"
+msgstr "[domy¶lnie=N]"
+
+#: src/configure.c:628
+msgid "[default=Y]"
+msgstr "[domy¶lnie=Y]"
+
+#: src/configure.c:628
+msgid "[no default]"
+msgstr "[brak domy¶lnego dzia³ania]"
+
+#: src/configure.c:631
+msgid "error writing to stderr, discovered before conffile prompt"
+msgstr "b³±d zapisu do stderr wykryty przed ukazaniem siê znaku zachêty"
+
+#: src/configure.c:638
+msgid "read error on stdin at conffile prompt"
+msgstr "b³±d odczytu ze stdin wykryty po ukazaniu siê znaku zachêty"
+
+#: src/configure.c:639
+msgid "EOF on stdin at conffile prompt"
+msgstr "EOF ze stdin wprowadzony ze znaku zachêty"
+
+#: src/depcon.c:77
+#, c-format
+msgid "unable to check for existence of `%.250s'"
+msgstr "nie mo¿na sprawdziæ istnienia `%.250s'"
+
+#: src/depcon.c:153 src/packages.c:396
+msgid " depends on "
+msgstr " zale¿y od "
+
+#: src/depcon.c:154
+msgid " pre-depends on "
+msgstr " zale¿y-przed od "
+
+#: src/depcon.c:155
+msgid " recommends "
+msgstr " poleca "
+
+#: src/depcon.c:156
+msgid " breaks "
+msgstr ""
+
+#: src/depcon.c:157
+msgid " conflicts with "
+msgstr " w konflikcie z "
+
+#: src/depcon.c:158
+msgid " suggests "
+msgstr " sugeruje "
+
+#: src/depcon.c:159
+msgid " enhances "
+msgstr " rozszerza "
+
+#: src/depcon.c:246
+#, c-format
+msgid "  %.250s is to be removed.\n"
+msgstr "  %.250s jest przeznaczony do usuniêcia.\n"
+
+#: src/depcon.c:249
+#, c-format
+msgid "  %.250s is to be deconfigured.\n"
+msgstr "  %.250s jest przeznaczony do zdekonfigurowania.\n"
+
+#: src/depcon.c:253
+#, c-format
+msgid "  %.250s is to be installed, but is version %.250s.\n"
+msgstr "  %.250s jest przeznaczony do zainstalowania, ale w wersji %.250s.\n"
+
+#: src/depcon.c:261
+#, c-format
+msgid "  %.250s is installed, but is version %.250s.\n"
+msgstr "  %.250s jest zainstalowany, ale w wersji %.250s.\n"
+
+#: src/depcon.c:276
+#, c-format
+msgid "  %.250s is unpacked, but has never been configured.\n"
+msgstr "  %.250s jest rozpakowany, ale nie by³ jeszcze skonfigurowany.\n"
+
+#: src/depcon.c:280
+#, c-format
+msgid "  %.250s is unpacked, but is version %.250s.\n"
+msgstr "  %.250s jest rozpakowany, ale w wersji %.250s.\n"
+
+#: src/depcon.c:286
+#, c-format
+msgid "  %.250s latest configured version is %.250s.\n"
+msgstr "  %.250s ma skonfigurowan± wersjê %.250s.\n"
+
+#: src/depcon.c:295
+#, c-format
+msgid "  %.250s is %s.\n"
+msgstr "  %.250s jest %s.\n"
+
+#: src/depcon.c:331
+#, c-format
+msgid "  %.250s provides %.250s but is to be removed.\n"
+msgstr "  %.250s dostarcza %.250s ale jest przeznaczony do usuniêcia.\n"
+
+#: src/depcon.c:335
+#, c-format
+msgid "  %.250s provides %.250s but is to be deconfigured.\n"
+msgstr ""
+"  %.250s dostarcza %.250s ale jest przeznaczony do zdekonfigurowania.\n"
+
+#: src/depcon.c:340
+#, c-format
+msgid "  %.250s provides %.250s but is %s.\n"
+msgstr "  %.250s dostarcza %.250s ale jest %s.\n"
+
+#: src/depcon.c:354
+#, c-format
+msgid "  %.250s is not installed.\n"
+msgstr "  %.250s nie jest zainstalowany.\n"
+
+#: src/depcon.c:385
+#, c-format
+msgid "  %.250s (version %.250s) is to be installed.\n"
+msgstr "  %.250s (wersja %.250s) jest przeznaczony do zainstalowania.\n"
+
+#: src/depcon.c:399
+#, c-format
+msgid "  %.250s (version %.250s) is %s.\n"
+msgstr "  %.250s (wersja %.250s) jest %s.\n"
+
+#: src/depcon.c:424
+#, c-format
+msgid "  %.250s provides %.250s and is to be installed.\n"
+msgstr "  %.250s dostarcza %.250s i jest przeznaczony do zainstalowania.\n"
+
+#: src/depcon.c:455
+#, c-format
+msgid "  %.250s provides %.250s and is %s.\n"
+msgstr "  %.250s dostarcza %.250s i jest %s.\n"
+
+#: src/enquiry.c:56 src/query.c:96 src/query.c:139
+msgid "(no description available)"
+msgstr "(brak dostêpnego opisu)"
+
+#: src/enquiry.c:81
+msgid ""
+"The following packages are in a mess due to serious problems during\n"
+"installation.  They must be reinstalled for them (and any packages\n"
+"that depend on them) to function properly:\n"
+msgstr ""
+"W przypadku ni¿ej wymienionych pakietów wyst±pi³y problemy podczas\n"
+"instalowania. Aby te pakiety (oraz inne, zale¿ne od nich) dzia³a³y\n"
+"poprawnie, musz± zostaæ przeinstalowane.\n"
+
+#: src/enquiry.c:86
+msgid ""
+"The following packages have been unpacked but not yet configured.\n"
+"They must be configured using dpkg --configure or the configure\n"
+"menu option in dselect for them to work:\n"
+msgstr ""
+"Ni¿ej wymienione pakiety zosta³y rozpakowane ale nie skonfigurowane.\n"
+"Aby te pakiety dzia³a³y poprawnie, musz± zostaæ skonfigurowane poprzez\n"
+"wywo³anie dpkg --configure lub u¿ycie opcji konfiguracji w menu dselect.\n"
+
+#: src/enquiry.c:91
+msgid ""
+"The following packages are only half configured, probably due to problems\n"
+"configuring them the first time.  The configuration should be retried using\n"
+"dpkg --configure <package> or the configure menu option in dselect:\n"
+msgstr ""
+"Ni¿ej wymienione pakiety zosta³y wpó³-skonfigurowane, gdy¿ prawdopodobnie\n"
+"wyst±pi³y problemy podczas ich pierwszego konfigurowania. Nale¿y ponowiæ\n"
+"próbê konfigurowania wywo³aniem dpkg --configure <pakiet> lub u¿yciem\n"
+"opcji konfiguracji z menu w dselect:\n"
+
+#: src/enquiry.c:96
+msgid ""
+"The following packages are only half installed, due to problems during\n"
+"installation.  The installation can probably be completed by retrying it;\n"
+"the packages can be removed using dselect or dpkg --remove:\n"
+msgstr ""
+"Ni¿ej wymienione pakiety zosta³y wpó³-zainstalowane, gdy¿ wyst±pi³y "
+"problemy\n"
+"podczas ich instalowania. Proces ten prawdopodobnie mo¿e zostaæ powtórzony;\n"
+"pakiety mog± te¿ byæ usuniête poprzez wywo³anie dpkg --remove lub u¿ycie "
+"dselect.\n"
+
+#: src/enquiry.c:121
+msgid "--audit does not take any arguments"
+msgstr "--audit wymaga niepodawania argumentu"
+
+#: src/enquiry.c:156
+msgid "<unknown>"
+msgstr "<nieznany>"
+
+#: src/enquiry.c:173
+msgid "--yet-to-unpack does not take any arguments"
+msgstr "--yet-to-unpack niepodawania argumentu"
+
+#: src/enquiry.c:211
+#, c-format
+msgid " %d in %s: "
+msgstr " %d w %s: "
+
+#: src/enquiry.c:226
+#, c-format
+msgid " %d packages, from the following sections:"
+msgstr " %d pakietów, z nastêpuj±cych sekcji:"
+
+#: src/enquiry.c:245
+msgid "--assert-* does not take any arguments"
+msgstr "--assert-* wymaga niepodawania argumentu"
+
+#: src/enquiry.c:260
+#, c-format
+msgid ""
+"Version of dpkg with working epoch support not yet configured.\n"
+" Please use `dpkg --configure dpkg', and then try again.\n"
+msgstr ""
+"Wersja dpkg obs³uguj±ca epoki jest jeszcze nie skonfigurowana.\n"
+" Nale¿y wykonaæ `dpkg --configure dpkg' i pó¼niej spróbowaæ ponownie.\n"
+
+#: src/enquiry.c:264
+#, c-format
+msgid "dpkg not recorded as installed, cannot check for epoch support !\n"
+msgstr ""
+"nie odnaleziono dpkg w bazie danych, nie mo¿na sprawdziæ czy obs³uguje "
+"epoki!\n"
+
+#: src/enquiry.c:307
+msgid "--predep-package does not take any argument"
+msgstr "--predep-package wymaga niepodawania argumentu"
+
+#: src/enquiry.c:359
+#, c-format
+msgid ""
+"dpkg: cannot see how to satisfy pre-dependency:\n"
+" %s\n"
+msgstr ""
+"dpkg: nie mo¿na rozwi±zaæ problemu z przed-zale¿no¶ciami:\n"
+" %s\n"
+
+#: src/enquiry.c:360
+#, c-format
+msgid "cannot satisfy pre-dependencies for %.250s (wanted due to %.250s)"
+msgstr ""
+"nie mo¿na rozwi±zaæ problemu z przed-zale¿no¶ciami dla %.250s (wymagane "
+"przez %.250s)"
+
+#: src/enquiry.c:377
+msgid "--print-architecture does not take any argument"
+msgstr "--print-architecture wymaga niepodawania argumentu"
+
+#: src/enquiry.c:419
+msgid ""
+"--compare-versions takes three arguments: <version> <relation> <version>"
+msgstr ""
+"--compare-versions wymaga podania trzech argumentów: <wersja> <relacja> "
+"<wersja>"
+
+#: src/enquiry.c:424
+msgid "--compare-versions bad relation"
+msgstr "--compare-versions b³êdna relacja"
+
+#: src/enquiry.c:429 src/enquiry.c:440
+#, c-format
+msgid "dpkg: version '%s' has bad syntax: %s\n"
+msgstr "wersja '%s' ma z³± sk³adniê: %s\n"
+
+#: src/errors.c:58
+#, c-format
+msgid ""
+"%s: error processing %s (--%s):\n"
+" %s\n"
+msgstr ""
+"%s: b³±d przetwarzania %s (--%s):\n"
+" %s\n"
+
+#: src/errors.c:81
+msgid ""
+"dpkg: failed to allocate memory for new entry in list of failed packages."
+msgstr ""
+"dpkg: b³±d podczas przydzielania pamiêci dla nowej pozycji w li¶cie b³êdnych "
+"pakietów."
+
+#: src/errors.c:91
+#, c-format
+msgid "dpkg: too many errors, stopping\n"
+msgstr "dpkg: zbyt wiele b³êdów, zatrzymanie\n"
+
+#: src/errors.c:97
+msgid "Errors were encountered while processing:\n"
+msgstr "Wyst±pi³y b³êdy podczas przetwarzania:\n"
+
+#: src/errors.c:104
+msgid "Processing was halted because there were too many errors.\n"
+msgstr ""
+"Przetwarzanie zosta³o zatrzymane z powodu wyst±pienia zbyt wielu b³êdów.\n"
+
+#: src/errors.c:112
+#, c-format
+msgid "Package %s was on hold, processing it anyway as you request\n"
+msgstr "Pakiet %s zosta³ wstrzymany, zostanie przetworzony wed³ug ¿±dania\n"
+
+#: src/errors.c:116
+#, c-format
+msgid ""
+"Package %s is on hold, not touching it.  Use --force-hold to override.\n"
+msgstr ""
+"Pakiet %s jest wstrzymany i nie bêdzie przetwarzany.  --force-hold wymusza "
+"jego przetworzenie.\n"
+
+#: src/errors.c:125
+msgid ""
+"dpkg - warning, overriding problem because --force enabled:\n"
+" "
+msgstr ""
+"dpkg - ostrze¿enie, problem zignorowany po u¿yciu opcji --force:\n"
+" "
+
+#: src/filesdb.c:123
+#, c-format
+msgid "unable to open files list file for package `%.250s'"
+msgstr "nie mo¿na otworzyæ listy plików pakietu `%.250s'"
+
+#: src/filesdb.c:128
+#, c-format
+msgid ""
+"dpkg: serious warning: files list file for package `%.250s' missing, "
+"assuming package has no files currently installed.\n"
+msgstr ""
+"dpkg: powa¿ne ostrze¿enie: brak listy plików pakietu `%.250s', przyjêcie ¿e "
+"pakiet nie ma zainstalowanych plików.\n"
+
+#: src/filesdb.c:145
+#, c-format
+msgid "files list for package `%.250s'"
+msgstr "lista plików pakietu `%.250s'"
+
+#: src/filesdb.c:158
+#, c-format
+msgid "files list file for package `%.250s' contains empty filename"
+msgstr "lista plików pakietu `%.250s' zawiera pust± nazwê pliku"
+
+#: src/filesdb.c:170
+#, c-format
+msgid "error closing files list file for package `%.250s'"
+msgstr "nie mo¿na zamkn±æ listy plików pakietu `%.250s'"
+
+#: src/filesdb.c:201
+#, c-format
+msgid "(Reading database ... "
+msgstr "(Odczytywanie bazy danych ... "
+
+#: src/filesdb.c:209
+#, c-format
+msgid "%d files and directories currently installed.)\n"
+msgstr "%d plików i katalogów obecnie zainstalowanych.)\n"
+
+#: src/filesdb.c:240
+#, c-format
+msgid "unable to create updated files list file for package %s"
+msgstr "nie mo¿na utworzyæ zaktualizowanej listy plików pakietu %s"
+
+#: src/filesdb.c:250
+#, c-format
+msgid "failed to write to updated files list file for package %s"
+msgstr "nie mo¿na zapisaæ zaktualizowanej listy plików pakietu %s"
+
+#: src/filesdb.c:252
+#, c-format
+msgid "failed to flush updated files list file for package %s"
+msgstr ""
+"nie mo¿na od¶wie¿yæ buforów dla zaktualizowanej listy plików pakietu %s"
+
+#: src/filesdb.c:254
+#, c-format
+msgid "failed to sync updated files list file for package %s"
+msgstr "nie mo¿na zsynchronizowaæ zaktualizowanej listy plików pakietu %s"
+
+#: src/filesdb.c:257
+#, c-format
+msgid "failed to close updated files list file for package %s"
+msgstr "nie mo¿na zamkn±æ zaktualizowanej listy plików pakietu %s"
+
+#: src/filesdb.c:259
+#, c-format
+msgid "failed to install updated files list file for package %s"
+msgstr "nie mo¿na zainstalowaæ zaktualizowanej listy plików pakietu %s"
+
+#: src/filesdb.c:323
+msgid "failed to open statoverride file"
+msgstr "nie mo¿na otworzyæ listy pliku statoverride"
+
+#: src/filesdb.c:327
+msgid "failed to fstat statoverride file"
+msgstr "nie mo¿na sprawdziæ stanu pliku statoverride"
+
+#: src/filesdb.c:330
+msgid "failed to fstat previous statoverride file"
+msgstr "nie mo¿na sprawdziæ stanu poprzedniego pliku statoverride"
+
+#: src/filesdb.c:349
+#, c-format
+msgid "statoverride file `%.250s'"
+msgstr "pliku statoverride `%.250s'"
+
+#: src/filesdb.c:362
+msgid "statoverride file contains empty line"
+msgstr "plik statoverride zawiera pust± liniê"
+
+#: src/filesdb.c:447
+msgid "failed to open diversions file"
+msgstr "nie mo¿na otworzyæ listy ominiêtych plików"
+
+#: src/filesdb.c:451
+msgid "failed to fstat previous diversions file"
+msgstr "nie mo¿na sprawdziæ stanu poprzedniej listy ominiêtych plików"
+
+#: src/filesdb.c:453
+msgid "failed to fstat diversions file"
+msgstr "nie mo¿na sprawdziæ stanu listy ominiêtych plików"
+
+#: src/filesdb.c:474
+msgid "fgets gave an empty string from diversions [i]"
+msgstr "funkcja `fgets' zwróci³a pusty ci±g znaków pliku ominiêcia [i]"
+
+#: src/filesdb.c:475
+msgid "diversions file has too-long line or EOF [i]"
+msgstr "nazwa pliku ominiêcia jest zbyt d³uga lub zawiera EOF [i]"
+
+#: src/filesdb.c:481
+msgid "read error in diversions [ii]"
+msgstr "nie mo¿na odczytaæ ominiêcia [ii]"
+
+#: src/filesdb.c:482
+msgid "unexpected EOF in diversions [ii]"
+msgstr "niespodziewany EOF w ominiêciu [ii]"
+
+#: src/filesdb.c:485
+msgid "fgets gave an empty string from diversions [ii]"
+msgstr "funkcja `fgets' zwróci³a pusty ci±g znaków pliku ominiêcia [ii]"
+
+#: src/filesdb.c:486 src/filesdb.c:497
+msgid "diversions file has too-long line or EOF [ii]"
+msgstr "nazwa pliku ominiêcia jest zbyt d³uga lub zawiera EOF [ii]"
+
+#: src/filesdb.c:492
+msgid "read error in diversions [iii]"
+msgstr "nie mo¿na odczytaæ ominiêcia [iii]"
+
+#: src/filesdb.c:493
+msgid "unexpected EOF in diversions [iii]"
+msgstr "niespodziewany EOF w ominiêciu [iii]"
+
+#: src/filesdb.c:496
+msgid "fgets gave an empty string from diversions [iii]"
+msgstr "funkcja `fgets' zwróci³a pusty ci±g znaków pliku ominiêcia [iii]"
+
+#: src/filesdb.c:504
+#, c-format
+msgid "conflicting diversions involving `%.250s' or `%.250s'"
+msgstr "konflikt dla ominiêcia `%.250s' lub `%.250s'"
+
+#: src/filesdb.c:513
+msgid "read error in diversions [i]"
+msgstr "nie mo¿na odczytaæ ominiêcia [i]"
+
+#: src/help.c:41
+msgid "not installed"
+msgstr "nie zainstalowany"
+
+#: src/help.c:42
+msgid "unpacked but not configured"
+msgstr "rozpakowany ale nie skonfigurowany"
+
+#: src/help.c:43
+msgid "broken due to postinst failure"
+msgstr "uszkodzony podczas przetwarzania skryptu `postinst'"
+
+#: src/help.c:44
+msgid "installed"
+msgstr "zainstalowany"
+
+#: src/help.c:45
+msgid "broken due to failed removal"
+msgstr "uszkodzony w trakcie usuwania"
+
+#: src/help.c:46
+msgid "not installed but configs remain"
+msgstr "nie zainstalowany ale pliki konfiguracyjne pozosta³y"
+
+#: src/help.c:87
+msgid "dpkg - error: PATH is not set.\n"
+msgstr "dpkg - b³±d: zmienna PATH jest nie ustawiona.\n"
+
+#: src/help.c:102
+#, c-format
+msgid "dpkg: `%s' not found on PATH.\n"
+msgstr "dpkg: `%s' nie odnaleziono w PATH.\n"
+
+#: src/help.c:109
+#, c-format
+msgid ""
+"%d expected program(s) not found on PATH.\n"
+"NB: root's PATH should usually contain /usr/local/sbin, /usr/sbin and /sbin."
+msgstr ""
+"%d program(ów) nie odnaleziono w PATH.\n"
+"zmienna PATH dla konta administratora powinna zawieraæ katalogi /usr/local/"
+"sbin, /usr/sbin oraz /sbin."
+
+#: src/help.c:179
+#, c-format
+msgid "failed to chroot to `%.250s'"
+msgstr "nie mo¿na zmieniæ katalogu g³ównego na `%.255s'"
+
+#: src/help.c:227
+#, c-format
+msgid "error un-catching signal %s: %s\n"
+msgstr "nie mo¿na odzyskaæ sygna³u %s: %s\n"
+
+#: src/help.c:245
+#, c-format
+msgid "unable to ignore signal %s before running script"
+msgstr "nie mo¿na zignorowaæ sygna³u %s przed wykonaniem skryptu"
+
+#: src/help.c:254
+#, c-format
+msgid "unable to set execute permissions on `%.250s'"
+msgstr "nie mo¿na ustawiæ praw do wykonywania `%.250s'"
+
+#: src/help.c:299
+#, c-format
+msgid "unable to stat installed %s script `%.250s'"
+msgstr "nie mo¿na sprawdziæ stanu zainstalowanego skryptu %s `%.250s'"
+
+#: src/help.c:301 src/help.c:357 src/help.c:377
+#, c-format
+msgid "unable to execute %s"
+msgstr "nie mo¿na wykonaæ %s"
+
+#: src/help.c:325
+#, c-format
+msgid "unable to stat new %s script `%.250s'"
+msgstr "nie mo¿na sprawdziæ stanu nowego skryptu %s `%.250s'"
+
+#: src/help.c:327
+#, c-format
+msgid "unable to execute new %s"
+msgstr "nie mo¿na wykonaæ nowego %s"
+
+#: src/help.c:346
+#, c-format
+msgid "old %s script"
+msgstr "poprzedni skrypt %s"
+
+#: src/help.c:354
+#, c-format
+msgid "dpkg: warning - unable to stat %s `%.250s': %s\n"
+msgstr "dpkg: ostrze¿enie - nie mo¿na sprawdziæ stanu %s `%.250s': %s\n"
+
+#: src/help.c:361
+#, c-format
+msgid "dpkg - trying script from the new package instead ...\n"
+msgstr "dpkg - próba wywo³ania skryptu z nowego pakietu ...\n"
+
+#: src/help.c:368
+#, c-format
+msgid "new %s script"
+msgstr "new %s script"
+
+#: src/help.c:372
+msgid "there is no script in the new version of the package - giving up"
+msgstr "brak skryptu w nowej wersji pakietu - zaniechanie wywo³ania skryptu"
+
+#: src/help.c:374
+#, c-format
+msgid "unable to stat %s `%.250s'"
+msgstr "nie mo¿na sprawdziæ stanu %s `%.250s'"
+
+#: src/help.c:378
+#, c-format
+msgid "dpkg: ... it looks like that went OK.\n"
+msgstr "dpkg: ... najprawdopodobniej wywo³anie skryptu powiod³o siê.\n"
+
+#: src/help.c:467
+msgid "unlink"
+msgstr "unlink"
+
+#: src/help.c:481
+msgid "chmod"
+msgstr "chmod"
+
+#: src/help.c:497 src/processarc.c:711
+msgid "delete"
+msgstr "usun±æ"
+
+#: src/help.c:507
+#, c-format
+msgid "failed to %s `%%.255s'"
+msgstr "nie mo¿na %s `%%.255s'"
+
+#: src/help.c:513 dpkg-deb/info.c:54
+msgid "failed to exec rm for cleanup"
+msgstr "nie mo¿na wywo³aæ `rm', aby wyczy¶ciæ katalog"
+
+# c-format
+#: src/main.c:44
+#, c-format
+msgid "Debian `%s' package management program version %s.\n"
+msgstr "Debian `%s', program do zarz±dzania pakietami, wersja `%s'.\n"
+
+#: src/main.c:46 src/query.c:467 dpkg-deb/main.c:48 dpkg-split/main.c:41
+#, c-format
+msgid ""
+"This is free software; see the GNU General Public License version 2 or\n"
+"later for copying conditions. There is NO warranty.\n"
+"See %s --license for copyright and license details.\n"
+msgstr ""
+"Niniejszy program jest oprogramowaniem wolnym, sprawd¼ Powszechn±\n"
+"Licencjê Publiczn± GNU w wersji drugiej lub pó¼niejszej, by dowiedzieæ\n"
+"siê o warunkach rozpowszechniania. Brak JAKIEJKOLWIEK gwarancji.\n"
+"Wiêcej szczegó³ów w %s --license.\n"
+
+#: src/main.c:57 src/query.c:478 dpkg-deb/main.c:56 dpkg-split/main.c:49
+#, c-format
+msgid ""
+"Usage: %s [<option> ...] <command>\n"
+"\n"
+msgstr ""
+"U¿ycie: %s [<opcja> ...] <polecenie>\n"
+"\n"
+
+#: src/main.c:61
+#, c-format
+msgid ""
+"Commands:\n"
+"  -i|--install       <.deb file name> ... | -R|--recursive <directory> ...\n"
+"  --unpack           <.deb file name> ... | -R|--recursive <directory> ...\n"
+"  -A|--record-avail  <.deb file name> ... | -R|--recursive <directory> ...\n"
+"  --configure        <package> ... | -a|--pending\n"
+"  -r|--remove        <package> ... | -a|--pending\n"
+"  -P|--purge         <package> ... | -a|--pending\n"
+"  --get-selections [<pattern> ...] Get list of selections to stdout.\n"
+"  --set-selections                 Set package selections from stdin.\n"
+"  --clear-selections               Deselect every non-essential package.\n"
+"  --update-avail <Packages-file>   Replace available packages info.\n"
+"  --merge-avail <Packages-file>    Merge with info from file.\n"
+"  --clear-avail                    Erase existing available info.\n"
+"  --forget-old-unavail             Forget uninstalled unavailable pkgs.\n"
+"  -s|--status <package> ...        Display package status details.\n"
+"  -p|--print-avail <package> ...   Display available version details.\n"
+"  -L|--listfiles <package> ...     List files `owned' by package(s).\n"
+"  -l|--list [<pattern> ...]        List packages concisely.\n"
+"  -S|--search <pattern> ...        Find package(s) owning file(s).\n"
+"  -C|--audit                       Check for broken package(s).\n"
+"  --print-architecture             Print dpkg architecture.\n"
+"  --compare-versions <a> <op> <b>  Compare version numbers - see below.\n"
+"  --force-help                     Show help on forcing.\n"
+"  -Dh|--debug=help                 Show help on debugging.\n"
+"\n"
+msgstr ""
+"Polecenia:\n"
+"  -i|--install       <plik .deb> ... | -R|--recursive <katalog> ...\n"
+"  --unpack           <plik .deb> ... | -R|--recursive <katalog> ...\n"
+"  -A|--record-avail  <plik .deb> ... | -R|--recursive <katalog> ...\n"
+"  --configure        <nazwa pakietu> ... | -a|--pending\n"
+"  -r|--remove        <nazwa pakietu> ... | -a|--pending\n"
+"  -P|--purge         <nazwa pakietu> ... | -a|--pending\n"
+"  --get-selections [<wzorzec> ...]   Lista wybranych pakietów na stdout.\n"
+"  --set-selections                   Lista wybranych pakietów ze stdin.\n"
+"  --clear-selections                 Odznacza wszystkie nie-niezbêdne "
+"pakiety.\n"
+"  --update-avail <plik Packages>     Wymiana info o dostêpnych pakietach.\n"
+"  --merge-avail <plik Packages>      Dodanie info o dostêpnych pakietach.\n"
+"  --clear-avail                      Usuwanie info o dostêpnych pakietach.\n"
+"  --forget-old-unavail               Usuwanie info o niedost. niezainst.\n"
+"  -s|--status <nazwa-pakietu> ...    Szczegó³y o stanie pakietu\n"
+"  -p|--print-avail <nazwa-pakietu> ... Szczegó³y o dostêpnym pakiecie.\n"
+"  -L|--listfiles <nazwa-pakietu> ... Lista plików zawartych w pakiecie.\n"
+"  -l|--list [<wzorzec> ...]          Zwiêz³a lista pakietów.\n"
+"  -S|--search <wzorzec> ...          Szukanie pakietu zawieraj±cego plik.\n"
+"  -C|--audit                         Sprawdzanie uszkodzonych pakietów.\n"
+"  --print-architecture               Podanie architektury dpkg.\n"
+"  --compare-versions <a> <rel> <b>   Porównanie numerów wersji - patrz "
+"ni¿ej.\n"
+"  --force-help                       Pomoc na temat wymuszania.\n"
+"  -Dh|--debug=help                   Pomoc n temat debugowania.\n"
+"\n"
+
+#: src/main.c:88 src/query.c:492 dpkg-deb/main.c:73 dpkg-split/main.c:63
+#, c-format
+msgid ""
+"  -h|--help                        Show this help message.\n"
+"  --version                        Show the version.\n"
+"  --license|--licence              Show the copyright licensing terms.\n"
+"\n"
+msgstr ""
+"  -h|--help                      Pokazuje ten ekran pomocy.\n"
+"  --version                      Pokazuje informacje o wersji programu.\n"
+"  --license|--licence            Pokazuje info o licencji i prawach "
+"autorskich.\n"
+"\n"
+
+#: src/main.c:94
+#, c-format
+msgid ""
+"Use dpkg -b|--build|-c|--contents|-e|--control|-I|--info|-f|--field|\n"
+" -x|--extract|-X|--vextract|--fsys-tarfile  on archives (type %s --help).\n"
+"\n"
+msgstr ""
+"U¿yj dpkg -b|--build|-c|--contents|-e|--control|-I|--info|-f|--field|\n"
+" -x|--extract|-X|--vextract|--fsys-tarfile na archiwach (patrz %s --help).\n"
+"\n"
+
+#: src/main.c:99
+#, c-format
+msgid ""
+"For internal use: dpkg --assert-support-predepends | --predep-package |\n"
+"  --assert-working-epoch | --assert-long-filenames | --assert-multi-conrep.\n"
+"\n"
+msgstr ""
+"Do u¿ytku wewnêtrznego: --assert-support-predepends | --predep-package |\n"
+"  --assert-working-epoch | --assert-long-filenames | --assert-multi-conrep.\n"
+"\n"
+
+#: src/main.c:104
+#, c-format
+msgid ""
+"Options:\n"
+"  --admindir=<directory>     Use <directory> instead of %s.\n"
+"  --root=<directory>         Install on a different root directory.\n"
+"  --instdir=<directory>      Change installation dir without changing admin "
+"dir.\n"
+"  -O|--selected-only         Skip packages not selected for install/"
+"upgrade.\n"
+"  -E|--skip-same-version     Skip packages whose same version is installed.\n"
+"  -G|--refuse-downgrade      Skip packages with earlier version than "
+"installed.\n"
+"  -B|--auto-deconfigure      Install even if it would break some other "
+"package.\n"
+"  --no-debsig                Do not try to verify package signatures.\n"
+"  --no-act|--dry-run|--simulate\n"
+"                             Just say what we would do - don't do it.\n"
+"  -D|--debug=<octal>         Enable debugging (see -Dhelp or --debug=help).\n"
+"  --status-fd <n>            Send status change updates to file descriptor "
+"<n>.\n"
+"  --log=<filename>           Log status changes and actions to <filename>.\n"
+"  --ignore-depends=<package>,...\n"
+"                             Ignore dependencies involving <package>.\n"
+"  --force-...                Override problems (see --force-help).\n"
+"  --no-force-...|--refuse-...\n"
+"                             Stop when problems encountered.\n"
+"  --abort-after <n>          Abort after encountering <n> errors.\n"
+"\n"
+msgstr ""
+"Opcje:\n"
+"  --admindir=<katalog>    U¿ywa <katalogu> zamiast %s.\n"
+"  --root=<katalog>        Instalacja w systemie o innym korzeniu.\n"
+"  --instdir=<katalog>     Zmiana katalogu g³ównego bez kat. administracyjn.\n"
+"  -O|--selected-only      Pomiñ pakiety niewybrane do zainst./aktualizacji.\n"
+"  -E|--skip-same-version  Pomiñ pakiety o tej samej wersji co "
+"zainstalowana.\n"
+"  -G=--refuse-downgrade   Pomiñ pakiety o wcze¶niejszej wersji ni¿ "
+"zainstal.\n"
+"  -B|--auto-deconfigure   Instaluj nawet gdy powoduje zepsucie innego "
+"pakietu.\n"
+"  --no-debsig             Nie próbuj sprawdzaæ podpisów pakietów.\n"
+"  --no-act|--dry-run|--simulate\n"
+"                          Tylko poka¿, co siê stanie - nie zmieniaj "
+"niczego.\n"
+"  -D|--debug=<ósemkowo>   W³±czenie debuggera - patrz -Dhelp lub --"
+"debug=help.\n"
+"  --status-fd <n>         Wy¶lij aktualizacje zmian stanu do pliku <n>.\n"
+"  --log=<plik>            Zapisuj zmiany do pliku <plik>.\n"
+"  --ignore-depends=<pakiet>,...\n"
+"                          Ignoruj zale¿no¶ci dotycz±ce <pakietu>.\n"
+"  --force-...             Ignoruj problemy - zobacz --force-help.\n"
+"  --no-force-...|--refuse-...\n"
+"                          Zatrzymaj, gdy wyst±pi± problemy.\n"
+"  --abort-after <n>       Zatrzymaj po wyst±pieniu <n> b³êdów.\n"
+"\n"
+
+#: src/main.c:127
+#, c-format
+msgid ""
+"Comparison operators for --compare-versions are:\n"
+"  lt le eq ne ge gt       (treat empty version as earlier than any "
+"version);\n"
+"  lt-nl le-nl ge-nl gt-nl (treat empty version as later than any version);\n"
+"  < << <= = >= >> >       (only for compatibility with control file "
+"syntax).\n"
+"\n"
+msgstr ""
+"Operatory porównania dla --compare-versions:\n"
+" lt le eq ne ge gt       (brak wersji traktowany jako wcze¶niejsza);\n"
+" lt-nl le-nl ge-nl gt-nl (brak wersji traktowany jako pó¼niejsza);\n"
+" < << <= = >= >> >       (dla zachow. kompatyb. ze sk³adni± pliku "
+"kontroln.).\n"
+"\n"
+
+#: src/main.c:134
+#, c-format
+msgid "Use `dselect' or `aptitude' for user-friendly package management.\n"
+msgstr ""
+"U¿yj `dselect' lub `aptitude', je¶li potrzebujesz wygodnego programu\n"
+"do zarz±dzania pakietami.\n"
+
+#: src/main.c:141
+msgid ""
+"Type dpkg --help for help about installing and deinstalling packages [*];\n"
+"Use `dselect' or `aptitude' for user-friendly package management;\n"
+"Type dpkg -Dhelp for a list of dpkg debug flag values;\n"
+"Type dpkg --force-help for a list of forcing options;\n"
+"Type dpkg-deb --help for help about manipulating *.deb files;\n"
+"Type dpkg --license for copyright license and lack of warranty (GNU GPL) "
+"[*].\n"
+"\n"
+"Options marked [*] produce a lot of output - pipe it through `less' or "
+"`more' !"
+msgstr ""
+"Wpisz dpkg --help, aby dowiedzieæ siê jak (od)instalowaæ pakiety [*];\n"
+"U¿yj `dselect' lub `aptitude', je¶li potrzebujesz wygodnego programu\n"
+"do zarz±dzania pakietami;\n"
+"Wpisz  dpkg -Dhelp, aby dowiedzieæ siê o opcjach debuggera;\n"
+"Wpisz  dpkg --force-help, aby dowiedzieæ siê, jak ignorowaæ problemy;\n"
+"Wpisz  dpkg-deb --help, aby dowiedzieæ siê, jak operowaæ plikami *.deb;\n"
+"Wpisz  dpkg --licence, aby poznaæ warunki licencji i gwarancji (GNU GPL) "
+"[*].\n"
+"\n"
+"Opcje oznaczone [*] podaj± du¿o tre¶ci - skieruj potok na `less' lub `more'!"
+
+#: src/main.c:206 src/query.c:544 dpkg-deb/main.c:177 dpkg-split/main.c:157
+#, c-format
+msgid "conflicting actions -%c (--%s) and -%c (--%s)"
+msgstr "konflikt miêdzy dzia³aniem -%c (--%s) i -%c (--%s)"
+
+#: src/main.c:212
+#, c-format
+msgid "Warning: obsolete option `--%s'\n"
+msgstr "Uwaga: niewykorzystywana ju¿ opcja `--%s'\n"
+
+#: src/main.c:220
+#, c-format
+msgid ""
+"%s debugging option, --debug=<octal> or -D<octal>:\n"
+"\n"
+" number  ref. in source   description\n"
+"      1   general           Generally helpful progress information\n"
+"      2   scripts           Invocation and status of maintainer scripts\n"
+"     10   eachfile          Output for each file processed\n"
+"    100   eachfiledetail    Lots of output for each file processed\n"
+"     20   conff             Output for each configuration file\n"
+"    200   conffdetail       Lots of output for each configuration file\n"
+"     40   depcon            Dependencies and conflicts\n"
+"    400   depcondetail      Lots of dependencies/conflicts output\n"
+"   1000   veryverbose       Lots of drivel about eg the dpkg/info directory\n"
+"   2000   stupidlyverbose   Insane amounts of drivel\n"
+"\n"
+"Debugging options are be mixed using bitwise-or.\n"
+"Note that the meanings and values are subject to change.\n"
+msgstr ""
+"%s - opcje debuggera, --debug=<ósemkowo> lub -D<ósemkowo>:\n"
+"\n"
+" numer   identyfikator    opis\n"
+"     1   general          Ogólnie przydatne informacje o postêpie\n"
+"     2   scripts          Wywo³anie i stan skryptów kontrolnych\n"
+"    10   eachfile         Informacje o ka¿dym przetwarzanym pliku\n"
+"   100   eachfiledetail   Wiêcej informacji o ka¿dym przetwarzanym pliku\n"
+"    20   conff            Informacje o ka¿dym pliku konfiguracyjnym\n"
+"   200   conffdetail      Wiêcej informacji o ka¿dym pliku konfiguracyjnym\n"
+"    40   depcon           Zale¿no¶ci i konflikty\n"
+"   400   depcondetail     Wiêcej informacji o zale¿no¶ciach i konfliktach\n"
+"  1000   veryverbose      Mnóstwo informacji m.in. o plikach bazy danych "
+"dpkg\n"
+"  2000   stupidlyverbose  Reszta szczegó³owych informacji\n"
+"\n"
+"Opcje debuggera mog± byæ ³±czone poprzez zsumowanie poszczególnych \n"
+" warto¶ci. Uwaga: znaczenia i warto¶ci opcji mog± siê zmieniæ!\n"
+
+#: src/main.c:241
+msgid "--debug requires an octal argument"
+msgstr "--debug wymaga podania argumentu bêd±cego liczb± ósemkow±"
+
+#: src/main.c:265
+#, c-format
+msgid "null package name in --ignore-depends comma-separated list `%.250s'"
+msgstr "pusta nazwa pakietu dla --ignore-depends w li¶cie `%.250s'"
+
+#: src/main.c:271
+#, c-format
+msgid "--ignore-depends requires a legal package name. `%.250s' is not; %s"
+msgstr ""
+"--ignore-depends wymaga podania poprawnej nazwy pakietu. `%.250s' jest "
+"niepoprawny; %s"
+
+#: src/main.c:287 src/main.c:298
+#, c-format
+msgid "invalid integer for --%s: `%.250s'"
+msgstr "b³êdna warto¶æ liczbowa dla --%s: `%.250s'"
+
+#: src/main.c:318
+#, c-format
+msgid ""
+"%s forcing options - control behaviour when problems found:\n"
+"  warn but continue:  --force-<thing>,<thing>,...\n"
+"  stop with error:    --refuse-<thing>,<thing>,... | --no-force-<thing>,...\n"
+" Forcing things:\n"
+"  all [!]                Set all force options\n"
+"  downgrade [*]          Replace a package with a lower version\n"
+"  configure-any          Configure any package which may help this one\n"
+"  hold                   Process incidental packages even when on hold\n"
+"  bad-path               PATH is missing important programs, problems "
+"likely\n"
+"  not-root               Try to (de)install things even when not root\n"
+"  overwrite              Overwrite a file from one package with another\n"
+"  overwrite-diverted     Overwrite a diverted file with an undiverted "
+"version\n"
+"  bad-verify             Install a package even if it fails authenticity "
+"check\n"
+"  depends-version [!]    Turn dependency version problems into warnings\n"
+"  depends [!]            Turn all dependency problems into warnings\n"
+"  confnew [!]            Always use the new config files, don't prompt\n"
+"  confold [!]            Always use the old config files, don't prompt\n"
+"  confdef [!]            Use the default option for new config files if one\n"
+"                         is available, don't prompt. If no default can be "
+"found,\n"
+"                         you will be prompted unless one of the confold or\n"
+"                         confnew options is also given\n"
+"  confmiss [!]           Always install missing config files\n"
+"  conflicts [!]          Allow installation of conflicting packages\n"
+"  architecture [!]       Process even packages with wrong architecture\n"
+"  overwrite-dir [!]      Overwrite one package's directory with another's "
+"file\n"
+"  remove-reinstreq [!]   Remove packages which require installation\n"
+"  remove-essential [!]   Remove an essential package\n"
+"\n"
+"WARNING - use of options marked [!] can seriously damage your installation.\n"
+"Forcing options marked [*] are enabled by default.\n"
+msgstr ""
+"%s - opcje wymuszenia - dzia³ania w przypadku wyst±pienia problemów:\n"
+"  ostrze¿, ale kontynuuj: --force-<opcja>,<opcja>,...\n"
+"  wstrzymaj i zg³o¶ b³±d: --refuse-<opcja>,<opcja>,... | --no-force-"
+"<opcja>,...\n"
+" Opcje wymuszenia:\n"
+"  all [!]               Ustaw wszystkie opcje wymuszenia\n"
+"  downgrade [*]         Zast±p pakiet wcze¶niejsz± wersj±\n"
+"  configure-any         Skonfiguruj wszystkie pakiety mog±ce pomóc "
+"bie¿±cemu\n"
+"  hold                  Przetwarzanie pakietów, które zosta³y wstrzymane\n"
+"  bad-path              Zignorowanie braków programów w ¶cie¿ce zmiennej "
+"PATH\n"
+"  not-root              Próba (de)instalacji, gdy dpkg nie uruchomi³ root\n"
+"  overwrite[*]          Nadpisanie plików z innych pakietów\n"
+"  overwrite-diverted    Napisanie ominiêtych plików nieominiêtymi\n"
+"  bad-verify            Zignorowanie problemów z potwierdzeniem "
+"autentyczno¶ci\n"
+"  depends-version [!]   Zignorowanie problemów z wersj± przy zale¿no¶ciach\n"
+"  depends [!]           Zignorowanie wszelkich problemów z zale¿no¶ciami\n"
+"  confnew [!]           U¿ycie nowego pliku konfiguracyjnego bez pytania\n"
+"  confold [!]           U¿ycie poprzedniego pliku konfiguracyjnego bez "
+"pytania\n"
+"  confdef [!]           U¿ycie domy¶lnej opcji dla plików konfig. bez\n"
+"                        pytania, chyba ¿e nie uda siê jej znale¼æ, a nie\n"
+"                        podano równie¿ opcji confold ani confnew.\n"
+"  confmiss [!]          Zainstalowanie brakuj±cych plików konfig. bez "
+"pytania\n"
+"  conflicts [!]         Zainstalowanie pakietów tworz±cych konflikt\n"
+"  architecture [!]      Przetwarzanie pakietów dla innej architektury\n"
+"  overwrite-dir [!]     Nadpisanie katalogów plikami z innych pakietów\n"
+"  remove-reinstreq [!]  Usuniêcie pakietów wymagaj±cych reinstalacji\n"
+"  remove-essential [!]  Usuniêcie istotnych pakietów\n"
+"\n"
+"UWAGA - u¿ycie opcji oznaczonej [!] mo¿e powa¿nie uszkodziæ instalacjê.\n"
+"Opcje oznaczone [*] s± domy¶lnie w³±czone.\n"
+
+#: src/main.c:363
+#, c-format
+msgid "unknown force/refuse option `%.*s'"
+msgstr "nieznana opcja force/refuse `%.*s'"
+
+#: src/main.c:368
+#, c-format
+msgid "Warning: obsolete force/refuse option `%s'\n"
+msgstr "Uwaga: niewykorzystywana ju¿ opcja force/refuse `%s'\n"
+
+#: src/main.c:491 src/main.c:501 src/main.c:509
+msgid "couldn't malloc in execbackend"
+msgstr "malloc w execbackend nie powiod³o siê"
+
+#: src/main.c:495 src/main.c:518
+msgid "couldn't strdup in execbackend"
+msgstr "strdup w execbackend nie powiod³o siê"
+
+#: src/main.c:523
+#, c-format
+msgid "failed to exec %s"
+msgstr "wywo³anie %s nie powiod³o siê"
+
+#: src/main.c:538
+msgid "--command-fd takes one argument, not zero"
+msgstr "--command-fd wymaga jednego argumentu, nie zero"
+
+#: src/main.c:540
+msgid "--command-fd only takes one argument"
+msgstr "--command-fd wymaga tylko jednego argumentu"
+
+#: src/main.c:542
+msgid "invalid number for --command-fd"
+msgstr "nieprawid³owy numer przy --command-fd"
+
+#: src/main.c:544
+#, c-format
+msgid "couldn't open `%i' for stream"
+msgstr "nie uda³o siê otworzyæ `%i' jako strumienia"
+
+#: src/main.c:569
+#, c-format
+msgid "unexpected eof before end of line %d"
+msgstr "niespodziewany EOF przed koñcem linii %d"
+
+#: src/main.c:613 src/main.c:628 src/query.c:580 dpkg-deb/main.c:200
+#: dpkg-split/main.c:170
+msgid "need an action option"
+msgstr "nale¿y okre¶liæ dzia³anie"
+
+#: src/packages.c:79
+#, c-format
+msgid "--%s --pending does not take any non-option arguments"
+msgstr "--%s --pending wymaga niepodawania argumentów nie bêd±cych opcj±"
+
+#: src/packages.c:109 src/query.c:321
+#, c-format
+msgid "--%s needs at least one package name argument"
+msgstr "--%s wymaga co najmniej jednej nazwy pakietu"
+
+#: src/packages.c:116
+msgid ""
+"you must specify packages by their own names, not by quoting the names of "
+"the files they come in"
+msgstr ""
+"nale¿y podaæ nazwê pakietu, a nie nazwê pliku, z którego zosta³ zainstalowany"
+
+#: src/packages.c:150
+#, c-format
+msgid "Package %s listed more than once, only processing once.\n"
+msgstr ""
+"Pakiet %s jest wymieniony kilkukrotnie, ale zostanie przetworzony tylko "
+"raz.\n"
+
+#: src/packages.c:154
+#, c-format
+msgid ""
+"More than one copy of package %s has been unpacked\n"
+" in this run !  Only configuring it once.\n"
+msgstr ""
+"Rozpakowana zosta³a wiêcej ni¿ jedna kopia pakietu %s\n"
+" w tym przebiegu!  Konfiguracja odbêdzie siê tylko dla jednej.\n"
+
+#: src/packages.c:269
+#, c-format
+msgid "  Package %s which provides %s is to be removed.\n"
+msgstr "  Pakiet %s dostarcza %s, ale jest przeznaczony do usuniêcia.\n"
+
+#: src/packages.c:272
+#, c-format
+msgid "  Package %s is to be removed.\n"
+msgstr "  Pakiet %s jest przeznaczony do usuniêcia.\n"
+
+#: src/packages.c:287
+#, c-format
+msgid "  Version of %s on system is %s.\n"
+msgstr "  Wersj± %s w systemie jest %s.\n"
+
+#: src/packages.c:307
+#, c-format
+msgid "dpkg: also configuring `%s' (required by `%s')\n"
+msgstr "dpkg: konfiguracja tak¿e dla `%s' (wymagana przez `%s')\n"
+
+#: src/packages.c:313
+#, c-format
+msgid "  Package %s which provides %s is not configured yet.\n"
+msgstr "  Pakiet %s dostarcza %s, ale nie zosta³ jeszcze skonfigurowany.\n"
+
+#: src/packages.c:316
+#, c-format
+msgid "  Package %s is not configured yet.\n"
+msgstr "  Pakiet %s nie jest jeszcze skonfigurowany.\n"
+
+#: src/packages.c:328
+#, c-format
+msgid "  Package %s which provides %s is not installed.\n"
+msgstr "  Pakiet %s dostarczaj±cy %s nie jest zainstalowany.\n"
+
+#: src/packages.c:331
+#, c-format
+msgid "  Package %s is not installed.\n"
+msgstr "  Pakiet %s nie jest zainstalowany.\n"
+
+#: src/packages.c:402
+msgid "; however:\n"
+msgstr "; jednak¿e:\n"
+
+#: src/processarc.c:102
+msgid "cannot access archive"
+msgstr "brak dostêpu do archiwum"
+
+#: src/processarc.c:112
+#, c-format
+msgid "error ensuring `%.250s' doesn't exist"
+msgstr "nie mo¿na usun±æ `%.250s'"
+
+#: src/processarc.c:117
+msgid "failed to exec dpkg-split to see if it's part of a multiparter"
+msgstr ""
+"nie mo¿na wywo³aæ `dpkg-split', aby upewniæ siê czy plik nie jest czê¶ci± "
+"wieloczê¶ciowego zestawu"
+
+#: src/processarc.c:120
+msgid "wait for dpkg-split failed"
+msgstr "nie mo¿na wykonaæ funkcji `wait' dla `dpkg-split'"
+
+#: src/processarc.c:126
+msgid "reassembled package file"
+msgstr "przebudowanie pliku pakietu"
+
+#: src/processarc.c:141
+#, c-format
+msgid "Authenticating %s ...\n"
+msgstr "Sprawdzanie %s ...\n"
+
+#: src/processarc.c:146
+msgid "failed to execl debsig-verify"
+msgstr "nie mo¿na wykonaæ `debsig-verify'"
+
+#: src/processarc.c:152
+#, c-format
+msgid "Verification on package %s failed!"
+msgstr "Sprawdzenie pakietu %s nie powiod³o siê!"
+
+#: src/processarc.c:154
+#, c-format
+msgid ""
+"Verification on package %s failed,\n"
+"but installing anyway as you request.\n"
+msgstr ""
+"Nie uda³o siê sprawdziæ pakietu %s,\n"
+"ale zostanie zainstalowany wed³ug ¿±dania\n"
+
+#: src/processarc.c:157
+#, c-format
+msgid "passed\n"
+msgstr "powiod³o siê\n"
+
+#: src/processarc.c:166
+msgid "unable to get unique filename for control info"
+msgstr "nie mo¿na pobraæ unikalnej nazwy pliku dla pliku kontrolnego"
+
+#: src/processarc.c:188
+msgid "failed to exec dpkg-deb to extract control information"
+msgstr "nie mo¿na wywo³aæ `dpkg-deb', aby pobraæ plik kontrolny"
+
+#: src/processarc.c:205
+#, c-format
+msgid "Recorded info about %s from %s.\n"
+msgstr "Zapisane informacje o %s z %s.\n"
+
+#: src/processarc.c:214
+#, c-format
+msgid "package architecture (%s) does not match system (%s)"
+msgstr "architektura pakietu (%s) nie zgadza siê z architektur± systemu (%s)"
+
+#: src/processarc.c:256
+#, fuzzy, c-format
+msgid ""
+"dpkg: regarding %s containing %s:\n"
+" package uses Breaks; not supported in this dpkg\n"
+msgstr ""
+"dpkg: problem z przed-zale¿no¶ciami %s zawieraj±cego %s:\n"
+"%s"
+
+#: src/processarc.c:260
+#, fuzzy, c-format
+msgid "unsupported dependency problem - not installing %.250s"
+msgstr "problem z przed-zale¿no¶ciami - %.250s nie bêdzie instalowany"
+
+#: src/processarc.c:262
+#, fuzzy, c-format
+msgid "dpkg: warning - ignoring Breaks !\n"
+msgstr "dpkg: ostrze¿enie - zignorowanie problemu z przed-zale¿no¶ciami!\n"
+
+#: src/processarc.c:275
+#, c-format
+msgid ""
+"dpkg: regarding %s containing %s, pre-dependency problem:\n"
+"%s"
+msgstr ""
+"dpkg: problem z przed-zale¿no¶ciami %s zawieraj±cego %s:\n"
+"%s"
+
+#: src/processarc.c:278
+#, c-format
+msgid "pre-dependency problem - not installing %.250s"
+msgstr "problem z przed-zale¿no¶ciami - %.250s nie bêdzie instalowany"
+
+#: src/processarc.c:279
+#, c-format
+msgid "dpkg: warning - ignoring pre-dependency problem !\n"
+msgstr "dpkg: ostrze¿enie - zignorowanie problemu z przed-zale¿no¶ciami!\n"
+
+#: src/processarc.c:294
+#, c-format
+msgid "Preparing to replace %s %s (using %s) ...\n"
+msgstr "Przygotowanie do zast±pienia %s %s (wykorzystuj±c %s) ...\n"
+
+#: src/processarc.c:299
+#, c-format
+msgid "Unpacking %s (from %s) ...\n"
+msgstr "Rozpakowanie %s (z %s) ...\n"
+
+#: src/processarc.c:321
+#, c-format
+msgid "name of conffile (starting `%.250s') is too long (>%d characters)"
+msgstr ""
+"nazwa pliku konfiguracyjnego (rozpoczynana od `%.250s') jest zbyt d³uga (>%d "
+"znaków)"
+
+#: src/processarc.c:374
+#, c-format
+msgid "read error in %.250s"
+msgstr "nie mo¿na odczytaæ %.250s"
+
+#: src/processarc.c:376
+#, c-format
+msgid "error closing %.250s"
+msgstr "nie mo¿na zamkn±æ %.250s"
+
+#: src/processarc.c:378
+#, c-format
+msgid "error trying to open %.250s"
+msgstr "nie mo¿na otworzyæ %.250s"
+
+#: src/processarc.c:411
+#, c-format
+msgid "De-configuring %s, so that we can remove %s ...\n"
+msgstr "Dekonfiguracja %s, tak ¿e mo¿na usun±æ %s ...\n"
+
+#: src/processarc.c:469
+#, c-format
+msgid "Unpacking replacement %.250s ...\n"
+msgstr "Rozpakowanie pakietu zastêpuj±cego %.250s ...\n"
+
+#: src/processarc.c:550
+msgid "unable to exec dpkg-deb to get filesystem archive"
+msgstr "nie mo¿na wywo³aæ `dpkg-deb', aby pobraæ archiwum z plikami"
+
+#: src/processarc.c:563
+msgid "error reading dpkg-deb tar output"
+msgstr "nie mo¿na odczytaæ potoku z `dpkg-deb' zawieraj±cego archiwum tar"
+
+#: src/processarc.c:565
+msgid "corrupted filesystem tarfile - corrupted package archive"
+msgstr "uszkodzone archiwum tar - uszkodzone archiwum pakietu"
+
+#: src/processarc.c:568
+msgid "dpkg-deb: zap possible trailing zeros"
+msgstr "dpkg-deb: usuniêcie prawdopodobnych zer na koñcu"
+
+#: src/processarc.c:621
+#, c-format
+msgid "dpkg: warning - could not stat old file `%.250s' so not deleting it: %s"
+msgstr ""
+"dpkg: ostrze¿enie - nie mo¿na pobraæ stanu poprzedniego pliku `%.250s', wiêc "
+"plik nie bêdzie usuwany: %s"
+
+#: src/processarc.c:629
+#, c-format
+msgid "dpkg: warning - unable to delete old directory `%.250s': %s\n"
+msgstr ""
+"dpkg: ostrze¿enie - nie mo¿na usun±æ poprzedniego katalogu `%.250s': %s\n"
+
+#: src/processarc.c:633
+#, c-format
+msgid ""
+"dpkg: warning - old conffile `%.250s' was an empty directory (and has now "
+"been deleted)\n"
+msgstr ""
+"dpkg: ostrze¿enie - poprzedni plik konfiguracyjny `%.250s' by³ pustym "
+"katalogiem  (i w³a¶nie zosta³ usuniêty)\n"
+
+#: src/processarc.c:663
+#, c-format
+msgid "unable to stat other new file `%.250s'"
+msgstr "nie mo¿na zbadaæ stanu nowego pliku `%.250s'"
+
+#: src/processarc.c:674
+#, c-format
+msgid ""
+"dpkg: warning - old file `%.250s' is the same as several new files!  (both `"
+"%.250s' and `%.250s')"
+msgstr ""
+"dpkg: ostrze¿enie - stary plik konfiguracyjny `%.250s' jest taki sam, jak "
+"kilka nowych plików (zarówno `%.250s, jak i `%.250s')"
+
+#: src/processarc.c:715
+#, c-format
+msgid "dpkg: warning - unable to %s old file `%%.250s': %%s\n"
+msgstr "dpkg: ostrze¿enie - nie mo¿na %s poprzedniego pliku `%%.250s': %%s\n"
+
+#: src/processarc.c:741 src/processarc.c:982 src/remove.c:292
+msgid "cannot read info directory"
+msgstr "nie mo¿na odczytaæ katalogu informacyjnego"
+
+#: src/processarc.c:754
+#, c-format
+msgid "old version of package has overly-long info file name starting `%.250s'"
+msgstr ""
+"poprzednia wersja pakietu ma plik informacyjny o zbyt d³ugiej nazwie "
+"rozpoczynaj±cej siê od `%.250s'"
+
+#: src/processarc.c:766
+#, c-format
+msgid "unable to remove obsolete info file `%.250s'"
+msgstr "nie mo¿na usun±æ nieaktualnego pliku informacyjnego `%.250s'"
+
+#: src/processarc.c:769
+#, c-format
+msgid "unable to install (supposed) new info file `%.250s'"
+msgstr "nie mo¿na zainstalowaæ nowego pliku informacyjnego `%.250s'"
+
+#: src/processarc.c:776
+msgid "unable to open temp control directory"
+msgstr "nie mo¿na otworzyæ tymczasowego katalogu kontrolnego"
+
+#: src/processarc.c:785
+#, c-format
+msgid "package contains overly-long control info file name (starting `%.50s')"
+msgstr ""
+"pakiet zawiera plik kontrolny o zbyt d³ugiej nazwie (rozpoczynaj±cej siê od `"
+"%.50s')"
+
+#: src/processarc.c:790
+#, c-format
+msgid "package control info contained directory `%.250s'"
+msgstr "archiwum kontrolne pakietu zawiera katalog `%.250s'"
+
+#: src/processarc.c:792
+#, c-format
+msgid "package control info rmdir of `%.250s' didn't say not a dir"
+msgstr "próba usuniêcia katalogu `%.250s' nie wykaza³a, ¿e to nie jest katalog"
+
+#: src/processarc.c:798
+#, c-format
+msgid "dpkg: warning - package %s contained list as info file"
+msgstr ""
+"dpkg: ostrze¿enie - pakiet %s zawiera listê plików jako plik informacyjny"
+
+#: src/processarc.c:805
+#, c-format
+msgid "unable to install new info file `%.250s' as `%.250s'"
+msgstr ""
+"nie mo¿na zainstalowaæ nowego pliku informacyjnego `%.250s' jako `%.250s'"
+
+#: src/processarc.c:962
+#, c-format
+msgid "(Noting disappearance of %s, which has been completely replaced.)\n"
+msgstr "(Stwierdzono znikniêcie %s, który zosta³ zupe³nie zast±piony.)\n"
+
+#: src/processarc.c:998
+#, c-format
+msgid "unable to delete disappearing control info file `%.250s'"
+msgstr "nie mo¿na usun±æ brakuj±cego pliku kontrolnego `%.250s'"
+
+#: src/query.c:160
+msgid ""
+"Desired=Unknown/Install/Remove/Purge/Hold\n"
+"| Status=Not/Installed/Config-files/Unpacked/Failed-config/Half-installed\n"
+"|/ Err?=(none)/Hold/Reinst-required/X=both-problems (Status,Err: "
+"uppercase=bad)\n"
+msgstr ""
+"Wybór=U=Nieznany/I=Instalacja/R=Usuniêcie/P=Wyczyszczenie/H=Zatrzymanie\n"
+"| Stan=N=Brak/I=Zainst./C=Skonfig./U=Rozpakowany/F=Nieskonfig./H=Wpó³-"
+"zainst.\n"
+"|/ B³êdy?=(brak)/H=Wstrzym./R=Do przeinst./X=Obydwa (Stan,B³êdy:wielk.lit."
+"=¼le)\n"
+
+#: src/query.c:164
+msgid "Name"
+msgstr "Nazwa"
+
+#: src/query.c:164
+msgid "Version"
+msgstr "Wersja"
+
+#: src/query.c:164
+msgid "Description"
+msgstr "Opis"
+
+#: src/query.c:218 src/query.c:453 src/select.c:80
+#, c-format
+msgid "No packages found matching %s.\n"
+msgstr "Nie znaleziono pakietu pasuj±cego do wzorca %s.\n"
+
+#: src/query.c:240
+#, c-format
+msgid "diversion by %s"
+msgstr "ominiêcie przez %s"
+
+#: src/query.c:241
+#, c-format
+msgid "local diversion"
+msgstr "lokalne ominiêcie"
+
+#: src/query.c:242
+msgid "to"
+msgstr "od"
+
+#: src/query.c:242
+msgid "from"
+msgstr "do"
+
+#: src/query.c:275
+msgid "--search needs at least one file name pattern argument"
+msgstr "--search wymaga podania co najmniej jednego wzorca pliku"
+
+#: src/query.c:303
+#, c-format
+msgid "dpkg: %s not found.\n"
+msgstr "dpkg: %s nie odnaleziony.\n"
+
+#: src/query.c:341
+#, c-format
+msgid "Package `%s' is not installed and no info is available.\n"
+msgstr ""
+"Pakiet `%s' nie jest zainstalowany i informacje o nim nie s± dostêpne.\n"
+
+#: src/query.c:350
+#, c-format
+msgid "Package `%s' is not available.\n"
+msgstr "Pakiet `%s' nie jest dostêpny.\n"
+
+#: src/query.c:360
+#, c-format
+msgid "Package `%s' is not installed.\n"
+msgstr "Pakiet `%s' nie jest zainstalowany.\n"
+
+#: src/query.c:369
+#, c-format
+msgid "Package `%s' does not contain any files (!)\n"
+msgstr "Pakiet `%s' nie zawiera ¿adnego pliku (!)\n"
+
+#: src/query.c:376
+#, c-format
+msgid "locally diverted to: %s\n"
+msgstr "lokalnie ominiêty do %s\n"
+
+#: src/query.c:379
+#, c-format
+msgid "package diverts others to: %s\n"
+msgstr "pakiet omija inne do: %s\n"
+
+#: src/query.c:382
+#, c-format
+msgid "diverted by %s to: %s\n"
+msgstr "ominiêty przez %s do: %s\n"
+
+#: src/query.c:404
+msgid ""
+"Use dpkg --info (= dpkg-deb --info) to examine archive files,\n"
+"and dpkg --contents (= dpkg-deb --contents) to list their contents.\n"
+msgstr ""
+"U¿yj dpkg --info (= dpkg-deb --info), aby zobaczyæ informacje o pakiecie,\n"
+"oraz dpkg --contents (= dpkg-deb --contents), aby sprawdziæ jego zawarto¶æ.\n"
+
+#: src/query.c:465
+#, c-format
+msgid "Debian `%s' package management program query tool\n"
+msgstr "Debian `%s', narzêdzie do przeszukiwania pakietów\n"
+
+#: src/query.c:482
+#, c-format
+msgid ""
+"Commands:\n"
+"  -s|--status <package> ...        Display package status details.\n"
+"  -p|--print-avail <package> ...   Display available version details.\n"
+"  -L|--listfiles <package> ...     List files `owned' by package(s).\n"
+"  -l|--list [<pattern> ...]        List packages concisely.\n"
+"  -W|--show <pattern> ...          Show information on package(s).\n"
+"  -S|--search <pattern> ...        Find package(s) owning file(s).\n"
+"\n"
+msgstr ""
+"Polecenia:\n"
+"  -s|--status <nazwa-pakietu> ...      Poka¿ szczegó³y o stanie pakietu.\n"
+"  -p|--print-avail <nazwa-pakietu> ... Poka¿ szczegó³y dostêpnej wersji.\n"
+"  -L|--listfiles <nazwa-pakietu> ...   Lista plików danego pakietu.\n"
+"  -l|--list [<wzorzec> ...]            Wy¶wietl streszczon± listê pakietów.\n"
+"  -W|--show <wzorzec> ...              Poka¿ informacje o pakiecie.\n"
+"  -S|--search <wzorzec> ...            Znajd¼ pakiet(y) zawieraj±ce plik"
+"(i).\n"
+"\n"
+
+#: src/query.c:498
+#, c-format
+msgid ""
+"Options:\n"
+"  --admindir=<directory>           Use <directory> instead of %s.\n"
+"  -f|--showformat=<format>         Use alternative format for --show.\n"
+"\n"
+msgstr ""
+"Opcje:\n"
+"  --admindir=<katalog>           U¿yj <katalogu> zamiast %s.\n"
+"  -f|--showformat=<format>       U¿yj alternatywnego formatu dla --show.\n"
+"\n"
+
+#: src/query.c:504 dpkg-deb/main.c:97
+#, c-format
+msgid ""
+"Format syntax:\n"
+"  A format is a string that will be output for each package. The format\n"
+"  can include the standard escape sequences \\n (newline), \\r (carriage\n"
+"  return) or \\\\ (plain backslash). Package information can be included\n"
+"  by inserting variable references to package fields using the ${var[;"
+"width]}\n"
+"  syntax. Fields will be right-aligned unless the width is negative in "
+"which\n"
+"  case left alignment will be used.\n"
+msgstr ""
+"Sk³adnia formatu:\n"
+"  Format jest ci±giem znaków, który bêdzie wypisany dla ka¿dego pakietu.\n"
+"  Mo¿e zawieraæ standardowe sekwencje escape - \\n (nowa linia), \\r\n"
+"  (powrót karetki) lub (\\\\) (zwyk³y odwrotny uko¶nik). Informacje\n"
+"  o pakietach mog± byæ zawarte przez wstawienie odwo³añ do zmiennych,\n"
+"  u¿ywaj±c sk³adni ${var[;szeroko¶æ]}. Pola bêd± przesuniête do prawej\n"
+"  strony, chyba ¿e zmienna szeroko¶æ jest ujemna, co spowoduje\n"
+"  przesuniêcie do strony lewej.\n"
+
+#: src/query.c:514
+msgid ""
+"Use --help for help about querying packages;\n"
+"Use --license for copyright license and lack of warranty (GNU GPL).\n"
+"\n"
+msgstr ""
+"U¿yj --help, aby uzyskaæ pomoc o wyszukiwanych pakietach;\n"
+"U¿yj --licence, aby uzyskaæ informacje o prawach autorskich i braku\n"
+"       gwarancji (GNU GPL).\n"
+
+#: src/remove.c:92
+#, c-format
+msgid ""
+"dpkg - warning: ignoring request to remove %.250s which isn't installed.\n"
+msgstr ""
+"dpkg - ostrze¿enie: zignorowanie ¿±dania usuniêcia %.250s, który nie jest "
+"zainstalowany.\n"
+
+#: src/remove.c:100
+#, c-format
+msgid ""
+"dpkg - warning: ignoring request to remove %.250s, only the config\n"
+" files of which are on the system.  Use --purge to remove them too.\n"
+msgstr ""
+"dpkg - ostrze¿enie: zignorowanie ¿±dania usuniêcia %.250s, poniewa¿\n"
+" w systemie s± tylko jego pliki konfiguracyjne. --purge usunie tak¿e te "
+"pliki.\n"
+
+#: src/remove.c:109
+msgid "This is an essential package - it should not be removed."
+msgstr "To jest istotny pakiet - nie powinien byæ usuwany."
+
+#: src/remove.c:135
+#, c-format
+msgid ""
+"dpkg: dependency problems prevent removal of %s:\n"
+"%s"
+msgstr ""
+"dpkg: problem z zale¿no¶ciami uniemo¿liwiaj± usuniêcie %s:\n"
+"%s"
+
+#: src/remove.c:137
+msgid "dependency problems - not removing"
+msgstr "problem z zale¿no¶ciami - nie bêdzie usuwany"
+
+#: src/remove.c:141
+#, c-format
+msgid ""
+"dpkg: %s: dependency problems, but removing anyway as you request:\n"
+"%s"
+msgstr ""
+"dpkg: %s: problem z zale¿no¶ciami, usuwanie wed³ug ¿±dania:\n"
+"%s"
+
+#: src/remove.c:149
+msgid ""
+"Package is in a very bad inconsistent state - you should\n"
+" reinstall it before attempting a removal."
+msgstr ""
+"Pakiet jest w z³ym stanie - powinien zostaæ przeinstalowany\n"
+" przed usuniêciem."
+
+#: src/remove.c:156
+#, c-format
+msgid "Would remove or purge %s ...\n"
+msgstr "Usuniêcie lub wyczyszczenie %s ...\n"
+
+#: src/remove.c:164
+#, c-format
+msgid "Removing %s ...\n"
+msgstr "Usuwanie %s ...\n"
+
+#: src/remove.c:257 src/remove.c:374
+#, c-format
+msgid ""
+"dpkg - warning: while removing %.250s, unable to remove directory `%.250s': %"
+"s - directory may be a mount point ?\n"
+msgstr ""
+"dpkg - ostrze¿enie: podczas usuwania %.250s nie mo¿na usun±æ katalogu `"
+"%.250s': %s - katalog mo¿e byæ punktem montowania?\n"
+
+#: src/remove.c:264 src/remove.c:381
+#, c-format
+msgid "cannot remove `%.250s'"
+msgstr "nie mo¿na usun±æ `%.250s'"
+
+#: src/remove.c:282
+#, c-format
+msgid "cannot remove file `%.250s'"
+msgstr "nie mo¿na usun±æ pliku `%.250s'"
+
+#: src/remove.c:315
+#, c-format
+msgid "unable to delete control info file `%.250s'"
+msgstr "nie mo¿na usun±æ pliku informacyjnego `%.250s'"
+
+#: src/remove.c:368
+#, c-format
+msgid ""
+"dpkg - warning: while removing %.250s, directory `%.250s' not empty so not "
+"removed.\n"
+msgstr ""
+"dpkg - ostrze¿enie: podczas usuwania %.250s, katalog `%.250s' nie by³ pusty, "
+"wiêc nie zosta³ usuniêty.\n"
+
+#: src/remove.c:404
+#, c-format
+msgid "Purging configuration files for %s ...\n"
+msgstr "Czyszczenie z plików konfiguracyjnych dla %s ...\n"
+
+#: src/remove.c:454
+#, c-format
+msgid "cannot remove old config file `%.250s' (= `%.250s')"
+msgstr ""
+"nie mo¿na usun±æ poprzedniego pliku konfiguracyjnego `%.250s' (= `%.250s')"
+
+#: src/remove.c:469
+#, c-format
+msgid "cannot read config file dir `%.250s' (from `%.250s')"
+msgstr ""
+"nie mo¿na odczytaæ katalogu starego pliku konfiguracyjnego `%.250s' (= `"
+"%.250s')"
+
+#: src/remove.c:504
+#, c-format
+msgid "cannot remove old backup config file `%.250s' (of `%.250s')"
+msgstr ""
+"nie mo¿na usun±æ kopii poprzedniego pliku konfiguracyjnego `%.250s' (= `"
+"%.250s')"
+
+#: src/remove.c:540
+#, c-format
+msgid "unable to check existence of `%.250s'"
+msgstr "nie mo¿na stwierdziæ istnienia `%.250s'"
+
+#: src/remove.c:575
+msgid "cannot remove old files list"
+msgstr "nie mo¿na usun±æ poprzedniej listy plików"
+
+#: src/remove.c:581
+msgid "can't remove old postrm script"
+msgstr "nie mo¿na usun±æ poprzedniego skryptu postrm"
+
+#: src/select.c:95
+msgid "--set-selections does not take any argument"
+msgstr "--set-selections wymaga niepodawania argumentu"
+
+#: src/select.c:114
+#, c-format
+msgid "unexpected eof in package name at line %d"
+msgstr "niespodziewany EOF w nazwie pakietu w linii %d"
+
+#: src/select.c:115
+#, c-format
+msgid "unexpected end of line in package name at line %d"
+msgstr "niespodziewany koniec linii w nazwie pakietu w linii %d"
+
+#: src/select.c:119
+#, c-format
+msgid "unexpected eof after package name at line %d"
+msgstr "niespodziewany EOF po nazwie pakietu w linii %d"
+
+#: src/select.c:120
+#, c-format
+msgid "unexpected end of line after package name at line %d"
+msgstr "niespodziewany koniec linii po nazwie pakietu w linii %d"
+
+#: src/select.c:129
+#, c-format
+msgid "unexpected data after package and selection at line %d"
+msgstr "niespodziewane dane po nazwie pakietu i wyborze w linii %d"
+
+#: src/select.c:134
+#, c-format
+msgid "illegal package name at line %d: %.250s"
+msgstr "nieprawid³owa nazwa pakietu w linii %d: %.250s"
+
+#: src/select.c:136
+#, c-format
+msgid "unknown wanted status at line %d: %.250s"
+msgstr "nieznany stan ¿±dania pakietu w linii %d: %.250s"
+
+#: src/select.c:142
+msgid "read error on standard input"
+msgstr "nie mo¿na odczytaæ standardowego wej¶cia"
+
+#: src/select.c:154
+msgid "--clear-selections does not take any argument"
+msgstr "--clear-selections wymaga niepodawania argumentu"
+
+#: src/update.c:44
+#, c-format
+msgid "--%s takes no arguments"
+msgstr "--%s wymaga niepodawania argumentu"
+
+#: src/update.c:48
+#, c-format
+msgid "--%s needs exactly one Packages file argument"
+msgstr "--%s wymaga podania dok³adnie jednej nazwy pliku pakietu"
+
+#: src/update.c:57
+msgid "unable to access dpkg status area for bulk available update"
+msgstr "brak dostêpu do katalogu administracyjnego dpkg"
+
+#: src/update.c:59
+msgid "bulk available update requires write access to dpkg status area"
+msgstr "brak praw zapisu do katalogu administracyjnego dpkg"
+
+#: src/update.c:66
+#, c-format
+msgid "Replacing available packages info, using %s.\n"
+msgstr "Zast±pienie informacji o dostêpnych pakietach, przy u¿yciu %s.\n"
+
+#: src/update.c:69
+#, c-format
+msgid "Updating available packages info, using %s.\n"
+msgstr "Zaktualizowanie informacji o dostêpnych pakietach, przy u¿yciu %s.\n"
+
+#: src/update.c:93
+#, c-format
+msgid "Information about %d package(s) was updated.\n"
+msgstr "Informacje o %d pakietach zosta³y zaktualizowane.\n"
+
+#: src/update.c:101
+msgid "--forget-old-unavail takes no arguments"
+msgstr "--forget-old-unavail wymaga niepodawania argumentu"
+
+#: dpkg-deb/build.c:67
+#, c-format
+msgid "dpkg-deb - error: %s (`%s') doesn't contain any digits\n"
+msgstr "dpkg-deb - b³±d: %s (`%s') nie zawiera ¿adnej cyfry\n"
+
+#: dpkg-deb/build.c:170
+msgid "--build needs a directory argument"
+msgstr "--build wymaga podania argumentu bêd±cego katalogiem"
+
+#: dpkg-deb/build.c:179
+msgid "--build takes at most two arguments"
+msgstr "--build wymaga podania najwy¿ej dwóch argumentów"
+
+#: dpkg-deb/build.c:183
+#, c-format
+msgid "unable to check for existence of archive `%.250s'"
+msgstr "nie mo¿na sprawdziæ istnienia archiwum `%.250s'"
+
+#: dpkg-deb/build.c:198
+msgid "target is directory - cannot skip control file check"
+msgstr "cel jest katalogiem - nie mo¿na dokonaæ sprawdzenia pliku kontrolnego"
+
+#: dpkg-deb/build.c:199
+#, c-format
+msgid ""
+"dpkg-deb: warning, not checking contents of control area.\n"
+"dpkg-deb: building an unknown package in `%s'.\n"
+msgstr ""
+"dpkg-deb: ostrze¿enie, zawarto¶æ pliku kontrolnego nie bêdzie sprawdzana.\n"
+"dpkg-deb: budowanie nieznanego pakietu w `%s'.\n"
+
+#: dpkg-deb/build.c:217
+msgid "package name has characters that aren't lowercase alphanums or `-+.'"
+msgstr ""
+"nazwa pakietu zawiera znaki nie bêd±ce ma³ymi literami, cyframi lub `-+.'"
+
+#: dpkg-deb/build.c:219
+#, c-format
+msgid "warning, `%s' contains user-defined Priority value `%s'\n"
+msgstr ""
+"ostrze¿enie, `%s' zawiera zdefiniowany przez u¿ytkownika Priorytet `%s'\n"
+
+#: dpkg-deb/build.c:224
+#, c-format
+msgid "warning, `%s' contains user-defined field `%s'\n"
+msgstr "ostrze¿enie, `%s' zawiera pole zdefiniowane przez u¿ytkownika `%s'\n"
+
+#: dpkg-deb/build.c:230
+#, c-format
+msgid "%d errors in control file"
+msgstr "%d b³êdów w pliku kontrolnym"
+
+#: dpkg-deb/build.c:241
+#, c-format
+msgid "dpkg-deb: building package `%s' in `%s'.\n"
+msgstr "dpkg-deb: budowanie pakietu `%s' w `%s'.\n"
+
+#: dpkg-deb/build.c:249
+#, c-format
+msgid "control directory has bad permissions %03lo (must be >=0755 and <=0775)"
+msgstr "katalog kontrolny ma z³e prawa %03lo (musz± byæ >=0755 oraz <=0775)"
+
+#: dpkg-deb/build.c:260
+#, c-format
+msgid "maintainer script `%.50s' is not a plain file or symlink"
+msgstr ""
+"skrypt instalacyjny `%.50s' nie jest plikiem ani symbolicznym dowi±zaniem"
+
+#: dpkg-deb/build.c:262
+#, c-format
+msgid ""
+"maintainer script `%.50s' has bad permissions %03lo (must be >=0555 and "
+"<=0775)"
+msgstr ""
+"skrypt instalacyjny `%.50s' ma z³e prawa %03lo (musz± byæ >=0555 oraz <=0775)"
+
+#: dpkg-deb/build.c:266
+#, c-format
+msgid "maintainer script `%.50s' is not stattable"
+msgstr "nie mo¿na sprawdziæ stanu skryptu instalacyjnego `%.50s'"
+
+#: dpkg-deb/build.c:276
+msgid "empty string from fgets reading conffiles"
+msgstr ""
+"funkcja `fgets' zwróci³a pusty ci±g znaków podczas odczytu pliku "
+"konfiguracyjnego"
+
+#: dpkg-deb/build.c:278
+#, c-format
+msgid ""
+"warning, conffile name `%.50s...' is too long, or missing final newline\n"
+msgstr ""
+"ostrze¿enie, nazwa pliku konfiguracyjnego `%.50s...' jest za d³uga lub brak "
+"w niej znaku koñca linii\n"
+
+#: dpkg-deb/build.c:291
+#, c-format
+msgid "warning, conffile filename `%s' contains trailing white spaces\n"
+msgstr "ostrze¿enie, nazwa pliku konfiguracyjnego `%s' koñczy siê spacjami\n"
+
+#: dpkg-deb/build.c:293
+#, c-format
+msgid "conffile `%.250s' does not appear in package"
+msgstr "plik konfiguracyjny `%.250s' nie zosta³ odnaleziony w pakiecie"
+
+#: dpkg-deb/build.c:295
+#, c-format
+msgid "conffile `%.250s' is not stattable"
+msgstr "nie mo¿na sprawdziæ stanu pliku konfiguracyjnego `%.250s'"
+
+#: dpkg-deb/build.c:297
+#, c-format
+msgid "warning, conffile `%s' is not a plain file\n"
+msgstr "ostrze¿enie, plik konfiguracyjny `%s' nie jest plikiem\n"
+
+#: dpkg-deb/build.c:302
+msgid "error reading conffiles file"
+msgstr "nie mo¿na odczytaæ pliku konfiguracyjnego"
+
+#: dpkg-deb/build.c:305
+msgid "error opening conffiles file"
+msgstr "nie mo¿na otworzyæ pliku konfiguracyjnego"
+
+#: dpkg-deb/build.c:308
+#, c-format
+msgid "dpkg-deb: ignoring %d warnings about the control file(s)\n"
+msgstr "dpkg-deb: zignorowanie %d ostrze¿eñ na temat plików informacyjnych\n"
+
+#: dpkg-deb/build.c:318
+#, c-format
+msgid "unable to unbuffer `%.255s'"
+msgstr "nie mo¿na wykonaæ funkcji `setvbuf' dla `%.255s'"
+
+#: dpkg-deb/build.c:323 dpkg-deb/build.c:396 dpkg-deb/build.c:417
+#, c-format
+msgid "failed to chdir to `%.255s'"
+msgstr "nie mo¿na zmieniæ katalogu na `%.255s'"
+
+#: dpkg-deb/build.c:324
+msgid "failed to chdir to .../DEBIAN"
+msgstr "nie mo¿na zmieniæ katalogu na .../DEBIAN"
+
+#: dpkg-deb/build.c:325 dpkg-deb/build.c:398
+msgid "failed to exec tar -cf"
+msgstr "nie mo¿na wykonaæ `tar -cf'"
+
+#: dpkg-deb/build.c:331
+msgid "failed to make tmpfile (control)"
+msgstr "nie mo¿na utworzyæ tymczasowego pliku (control)"
+
+#: dpkg-deb/build.c:332
+#, c-format
+msgid "failed to open tmpfile (control), %s"
+msgstr "nie mo¿na otworzyæ tymczasowego pliku (control), %s"
+
+#: dpkg-deb/build.c:335
+#, c-format
+msgid "failed to unlink tmpfile (control), %s"
+msgstr "nie mo¿na usun±æ tymczasowego pliku (control), %s"
+
+#: dpkg-deb/build.c:343 dpkg-deb/build.c:372
+msgid "control"
+msgstr "control"
+
+#: dpkg-deb/build.c:348
+msgid "failed to fstat tmpfile (control)"
+msgstr "nie mo¿na sprawdziæ stanu tymczasowego pliku (control)"
+
+#: dpkg-deb/build.c:371
+msgid "failed to rewind tmpfile (control)"
+msgstr "nie mo¿na przewin±æ tymczasowego pliku (control)"
+
+#: dpkg-deb/build.c:379
+msgid "failed to make tmpfile (data)"
+msgstr "nie mo¿na utworzyæ tymczasowego pliku (data)"
+
+#: dpkg-deb/build.c:380
+#, c-format
+msgid "failed to open tmpfile (data), %s"
+msgstr "nie mo¿na otworzyæ tymczasowego pliku (data), %s"
+
+#: dpkg-deb/build.c:383
+#, c-format
+msgid "failed to unlink tmpfile (data), %s"
+msgstr "nie mo¿na usun±æ tymczasowego pliku (data), %s"
+
+#: dpkg-deb/build.c:407 dpkg-deb/extract.c:274
+msgid "data"
+msgstr "dane"
+
+#: dpkg-deb/build.c:419
+msgid "failed to exec find"
+msgstr "nie mo¿na wywo³aæ `find'"
+
+#: dpkg-deb/build.c:430 dpkg-deb/build.c:437
+msgid "failed to write filename to tar pipe (data)"
+msgstr "nie mo¿na pisaæ nazwy pliku do potoku do programu tar (dane)"
+
+#: dpkg-deb/build.c:451
+#, c-format
+msgid "Internal error, compress_type `%i' unknown!"
+msgstr "B³±d wewnêtrzny, compress_type '%i' nieznany!"
+
+#: dpkg-deb/build.c:463
+msgid "failed to rewind tmpfile (data)"
+msgstr "nie mo¿na przewin±æ tymczasowego pliku dla archiwum z danymi"
+
+#: dpkg-deb/build.c:464
+msgid "cat (data)"
+msgstr "cat (dane)"
+
+#: dpkg-deb/extract.c:51
+msgid "failed to exec sh -c mv foo/* &c"
+msgstr "nie mo¿na wywo³aæ `sh -c mv foo/* &c'"
+
+#: dpkg-deb/extract.c:59
+#, c-format
+msgid "error reading %s from file %.255s"
+msgstr "nie mo¿na odczytaæ %s z pliku %.255s"
+
+#: dpkg-deb/extract.c:61
+#, c-format
+msgid "unexpected end of file in %s in %.255s"
+msgstr "niespodziewany koniec linii w %s w %.255s"
+
+#: dpkg-deb/extract.c:72 dpkg-split/info.c:52
+#, c-format
+msgid "file `%.250s' is corrupt - %.250s length contains nulls"
+msgstr ""
+"plik `%.250s' jest uszkodzony - liczba d³ugo¶ci %.250s zawiera puste znaki"
+
+#: dpkg-deb/extract.c:79 dpkg-split/info.c:43
+#, c-format
+msgid "file `%.250s' is corrupt - bad digit (code %d) in %s"
+msgstr "plik `%.250s' jest uszkodzony - z³a cyfra (kod %d) w %s"
+
+#: dpkg-deb/extract.c:104
+#, c-format
+msgid "failed to read archive `%.255s'"
+msgstr "nie mo¿na odczytaæ archiwum `%.255s'"
+
+#: dpkg-deb/extract.c:105
+msgid "failed to fstat archive"
+msgstr "nie mo¿na sprawdziæ stanu archiwum"
+
+#: dpkg-deb/extract.c:106
+msgid "version number"
+msgstr "numer wersji"
+
+#: dpkg-deb/extract.c:115
+msgid "between members"
+msgstr "pomiêdzy cz³onami"
+
+#: dpkg-deb/extract.c:117 dpkg-split/info.c:95
+#, c-format
+msgid "file `%.250s' is corrupt - bad magic at end of first header"
+msgstr ""
+"plik `%.250s' jest uszkodzony - z³a liczba magiczna na koñcu pierwszego "
+"nag³ówka"
+
+#: dpkg-deb/extract.c:121
+#, c-format
+msgid "file `%.250s' is corrupt - negative member length %zi"
+msgstr "plik `%.250s' jest uszkodzony - ujemna liczba d³ugo¶ci %zi"
+
+#: dpkg-deb/extract.c:125
+#, c-format
+msgid "file `%.250s' is not a debian binary archive (try dpkg-split?)"
+msgstr "plik `%.250s' nie jest archiwum binarnym Debiana (mo¿e dpkg-split?)"
+
+#: dpkg-deb/extract.c:128
+msgid "header info member"
+msgstr "cz³on informacji nag³ówkowej"
+
+#: dpkg-deb/extract.c:131
+msgid "archive has no newlines in header"
+msgstr "archiwum nie zawiera znaków nowej linii w nag³ówku"
+
+#: dpkg-deb/extract.c:134
+msgid "archive has no dot in version number"
+msgstr "archiwum nie zawiera kropki w numerze wersji"
+
+#: dpkg-deb/extract.c:137
+#, c-format
+msgid "archive version %.250s not understood, get newer dpkg-deb"
+msgstr ""
+"archiwum w wersji %.250s jest nie obs³ugiwane, potrzebny jest nowy dpkg-deb"
+
+#: dpkg-deb/extract.c:146 dpkg-deb/extract.c:175
+#, c-format
+msgid "skipped member data from %s"
+msgstr "pominiêto dane cz³onu z %s"
+
+#: dpkg-deb/extract.c:165
+#, c-format
+msgid "file `%.250s' contains ununderstood data member %.*s, giving up"
+msgstr "plik `%.250s' zawiera nierozpoznane archiwum z danymi %.*s"
+
+#: dpkg-deb/extract.c:171
+#, c-format
+msgid "file `%.250s' contains two control members, giving up"
+msgstr "plik `%.250s' zawiera dwa archiwa kontrolne"
+
+#: dpkg-deb/extract.c:183
+#, c-format
+msgid ""
+" new debian package, version %s.\n"
+" size %ld bytes: control archive= %zi bytes.\n"
+msgstr ""
+" nowy pakiet debiana, wersja %s.\n"
+" rozmiar %ld bajtów: archiwum kontrolne= %zi bytes.\n"
+
+#: dpkg-deb/extract.c:195
+msgid "control information length"
+msgstr "d³ugo¶æ informacji kontrolnej"
+
+#: dpkg-deb/extract.c:197
+#, c-format
+msgid "archive has malformatted control length `%s'"
+msgstr "archiwum ma uszkodzon± d³ugo¶æ kontroln± `%s'"
+
+#: dpkg-deb/extract.c:200
+#, c-format
+msgid ""
+" old debian package, version %s.\n"
+" size %ld bytes: control archive= %zi, main archive= %ld.\n"
+msgstr ""
+" poprzedni pakiet debiana, wersja %s.\n"
+" rozmiar %ld bajtów: archiwum kontrolne= %zi, archiwum z danymi= %ld.\n"
+
+#: dpkg-deb/extract.c:208
+msgid "failed allocating memory for variable `ctrlarea'"
+msgstr "b³±d przydzielania pamiêci dla zmiennej `ctrlarea'"
+
+#: dpkg-deb/extract.c:211
+msgid "control area"
+msgstr "obszar kontrolny"
+
+#: dpkg-deb/extract.c:217
+#, c-format
+msgid ""
+"dpkg-deb: file looks like it might be an archive which has been\n"
+"dpkg-deb:    corrupted by being downloaded in ASCII mode\n"
+msgstr ""
+"dpkg-deb: plik wygl±da na archiwum, które zosta³o uszkodzone podczas\n"
+"dpkg-deb:    transferu FTP dokonanego w trybie ASCII\n"
+
+#: dpkg-deb/extract.c:222
+#, c-format
+msgid "`%.255s' is not a debian format archive"
+msgstr "`%.255s' nie jest plikiem archiwum Debiana"
+
+#: dpkg-deb/extract.c:228
+msgid "failed getting the current file position"
+msgstr "b³±d pobierania bie¿±cej pozycji w pliku"
+
+#: dpkg-deb/extract.c:233
+msgid "failed setting the current file position"
+msgstr "b³±d ustawiania bie¿±cej pozycji w pliku"
+
+#: dpkg-deb/extract.c:242
+msgid "failed to open pipe descriptor `1' in paste"
+msgstr "nie mo¿na otworzyæ deskryptora potoku `1' dla funkcji `paste'"
+
+#: dpkg-deb/extract.c:244
+msgid "failed to write to gzip -dc"
+msgstr "nie mo¿na zapisaæ potoku dla `gzip -dc'"
+
+#: dpkg-deb/extract.c:245
+msgid "failed to close gzip -dc"
+msgstr "nie mo¿na zamkn±æ potoku dla `gzip -dc'"
+
+#: dpkg-deb/extract.c:252
+msgid "failed to syscall lseek to files archive portion"
+msgstr "nie mo¿na wykonaæ funkcji `syscall' dla `lseek'"
+
+#: dpkg-deb/extract.c:260
+msgid "failed to write to pipe in copy"
+msgstr "nie mo¿na zapisaæ potoku dla funkcji `copy'"
+
+#: dpkg-deb/extract.c:261
+msgid "failed to close pipe in copy"
+msgstr "nie mo¿na zamkn±æ potoku dla funkcji `copy'"
+
+#: dpkg-deb/extract.c:282
+msgid "failed to create directory"
+msgstr "nie mo¿na utworzyæ katalogu"
+
+#: dpkg-deb/extract.c:283
+msgid "failed to chdir to directory after creating it"
+msgstr "nie mo¿na zmieniæ katalogu po jego utworzeniu"
+
+#: dpkg-deb/extract.c:285
+msgid "failed to chdir to directory"
+msgstr "nie mo¿na zmieniæ katalogu bie¿±cego"
+
+#: dpkg-deb/extract.c:299
+msgid "failed to exec tar"
+msgstr "nie mo¿na wywo³aæ `tar'"
+
+#: dpkg-deb/extract.c:322 dpkg-deb/extract.c:337 dpkg-deb/info.c:68
+#, c-format
+msgid "--%s needs a .deb filename argument"
+msgstr "--%s wymaga podania nazwy pliku .deb"
+
+#: dpkg-deb/extract.c:325
+#, c-format
+msgid ""
+"--%s needs a target directory.\n"
+"Perhaps you should be using dpkg --install ?"
+msgstr ""
+"--%s wymaga podania katalogu docelowego.\n"
+"Byæ mo¿e nale¿y u¿yæ dpkg --install"
+
+#: dpkg-deb/extract.c:328
+#, c-format
+msgid "--%s takes at most two arguments (.deb and directory)"
+msgstr "--%s wymaga podania co najwy¿ej dwóch argumentów (.deb oraz katalogu)"
+
+#: dpkg-deb/extract.c:339
+#, c-format
+msgid "--%s takes only one argument (.deb filename)"
+msgstr "--%s wymaga podania jednego argumentu (nazwy pliku .deb)"
+
+#: dpkg-deb/info.c:49
+msgid "failed to chdir to `/' for cleanup"
+msgstr "nie mo¿na zmieniæ katalogu na `/' przy czyszczeniu ¶rodowiska"
+
+#: dpkg-deb/info.c:51
+msgid "failed to fork for cleanup"
+msgstr "nie mo¿na wywo³aæ funkcji `fork' przy czyszczeniu ¶rodowiska"
+
+#: dpkg-deb/info.c:56
+msgid "failed to wait for rm cleanup"
+msgstr "nie mo¿na wykonaæ funkcji `wait' przy czyszczeniu ¶rodowiska"
+
+#: dpkg-deb/info.c:57
+#, c-format
+msgid "rm cleanup failed, code %d\n"
+msgstr "nie mo¿na wyczy¶ciæ ¶rodowiska, `rm' zwróci³ kod b³êdu %d\n"
+
+#: dpkg-deb/info.c:71
+msgid "failed to make temporary directoryname"
+msgstr "utworzenie tymczasowego katalogu nie powiod³o siê"
+
+#: dpkg-deb/info.c:75
+msgid "failed to exec rm -rf"
+msgstr "nie mo¿na wywo³aæ `rm -rf'"
+
+#: dpkg-deb/info.c:107
+msgid "info_spew"
+msgstr "info_spew"
+
+#: dpkg-deb/info.c:109
+#, c-format
+msgid "dpkg-deb: `%.255s' contains no control component `%.255s'\n"
+msgstr "dpkg-deb: `%.255s' nie zawiera pliku informacyjnego `%.255s'\n"
+
+#: dpkg-deb/info.c:113
+#, c-format
+msgid "open component `%.255s' (in %.255s) failed in an unexpected way"
+msgstr ""
+"nie mo¿na otworzyæ pliku informacyjnego `%.255s' (w %.255s) z nieokre¶lonego "
+"powodu"
+
+#: dpkg-deb/info.c:119
+msgid "One requested control component is missing"
+msgstr "Brak jednego pliku informacyjnego"
+
+#: dpkg-deb/info.c:121
+#, c-format
+msgid "%d requested control components are missing"
+msgstr "Brak %d plików informacyjnych"
+
+#: dpkg-deb/info.c:134
+#, c-format
+msgid "cannot scan directory `%.255s'"
+msgstr "nie mo¿na przeszukaæ katalogu `%.255s'"
+
+#: dpkg-deb/info.c:139
+#, c-format
+msgid "cannot stat `%.255s' (in `%.255s')"
+msgstr "nie mo¿na sprawdziæ stanu `%.255s' (w `%.255s')"
+
+#: dpkg-deb/info.c:142
+#, c-format
+msgid "cannot open `%.255s' (in `%.255s')"
+msgstr "nie mo¿na otworzyæ `%.255s' (w `%.255s')"
+
+#: dpkg-deb/info.c:156
+#, c-format
+msgid "failed to read `%.255s' (in `%.255s')"
+msgstr "nie mo¿na odczytaæ `%.255s' (w `%.255s')"
+
+#: dpkg-deb/info.c:159
+#, c-format
+msgid " %7ld bytes, %5d lines   %c  %-20.127s %.127s\n"
+msgstr " %7ld bajtów, %5d linii   %c  %-20.127s %.127s\n"
+
+#: dpkg-deb/info.c:165
+#, c-format
+msgid "     not a plain file          %.255s\n"
+msgstr "     nie jest plikiem          %.255s\n"
+
+#: dpkg-deb/info.c:170
+#, c-format
+msgid "failed to read `control' (in `%.255s')"
+msgstr "nie mo¿na odczytaæ `control' (w `%.255s')"
+
+#: dpkg-deb/info.c:171
+msgid "(no `control' file in control archive!)\n"
+msgstr "(brak pliku `control' w archiwum kontrolnym!)\n"
+
+#: dpkg-deb/info.c:191
+msgid "could not open the `control' component"
+msgstr "nie mo¿na otworzyæ pliku kontrolnego `control'"
+
+#: dpkg-deb/info.c:221
+msgid "failed during read of `control' component"
+msgstr "nie mo¿na odczytaæ pliku kontrolnego `control'"
+
+#: dpkg-deb/info.c:232
+msgid "Error in format"
+msgstr "B³±d w formacie"
+
+#: dpkg-deb/info.c:268
+msgid "--contents takes exactly one argument"
+msgstr "--contents wymaga podania dok³adnie jednego argumentu"
+
+#: dpkg-deb/main.c:46
+#, c-format
+msgid "Debian `%s' package archive backend version %s.\n"
+msgstr "Debian `%s', program do zarz±dzania pakietami, wersja %s.\n"
+
+#: dpkg-deb/main.c:60
+#, c-format
+msgid ""
+"Commands:\n"
+"  -b|--build <directory> [<deb>]   Build an archive.\n"
+"  -c|--contents <deb>              List contents.\n"
+"  -I|--info <deb> [<cfile> ...]    Show info to stdout.\n"
+"  -W|--show <deb>                  Show information on package(s)\n"
+"  -f|--field <deb> [<cfield> ...]  Show field(s) to stdout.\n"
+"  -e|--control <deb> [<directory>] Extract control info.\n"
+"  -x|--extract <deb> <directory>   Extract files.\n"
+"  -X|--vextract <deb> <directory>  Extract & list files.\n"
+"  --fsys-tarfile <deb>             Output filesystem tarfile.\n"
+"\n"
+msgstr ""
+"Polecenia:\n"
+"  -b|--build <katalog> [<deb>]       Budowanie archiwum.\n"
+"  -c|--contents <deb>                Wypisanie zawarto¶ci.\n"
+"  -I|--info <deb> [<plikkontr>...]   Podanie informacji na stdout.\n"
+"  -W|--show <deb>                    Podanie informacji o pakiecie(-ach).\n"
+"  -f|--field <deb> [<polekontr>...]  Podanie pól kontr. na stdout.\n"
+"  -e|--control <deb> [<katalog>]     Rozpakowanie plików kontrolnych.\n"
+"  -x|--extract <deb> <katalog>       Rozpakowanie plików archiw.\n"
+"  -X|--vextract <deb> <katalog>      Rozpak. i wypisanie plików.\n"
+"  --fsys-tarfile <deb>               Podanie plików archiwum tar.\n"
+"\n"
+
+#: dpkg-deb/main.c:79
+#, c-format
+msgid ""
+"<deb> is the filename of a Debian format archive.\n"
+"<cfile> is the name of an administrative file component.\n"
+"<cfield> is the name of a field in the main `control' file.\n"
+"\n"
+msgstr ""
+"<deb> jest nazw± pliku w formacie archiwum Debiana.\n"
+"<plikkontr> jest nazw± pliku informacyjnego.\n"
+"<polekontr> jest nazw± pola g³ównego pliku `control'.\n"
+"\n"
+
+#: dpkg-deb/main.c:85
+#, c-format
+msgid ""
+"Options:\n"
+"  --showformat=<format>            Use alternative format for --show.\n"
+"  -D                               Enable debugging output.\n"
+"  --old, --new                     Select archive format.\n"
+"  --nocheck                        Suppress control file check (build bad\n"
+"                                     packages).\n"
+"  -z#                              Set the compression level when building.\n"
+"  -Z<type>                         Set the compression type used when "
+"building.\n"
+"                                     Allowed values: gzip, bzip2, none.\n"
+"\n"
+msgstr ""
+"Opcje:\n"
+"  --showformat=<format>  U¿ywa innego formatu dla --show.\n"
+"  -D                     W³±czenie debuggera.\n"
+"  --old, --new           Wybiera format archiwum.\n"
+"  --nocheck              Brak sprawdzania pól kontrolnych (tworzy z³e\n"
+"                           pakiety).\n"
+"  -z#                    Okre¶lenie stopnia kompresji dla budowanego "
+"pakietu.\n"
+"  -Z<typ>                Ustawia rodzaj kompresji podczas budowania.\n"
+"                         Dozwolone warto¶ci: gzip, bzip2, none.\n"
+"\n"
+
+#: dpkg-deb/main.c:106
+#, c-format
+msgid ""
+"\n"
+"Use `dpkg' to install and remove packages from your system, or\n"
+"`dselect' or `aptitude' for user-friendly package management.  Packages\n"
+"unpacked using `dpkg-deb --extract' will be incorrectly installed !\n"
+msgstr ""
+"\n"
+"U¿yj `dpkg', aby zainstalowaæ lub usun±æ pakiety z systemu, lub\n"
+"`dselect' lub 'aptitude', je¶li potrzebujesz wygodnego programu\n"
+"do zarz±dzania pakietami. Pakiety rozpakowane poleceniem\n"
+"`dpkg-deb --extract' nie bêd± poprawnie zainstalowane!\n"
+
+#: dpkg-deb/main.c:115
+msgid ""
+"Type dpkg-deb --help for help about manipulating *.deb files;\n"
+"Type dpkg --help for help about installing and deinstalling packages."
+msgstr ""
+"Wpisz dpkg-deb --help, aby dowiedzieæ siê jak operowaæ plikami *.deb;\n"
+"Wpisz dpkg --help, aby dowiedzieæ siê jak (od)instalowaæ pakiety."
+
+#: dpkg-deb/main.c:192
+#, c-format
+msgid "unknown compression type `%s'!"
+msgstr "nieznany typ kompresji `%s'!"
+
+#: dpkg-split/info.c:64
+#, c-format
+msgid "file `%.250s' is corrupt - %.250s missing"
+msgstr "plik `%.250s' jest uszkodzony - brakuje %.250s"
+
+#: dpkg-split/info.c:67
+#, c-format
+msgid "file `%.250s' is corrupt - missing newline after %.250s"
+msgstr "plik `%.250s' jest uszkodzony - brakuje znaku nowej linii po %.250s"
+
+#: dpkg-split/info.c:91
+msgid "unable to seek back"
+msgstr "nie mo¿na cofn±æ pliku"
+
+#: dpkg-split/info.c:105
+#, c-format
+msgid "file `%.250s' is corrupt - bad padding character (code %d)"
+msgstr "plik `%.250s' jest uszkodzony - z³y znak (kod %d)"
+
+#: dpkg-split/info.c:109
+#, c-format
+msgid "file `%.250s' is corrupt - nulls in info section"
+msgstr "plik `%.250s' jest uszkodzony - puste znaki w sekcji informacyjnej"
+
+#: dpkg-split/info.c:116
+#, c-format
+msgid "file `%.250s' is format version `%.250s' - you need a newer dpkg-split"
+msgstr ""
+"plik `%.250s' jest w formacie wersji `%.250s' - potrzebny jest nowszy dpkg-"
+"split"
+
+#: dpkg-split/info.c:124
+#, c-format
+msgid "file `%.250s' is corrupt - bad MD5 checksum `%.250s'"
+msgstr "plik `%.250s' jest uszkodzony - z³y skrót MD5 `%.250s'"
+
+#: dpkg-split/info.c:131
+#, c-format
+msgid "file `%.250s' is corrupt - no slash between part numbers"
+msgstr "plik `%.250s' jest uszkodzony - brak uko¶nika miêdzy numerami czê¶ci"
+
+#: dpkg-split/info.c:140
+#, c-format
+msgid "file `%.250s' is corrupt - bad part number"
+msgstr "plik `%.250s' jest uszkodzony - z³y numer czê¶ci"
+
+#: dpkg-split/info.c:145
+#, c-format
+msgid "file `%.250s' is corrupt - bad magic at end of second header"
+msgstr ""
+"plik `%.250s' jest uszkodzony - z³a liczba magiczna na koñcu drugiego "
+"nag³ówka"
+
+#: dpkg-split/info.c:147
+#, c-format
+msgid "file `%.250s' is corrupt - second member is not data member"
+msgstr "plik `%.250s' jest uszkodzony - drugi cz³on nie jest cz³onem z danymi"
+
+#: dpkg-split/info.c:153
+#, c-format
+msgid "file `%.250s' is corrupt - wrong number of parts for quoted sizes"
+msgstr ""
+"plik `%.250s' jest uszkodzony - z³a ilo¶æ czê¶ci dla wybranego rozmiaru"
+
+#: dpkg-split/info.c:157
+#, c-format
+msgid "file `%.250s' is corrupt - size is wrong for quoted part number"
+msgstr "plik `%.250s' jest uszkodzony - z³y rozmiar dla wybranej ilo¶ci czê¶ci"
+
+#: dpkg-split/info.c:163
+#, c-format
+msgid "unable to fstat part file `%.250s'"
+msgstr "nie mo¿na zbadaæ stanu pliku czê¶ci `%.250s'"
+
+#: dpkg-split/info.c:169
+#, c-format
+msgid "file `%.250s' is corrupt - too short"
+msgstr "plik `%.250s' jest uszkodzony - za krótki"
+
+#: dpkg-split/info.c:181 dpkg-split/info.c:222
+#, c-format
+msgid "cannot open archive part file `%.250s'"
+msgstr "nie mo¿na otworzyæ pliku czê¶ci `%.250s'"
+
+#: dpkg-split/info.c:183
+#, c-format
+msgid "file `%.250s' is not an archive part"
+msgstr "plik `%.250s' nie jest czê¶ci± archiwum"
+
+#: dpkg-split/info.c:188
+#, c-format
+msgid ""
+"%s:\n"
+"    Part format version:            %s\n"
+"    Part of package:                %s\n"
+"        ... version:                %s\n"
+"        ... MD5 checksum:           %s\n"
+"        ... length:                 %lu bytes\n"
+"        ... split every:            %lu bytes\n"
+"    Part number:                    %d/%d\n"
+"    Part length:                    %zi bytes\n"
+"    Part offset:                    %lu bytes\n"
+"    Part file size (used portion):  %lu bytes\n"
+"\n"
+msgstr ""
+"%s:\n"
+"    Wersja formatu czê¶ci:          %s\n"
+"    Czê¶æ pakietu:                  %s\n"
+"        ... wersja:                 %s\n"
+"        ... skrót MD5:              %s\n"
+"        ... d³ugo¶æ:                %lu bajtów\n"
+"        ... podzielony co:          %lu bajtów\n"
+"    Numer czê¶ci:                   %d/%d\n"
+"    D³ugo¶æ czê¶ci:                 %zi bajtów\n"
+"    Offset czê¶ci:                  %lu bajtów\n"
+"    Rozmiar pliku czê¶ci (u¿yta):   %lu bajtów\n"
+"\n"
+
+#: dpkg-split/info.c:218
+msgid "--info requires one or more part file arguments"
+msgstr ""
+"--info wymaga podania co najmniej jednego argumentu bêd±cego plikiem czê¶ci"
+
+#: dpkg-split/info.c:228
+#, c-format
+msgid "file `%s' is not an archive part\n"
+msgstr "plik `%s' nie jest czê¶ci± archiwum\n"
+
+#: dpkg-split/join.c:48
+#, c-format
+msgid "unable to open output file `%.250s'"
+msgstr "nie mo¿na otworzyæ pliku wyj¶ciowego `%.250s'"
+
+#: dpkg-split/join.c:52
+#, c-format
+msgid "unable to (re)open input part file `%.250s'"
+msgstr "nie mo¿na otworzyæ pliku wej¶ciowego czê¶ci archiwum `%.250s'"
+
+#: dpkg-split/join.c:68
+#, c-format
+msgid "done\n"
+msgstr "zrobione\n"
+
+#: dpkg-split/join.c:84
+#, c-format
+msgid "files `%.250s' and `%.250s' are not parts of the same file"
+msgstr "plik `%.250s' oraz `%.250s' nie s± czê¶ciami tego samego archiwum"
+
+#: dpkg-split/join.c:89
+#, c-format
+msgid "there are several versions of part %d - at least `%.250s' and `%.250s'"
+msgstr ""
+"jest kilka ró¿nych wersji czê¶ci %d - przynajmniej `%.250s' oraz `%.250s'"
+
+#: dpkg-split/join.c:102
+msgid "--join requires one or more part file arguments"
+msgstr ""
+"--join wymaga podania co najmniej jednego argumentu bêd±cego plikiem czê¶ci"
+
+#: dpkg-split/join.c:123
+#, c-format
+msgid "part %d is missing"
+msgstr "brakuje czê¶ci %d"
+
+#: dpkg-split/main.c:38
+#, c-format
+msgid "Debian `%s' package split/join tool; version %s.\n"
+msgstr "Debian `%s', program do dzielenia/³±czenia pakietów, wersja %s.\n"
+
+#: dpkg-split/main.c:40
+#, c-format
+msgid "Copyright (C) 1994-1996 Ian Jackson.\n"
+msgstr "Copyright (C) 1994-1996 Ian Jackson.\n"
+
+#: dpkg-split/main.c:53
+#, c-format
+msgid ""
+"Commands:\n"
+"  -s|--split <file> [<prefix>]     Split an archive.\n"
+"  -j|--join <part> <part> ...      Join parts together.\n"
+"  -I|--info <part> ...             Display info about a part.\n"
+"  -a|--auto -o <complete> <part>   Auto-accumulate parts.\n"
+"  -l|--listq                       List unmatched pieces.\n"
+"  -d|--discard [<filename> ...]    Discard unmatched pieces.\n"
+"\n"
+msgstr ""
+"Polecenia:\n"
+"  -s|--split <plik> [<prefiks>]  Podziel archiwum.\n"
+"  -j|--join <czê¶æ> <czê¶æ> ...  Po³±cz czê¶ci archiwum.\n"
+"  -I|--info <czê¶æ> ...          Wy¶wietl info o czê¶ci.\n"
+"  -a|--auto -o <komplet> <czê¶æ> Automatyczne ³±czenie czê¶ci.\n"
+"  -l|--listq                     Lista niepasuj±cych czê¶ci.\n"
+"  -d|--discard [<plik> ...]      Usuniêcie niepasuj±cych czê¶ci.\n"
+"\n"
+
+#: dpkg-split/main.c:69
+#, c-format
+msgid ""
+"Options:\n"
+"  --depotdir <directory>           Use <directory> instead of %s/%s.\n"
+"  -S|--partsize <size>             In KiB, for -s (default is 450).\n"
+"  -o|--output <file>               For -j (default is <package>-<version>."
+"deb).\n"
+"  -Q|--npquiet                     Be quiet when -a is not a part.\n"
+"  --msdos                          Generate 8.3 filenames.\n"
+"\n"
+"Exit status: 0 = OK;  1 = -a is not a part;  2 = trouble!\n"
+msgstr ""
+"Opcje:\n"
+"  --depotdir <katalog>           U¿yj <katalogu> zamiast %s/%s.\n"
+"  -S|--partsize <rozmiar>        W kB, dla -s (domy¶lnie jest 450)\n"
+"  -o|--output <plik>             Dla -j (domy¶lnie <pakiet>-<wersja>.deb).\n"
+"  -Q|--npquiet                   Brak komunikatu, gdy -a nie jest czê¶ci±.\n"
+"  --msdos                        Tworzenie nazw plików w formacie 8.3.\n"
+"\n"
+"Kod powrotu: 0 = OK;  1 = -a nie jest czê¶ci±;  2 = problem!\n"
+
+#: dpkg-split/main.c:81
+msgid "Type dpkg-split --help for help."
+msgstr "Wpisz dpkg-split --help, aby otrzymaæ pomoc."
+
+#: dpkg-split/main.c:91
+#, c-format
+msgid "error reading %s"
+msgstr "b³±d odczytu %s"
+
+#: dpkg-split/main.c:95
+#, c-format
+msgid "error reading %.250s"
+msgstr "b³±d odczytu %.250s"
+
+#: dpkg-split/main.c:96
+#, c-format
+msgid "unexpected end of file in %.250s"
+msgstr "niespodziewany koniec pliku dla %.250s"
+
+#: dpkg-split/main.c:116
+msgid "part size is far too large or is not positive"
+msgstr "rozmiar czê¶ci jest za du¿y lub jest liczb± ujemn±"
+
+#: dpkg-split/main.c:120
+#, c-format
+msgid "part size must be at least %dk (to allow for header)"
+msgstr "rozmiar czê¶ci musi mieæ co najmniej %dk"
+
+#: dpkg-split/queue.c:69
+#, c-format
+msgid "unable to read depot directory `%.250s'"
+msgstr "nie mo¿na odczytaæ katalogu czê¶ci `%.250s'"
+
+#: dpkg-split/queue.c:107
+msgid "--auto requires the use of the --output option"
+msgstr "--auto wymaga u¿ycia opcji --output"
+
+#: dpkg-split/queue.c:109
+msgid "--auto requires exactly one part file argument"
+msgstr "--auto wymaga podania dok³adnie jednego pliku czê¶ci"
+
+#: dpkg-split/queue.c:113
+#, c-format
+msgid "unable to read part file `%.250s'"
+msgstr "nie mo¿na odczytaæ pliku czê¶ci `%.250s'"
+
+#: dpkg-split/queue.c:116
+#, c-format
+msgid "File `%.250s' is not part of a multipart archive.\n"
+msgstr "Plik `%.250s' nie jest czê¶ci± archiwum.\n"
+
+#: dpkg-split/queue.c:143
+#, c-format
+msgid "unable to reopen part file `%.250s'"
+msgstr "nie mo¿na otworzyæ pliku czê¶ci `%.250s'"
+
+#: dpkg-split/queue.c:147
+#, c-format
+msgid "part file `%.250s' has trailing garbage"
+msgstr "plik czê¶ci `%.250s' zawiera ¶mieci"
+
+#: dpkg-split/queue.c:156
+#, c-format
+msgid "unable to open new depot file `%.250s'"
+msgstr "nie mo¿na otworzyæ nowego pliku czê¶ci `%.250s'"
+
+#: dpkg-split/queue.c:160
+#, c-format
+msgid "unable to rename new depot file `%.250s' to `%.250s'"
+msgstr "nie mo¿na zmieniæ nazwy nowego pliku czê¶ci z `%.250s' na `%.250s'"
+
+#: dpkg-split/queue.c:162
+#, c-format
+msgid "Part %d of package %s filed (still want "
+msgstr "Czê¶æ %d pakietu %s odnaleziona (wci±¿ potrzeba "
+
+#: dpkg-split/queue.c:166
+msgid " and "
+msgstr " oraz "
+
+#: dpkg-split/queue.c:179
+#, c-format
+msgid "unable to delete used-up depot file `%.250s'"
+msgstr "nie mo¿na usuwaæ u¿ytego pliku czê¶ci `%.250s'"
+
+#: dpkg-split/queue.c:194
+msgid "--listq does not take any arguments"
+msgstr "--listq wymaga niepodawania argumentu"
+
+#: dpkg-split/queue.c:197
+msgid "Junk files left around in the depot directory:\n"
+msgstr "W katalogu czê¶ci znajduj± siê pliki zawieraj±ce ¶mieci:\n"
+
+#: dpkg-split/queue.c:202 dpkg-split/queue.c:226
+#, c-format
+msgid "unable to stat `%.250s'"
+msgstr "nie mo¿na sprawdziæ stanu `%.250s'"
+
+#: dpkg-split/queue.c:205
+#, c-format
+msgid " %s (%lu bytes)\n"
+msgstr " %s (%lu bajtów)\n"
+
+#: dpkg-split/queue.c:207
+#, c-format
+msgid " %s (not a plain file)\n"
+msgstr " %s (nie jest plikiem)\n"
+
+#: dpkg-split/queue.c:212
+msgid "Packages not yet reassembled:\n"
+msgstr "Pakiety jeszcze nie przebudowane:\n"
+
+#: dpkg-split/queue.c:228
+#, c-format
+msgid "part file `%.250s' is not a plain file"
+msgstr "plik czê¶ci `%.250s' nie jest zwyk³ym plikiem"
+
+#: dpkg-split/queue.c:233
+#, c-format
+msgid "(total %lu bytes)\n"
+msgstr "(ca³o¶æ %lu bajtów)\n"
+
+#: dpkg-split/queue.c:256
+#, c-format
+msgid "unable to discard `%.250s'"
+msgstr "nie mo¿na usun±æ `%.250s'"
+
+#: dpkg-split/queue.c:257
+#, c-format
+msgid "Deleted %s.\n"
+msgstr "Usuniêto %s.\n"
+
+#: dpkg-split/split.c:45
+msgid "--split needs a source filename argument"
+msgstr "--split wymaga podania nazwy pliku ¼ród³owego"
+
+#: dpkg-split/split.c:48
+msgid "--split takes at most a source filename and destination prefix"
+msgstr ""
+"--split wymaga podania najwy¿ej nazwy pliku ¼ród³owego i prefiksu plików "
+"docelowych"
+
+#: dpkg-split/split.c:62
+#, c-format
+msgid "unable to open source file `%.250s'"
+msgstr "nie mo¿na otworzyæ pliku ¼ród³owego `%.255s'"
+
+#: dpkg-split/split.c:63
+msgid "unable to fstat source file"
+msgstr "nie mo¿na sprawdziæ stanu pliku ¼ród³owego"
+
+#: dpkg-split/split.c:64
+#, c-format
+msgid "source file `%.250s' not a plain file"
+msgstr "plik ¼ród³owy `%.255s' nie jest zwyk³ym plikiem"
+
+#: dpkg-split/split.c:70
+msgid "unable to exec mksplit"
+msgstr "nie mo¿na wykonaæ mksplit"
+
+#: scripts/cleanup-info.pl:36 scripts/dpkg-divert.pl:16
+#: scripts/dpkg-statoverride.pl:22 scripts/install-info.pl:17
+#: scripts/update-alternatives.pl:37
+#, perl-format
+msgid "Debian %s version %s.\n"
+msgstr "Debian %s w wersji %s.\n"
+
+#: scripts/cleanup-info.pl:38
+msgid ""
+"\n"
+"Copyright (C) 1996 Kim-Minh Kaplan."
+msgstr ""
+"\n"
+"Copyright (C) 1996 Kim-Minh Kaplan."
+
+#: scripts/cleanup-info.pl:41 scripts/dpkg-divert.pl:22
+#: scripts/dpkg-statoverride.pl:27 scripts/install-info.pl:22
+#: scripts/update-alternatives.pl:43
+msgid ""
+"\n"
+"This is free software; see the GNU General Public Licence version 2 or\n"
+"later for copying conditions. There is NO warranty.\n"
+msgstr ""
+"\n"
+"Niniejszy program jest oprogramowaniem wolnym, sprawd¼ \n"
+"Powszechn± Licencjê Publiczn± GNU w wersji drugiej lub pó¼niejszej,\n"
+"by dowiedzieæ siê o warunkach rozpowszechniania.\n"
+"Brak JAKIEJKOLWIEK gwarancji.\n"
+
+#: scripts/cleanup-info.pl:49
+#, perl-format
+msgid ""
+"Usage: %s [<option> ...] [--] [<dirname>]\n"
+"\n"
+"Options:\n"
+"  --unsafe     set some additional possibly useful options.\n"
+"               warning: this option may garble an otherwise correct file.\n"
+"  --help       show this help message.\n"
+"  --version    show the version.\n"
+msgstr ""
+"U¿ycie: %s [<opcja> ...] [--] [<katalog>]\n"
+"\n"
+"Opcje:\n"
+"  --unsafe     ustawia kilka dodatkowych opcji, które mog± byæ u¿yteczne.\n"
+"               uwaga: ta opcja mo¿e zniszczyæ poprawny plik.\n"
+"  --help       pokazuje ten komunikat pomocy.\n"
+"  --version    pokazuje informacje o wersji programu.\n"
+
+#: scripts/cleanup-info.pl:66 scripts/install-info.pl:508
+#, perl-format
+msgid "%s: warning - unable to unlock %s: %s"
+msgstr "%s: ostrze¿enie - nie mo¿na odblokowaæ %s: %s"
+
+#: scripts/cleanup-info.pl:86 scripts/install-info.pl:119
+#, perl-format
+msgid "%s: unknown option `%s'"
+msgstr "%s: nieznana opcja `%s'"
+
+#: scripts/cleanup-info.pl:94 scripts/install-info.pl:130
+#, perl-format
+msgid "%s: too many arguments"
+msgstr "%s: zbyt wiele argumentów"
+
+#: scripts/cleanup-info.pl:101 scripts/install-info.pl:305
+#, perl-format
+msgid "%s: failed to lock dir for editing! %s"
+msgstr "%s: nie mo¿na zablokowaæ katalogu do edycji! %s"
+
+#: scripts/cleanup-info.pl:103
+#, perl-format
+msgid "try deleting %s"
+msgstr "próba usuwania %s"
+
+#: scripts/cleanup-info.pl:107 scripts/install-info.pl:312
+#: scripts/update-alternatives.pl:211
+#, fuzzy, perl-format
+msgid "unable to open %s: %s"
+msgstr "nie mo¿na zamkn±æ %s: %s"
+
+#: scripts/cleanup-info.pl:109 scripts/install-info.pl:482
+#, fuzzy, perl-format
+msgid "unable to create %s: %s"
+msgstr "nie mo¿na usun±æ %s: %s"
+
+#: scripts/cleanup-info.pl:120 scripts/install-info.pl:485
+#, fuzzy, perl-format
+msgid "unable to write %s: %s"
+msgstr "nie mo¿na usun±æ %s: %s"
+
+#: scripts/cleanup-info.pl:160 scripts/install-info.pl:165
+#: scripts/install-info.pl:207 scripts/install-info.pl:314
+#, fuzzy, perl-format
+msgid "unable to read %s: %s"
+msgstr "nie mo¿na usun±æ %s: %s"
+
+#: scripts/cleanup-info.pl:161 scripts/install-info.pl:315
+#, fuzzy, perl-format
+msgid "unable to close %s after read: %s"
+msgstr "zamykanie %s po czytaniu: %s"
+
+#: scripts/cleanup-info.pl:165 scripts/install-info.pl:486
+#: scripts/update-alternatives.pl:472
+#, perl-format
+msgid "unable to close %s: %s"
+msgstr "nie mo¿na zamkn±æ %s: %s"
+
+#: scripts/cleanup-info.pl:171 scripts/install-info.pl:490
+#, fuzzy, perl-format
+msgid "unable to backup old %s, giving up: %s"
+msgstr "nie mo¿na utworzyæ kopii zapasowej starego %s, poddawanie siê: %s"
+
+#: scripts/cleanup-info.pl:174
+#, fuzzy, perl-format
+msgid "failed to install %s; it will be left as %s: %s"
+msgstr "%s: b³±d instalowania %s; zostawianie go jako %s: %s"
+
+#: scripts/cleanup-info.pl:178
+#, fuzzy, perl-format
+msgid "%s: unable to unlock %s: %s"
+msgstr "%s: nie mo¿na odblokowaæ %s: %s"
+
+#: scripts/dpkg-divert.pl:12 scripts/update-alternatives.pl:33
+#, perl-format
+msgid "Cannot get ENOENT value from %s: %s"
+msgstr "Nie mo¿na pobraæ warto¶ci ENOENT z %s: %s"
+
+#: scripts/dpkg-divert.pl:18
+msgid ""
+"\n"
+"Copyright (C) 1995 Ian Jackson.\n"
+"Copyright (C) 2000,2001 Wichert Akkerman."
+msgstr ""
+"\n"
+"Copyright (C) 1995 Ian Jackson.\n"
+"Copyright (C) 2000,2001 Wichert Akkerman."
+
+#: scripts/dpkg-divert.pl:30
+#, perl-format
+msgid ""
+"Usage: %s [<option> ...] <command>\n"
+"\n"
+"Commands:\n"
+"  [--add] <file>           add a diversion.\n"
+"  --remove <file>          remove the diversion.\n"
+"  --list [<glob-pattern>]  show file diversions.\n"
+"  --truename <file>        return the diverted file.\n"
+"\n"
+"Options:\n"
+"  --package <package>      name of the package whose copy of <file> will "
+"not\n"
+"                             be diverted.\n"
+"  --local                  all packages' versions are diverted.\n"
+"  --divert <divert-to>     the name used by other packages' versions.\n"
+"  --rename                 actually move the file aside (or back).\n"
+"  --admindir <directory>   set the directory with the diversions file.\n"
+"  --test                   don't do anything, just demonstrate.\n"
+"  --quiet                  quiet operation, minimal output.\n"
+"  --help                   show this help message.\n"
+"  --version                show the version.\n"
+"\n"
+"When adding, default is --local and --divert <original>.distrib.\n"
+"When removing, --package or --local and --divert must match if specified.\n"
+"Package preinst/postrm scripts should always specify --package and --"
+"divert.\n"
+msgstr ""
+"U¿ycie: %s [<opcja> ...] <polecenie>\n"
+"\n"
+"Polecenia:\n"
+"  [--add] <plik>           dodaje ominiêcie.\n"
+"  --remove <plik>          usuwa ominiêcie.\n"
+"  --list [<wzorzec-glob>]  pokazuje ominiêcia pliku.\n"
+"  --truename <plik>        zwraca ominiêty plik.\n"
+"\n"
+"Opcje:\n"
+"  --package <pakiet>       nazwa pakietu, którego kopia <pliku> nie\n"
+"                            bêdzie ominiêta.\n"
+"  --local                  wszystkie wersje pakietu s± omijane.\n"
+"  --divert <divert-to>     nazwa u¿ywane przez wersje innych pakietów.\n"
+"  --rename                 natychmiast zmienia nazwê pliku.\n"
+"  --admindir <katalog>     ustawia katalog zawieraj±cy plik diversions.\n"
+"  --test                   nic nie robi, tylko pokazuje, co by³oby "
+"zrobione.\n"
+"  --quiet                  tryb cichy, komunikaty ograniczone do minimum.\n"
+"  --help                   wy¶wietla ten komunikat pomocy\n"
+"  --version                wy¶wietla informacje o wersji.\n"
+"\n"
+"Domy¶lne opcje podczas dodawania: --local i --divert <orygina³>.distrib.\n"
+"Podczas usuwania: --package lub --local i --divert musz± pasowaæ, je¶li "
+"podano.\n"
+"Skrypty przed/poinstalacyjne musz± zawsze podawaæ --package i --divert.\n"
+
+#: scripts/dpkg-divert.pl:64 scripts/update-alternatives.pl:110
+#, perl-format
+msgid "two modes specified: %s and --%s"
+msgstr "podano dwa tryby: %s i --%s"
+
+#: scripts/dpkg-divert.pl:97
+#, fuzzy, perl-format
+msgid "--%s needs a divert-to argument"
+msgstr "--divert wymaga podania argumentu divert-to"
+
+#: scripts/dpkg-divert.pl:99
+msgid "divert-to may not contain newlines"
+msgstr "divert-to nie mo¿e zawieraæ znaków nowej linii"
+
+#: scripts/dpkg-divert.pl:101
+#, fuzzy, perl-format
+msgid "--%s needs a <package> argument"
+msgstr "--package wymaga podania argumentu, bêd±cego pakietem"
+
+#: scripts/dpkg-divert.pl:103
+msgid "package may not contain newlines"
+msgstr "pakiet nie mo¿e zawieraæ znaków nowej linii"
+
+#: scripts/dpkg-divert.pl:105 scripts/dpkg-statoverride.pl:74
+#: scripts/update-alternatives.pl:152 scripts/update-alternatives.pl:155
+#, fuzzy, perl-format
+msgid "--%s needs a <directory> argument"
+msgstr "--altdir wymaga argumentu <katalog>"
+
+#: scripts/dpkg-divert.pl:108 scripts/dpkg-statoverride.pl:86
+#: scripts/update-alternatives.pl:160
+#, perl-format
+msgid "unknown option `%s'"
+msgstr "nieznana opcja `%s'"
+
+#: scripts/dpkg-divert.pl:114
+#, perl-format
+msgid "cannot open diversions: %s"
+msgstr "nie mo¿na otworzyæ listy ominiêtych plików: %s"
+
+#: scripts/dpkg-divert.pl:117
+msgid "missing altname"
+msgstr "brakuj±cy argument  altname"
+
+#: scripts/dpkg-divert.pl:119
+msgid "missing package"
+msgstr "brakuj±cy pakiet"
+
+#: scripts/dpkg-divert.pl:125 scripts/dpkg-divert.pl:153
+#: scripts/dpkg-divert.pl:195 scripts/dpkg-statoverride.pl:144
+#, fuzzy, perl-format
+msgid "--%s needs a single argument"
+msgstr "--add wymaga podania pojedynczego argumentu"
+
+#: scripts/dpkg-divert.pl:127 scripts/dpkg-divert.pl:131
+#, perl-format
+msgid "filename \"%s\" is not absolute"
+msgstr "nazwa pliku \"%s\" nie jest absolutna"
+
+#: scripts/dpkg-divert.pl:128 scripts/dpkg-statoverride.pl:118
+msgid "file may not contain newlines"
+msgstr "plik nie mo¿e zawieraæ znaków nowej linii"
+
+#: scripts/dpkg-divert.pl:129
+msgid "Cannot divert directories"
+msgstr "Nie mo¿na omijaæ katalogów"
+
+#: scripts/dpkg-divert.pl:138
+#, perl-format
+msgid "Leaving `%s'"
+msgstr "Opuszczanie`%s'"
+
+#: scripts/dpkg-divert.pl:141
+#, perl-format
+msgid "`%s' clashes with `%s'"
+msgstr "`%s' koliduje z `%s'"
+
+#: scripts/dpkg-divert.pl:147
+#, perl-format
+msgid "Adding `%s'"
+msgstr "Dodawanie `%s'"
+
+#: scripts/dpkg-divert.pl:157
+#, perl-format
+msgid ""
+"mismatch on divert-to\n"
+"  when removing `%s'\n"
+"  found `%s'"
+msgstr ""
+"niedopasowanie argumentu divert-to\n"
+"  podczas usuwania `%s'\n"
+"  znaleziono `%s'"
+
+#: scripts/dpkg-divert.pl:159
+#, perl-format
+msgid ""
+"mismatch on package\n"
+"  when removing `%s'\n"
+"  found `%s'"
+msgstr ""
+"niedopasowanie pakietu\n"
+"  podczas usuwania `%s'\n"
+"  znaleziono `%s'"
+
+#: scripts/dpkg-divert.pl:161
+#, perl-format
+msgid "Removing `%s'"
+msgstr "Usuwanie `%s'"
+
+#: scripts/dpkg-divert.pl:176
+#, perl-format
+msgid "No diversion `%s', none removed"
+msgstr "Brak ominiêcia `%s', nic nie usuniêto"
+
+#: scripts/dpkg-divert.pl:205
+#, perl-format
+msgid "internal error - bad mode `%s'"
+msgstr "b³±d wewnêtrzny - niepoprawny tryb `%s'"
+
+#: scripts/dpkg-divert.pl:219
+#, perl-format
+msgid "cannot stat old name `%s': %s"
+msgstr "nie mo¿na pobraæ statusu starego pliku `%s' : %s"
+
+#: scripts/dpkg-divert.pl:221
+#, perl-format
+msgid "cannot stat new name `%s': %s"
+msgstr "nie mo¿na pobraæ statusu nowego pliku `%s' : %s"
+
+#: scripts/dpkg-divert.pl:236
+#, perl-format
+msgid "error checking `%s': %s"
+msgstr "b³±d sprawdzania `%s': %s"
+
+#: scripts/dpkg-divert.pl:241
+#, perl-format
+msgid ""
+"rename involves overwriting `%s' with\n"
+"  different file `%s', not allowed"
+msgstr ""
+"zmiana nazwy oznacza nadpisanie `%s' \n"
+"  innym plikiem `%s', co nie jest dozwolone"
+
+#: scripts/dpkg-divert.pl:251
+#, perl-format
+msgid "rename: remove duplicate old link `%s': %s"
+msgstr "rename: usuwanie podwójnego starego dowi±zania `%s': %s"
+
+#: scripts/dpkg-divert.pl:253
+#, perl-format
+msgid "rename: rename `%s' to `%s': %s"
+msgstr "rename: zmienianie nazwy `%s' na `%s': %s"
+
+#: scripts/dpkg-divert.pl:260
+#, perl-format
+msgid "create diversions-new: %s"
+msgstr "tworzenie pliku diversions-new: %s"
+
+#: scripts/dpkg-divert.pl:264
+#, perl-format
+msgid "write diversions-new: %s"
+msgstr "zapisywanie pliku diversions-new: %s"
+
+#: scripts/dpkg-divert.pl:266
+#, perl-format
+msgid "close diversions-new: %s"
+msgstr "zamykanie pliku diversions-new: %s"
+
+#: scripts/dpkg-divert.pl:268
+#, perl-format
+msgid "remove old diversions-old: %s"
+msgstr "usuwanie starego pliku diversions-old: %s"
+
+#: scripts/dpkg-divert.pl:270
+#, perl-format
+msgid "create new diversions-old: %s"
+msgstr "czytanie nowego pliku diversions-old: %s"
+
+#: scripts/dpkg-divert.pl:272
+#, perl-format
+msgid "install new diversions: %s"
+msgstr "instalowanie nowej listy ominiêæ: %s"
+
+#: scripts/dpkg-divert.pl:291 scripts/update-alternatives.pl:662
+#, perl-format
+msgid "internal error: %s corrupt: %s"
+msgstr "b³±d wewnêtrzny: uszkodzone %s: %s"
+
+#: scripts/dpkg-statoverride.pl:24
+msgid ""
+"\n"
+"Copyright (C) 2000 Wichert Akkerman."
+msgstr ""
+"\n"
+"Copyright (C) 2000 Wichert Akkerman."
+
+#: scripts/dpkg-statoverride.pl:35
+#, perl-format
+msgid ""
+"Usage: %s [<option> ...] <command>\n"
+"\n"
+"Commands:\n"
+"  --add <owner> <group> <mode> <file>\n"
+"                           add a new entry into the database.\n"
+"  --remove <file>          remove file from the database.\n"
+"  --list [<glob-pattern>]  list current overrides in the database.\n"
+"\n"
+"Options:\n"
+"  --admindir <directory>   set the directory with the statoverride file.\n"
+"  --update                 immediately update file permissions.\n"
+"  --force                  force an action even if a sanity check fails.\n"
+"  --quiet                  quiet operation, minimal output.\n"
+"  --help                   show this help message.\n"
+"  --version                show the version.\n"
+msgstr ""
+"U¿ycie: %s [<opcja> ...] <polecenie>\n"
+"\n"
+"Polecenia:\n"
+"  --add <w³a¶ciciel> <grupa> <tryb> <plik>\n"
+"                           dodaje nowy wpis do bazy danych.\n"
+"  --remove <plik>          usuwa plik z bazy danych.\n"
+"  --list [<wzorzec-glob>]  wy¶wietla bie¿±ce nadpisania z bazy danych.\n"
+"\n"
+"Opcje:\n"
+"  --admindir <katalog>     ustawia katalog zawieraj±cy plik statoverride.\n"
+"  --update                 natychmiast aktualizuje prawa do pliku.\n"
+"  --force                  wymusza akcjê, nawet je¿eli testy by zabroni³y.\n"
+"  --quiet                  tryb cichy, komunikaty ograniczone do minimum.\n"
+"  --help                   wy¶wietla ten komunikat pomocy\n"
+"  --version                wy¶wietla informacje o wersji.\n"
+
+#: scripts/dpkg-statoverride.pl:93
+msgid "no mode specified"
+msgstr "nie podano trybu"
+
+#: scripts/dpkg-statoverride.pl:97
+msgid "--add needs four arguments"
+msgstr "--add wymaga podania czterech argumentów"
+
+#: scripts/dpkg-statoverride.pl:102
+#, perl-format
+msgid "illegal user %s"
+msgstr "niew³a¶ciwy u¿ytkownik %s"
+
+#: scripts/dpkg-statoverride.pl:104
+#, perl-format
+msgid "non-existing user %s"
+msgstr "u¿ytkownik %s nie istnieje"
+
+#: scripts/dpkg-statoverride.pl:110
+#, perl-format
+msgid "illegal group %s"
+msgstr "niew³a¶ciwa grupa %s"
+
+#: scripts/dpkg-statoverride.pl:112
+#, perl-format
+msgid "non-existing group %s"
+msgstr "grupa %s nie istnieje"
+
+#: scripts/dpkg-statoverride.pl:116
+#, perl-format
+msgid "illegal mode %s"
+msgstr "niew³a¶ciwy tryb %s"
+
+#: scripts/dpkg-statoverride.pl:119 scripts/dpkg-statoverride.pl:146
+#: scripts/dpkg-statoverride.pl:165
+msgid "stripping trailing /"
+msgstr "usuwanie koñcowych znaków /"
+
+#: scripts/dpkg-statoverride.pl:122
+#, perl-format
+msgid "An override for \"%s\" already exists, "
+msgstr "Ju¿ istnieje nadpisanie dla \"%s\", "
+
+#: scripts/dpkg-statoverride.pl:124
+#, fuzzy
+msgid "but --force specified so will be ignored."
+msgstr "ale podano --force, wiêc zostanie zignorowany"
+
+#: scripts/dpkg-statoverride.pl:126
+msgid "aborting"
+msgstr "przerywanie"
+
+#: scripts/dpkg-statoverride.pl:137
+#, perl-format
+msgid "warning: --update given but %s does not exist"
+msgstr "ostrze¿enie: podano --update, ale %s nie istnieje"
+
+#: scripts/dpkg-statoverride.pl:139
+#, perl-format
+msgid "failed to chown %s: %s"
+msgstr "b³±d wykonania polecenia chown %s: %s"
+
+#: scripts/dpkg-statoverride.pl:140
+#, perl-format
+msgid "failed to chmod %s: %s"
+msgstr "b³±d wykonania polecenia chmod %s: %s"
+
+#: scripts/dpkg-statoverride.pl:148
+msgid "No override present."
+msgstr "Brak nadpisania."
+
+#: scripts/dpkg-statoverride.pl:156
+msgid "warning: --update is useless for --remove"
+msgstr "ostrze¿enie: --update jest bezu¿yteczne w po³±czeniu z --remove"
+
+#: scripts/dpkg-statoverride.pl:182
+#, perl-format
+msgid "cannot open statoverride: %s"
+msgstr "nie mo¿na otworzyæ pliku statoverride: %s"
+
+#: scripts/dpkg-statoverride.pl:188
+#, perl-format
+msgid "Multiple overrides for \"%s\", aborting"
+msgstr "Wiele nadpisañ dla \"%s\", przerywanie"
+
+#: scripts/dpkg-statoverride.pl:201
+#, perl-format
+msgid "cannot open new statoverride file: %s"
+msgstr "nie mo¿na otworzyæ nowego pliku statoverride: %s"
+
+#: scripts/dpkg-statoverride.pl:208
+#, perl-format
+msgid "error removing statoverride-old: %s"
+msgstr "b³±d usuwania statoverride-old: %s"
+
+#: scripts/dpkg-statoverride.pl:210
+#, perl-format
+msgid "error creating new statoverride-old: %s"
+msgstr "b³±d tworzenia nowego pliku statoverride-old: %s"
+
+#: scripts/dpkg-statoverride.pl:212
+#, perl-format
+msgid "error installing new statoverride: %s"
+msgstr "b³±d instalowania nowego pliku statoverride: %s"
+
+#: scripts/install-info.pl:19
+msgid ""
+"\n"
+"Copyright (C) 1994,1995 Ian Jackson."
+msgstr ""
+"\n"
+"Copyright (C) 1994,1995 Ian Jackson."
+
+#: scripts/install-info.pl:31
+#, perl-format
+msgid ""
+"Usage: %s [<options> ...] [--] <filename>\n"
+"\n"
+"Options:\n"
+"  --section <regexp> <title>\n"
+"                           put the new entry in the <regex> matched section\n"
+"                           or create a new one with <title> if non-"
+"existent.\n"
+"  --menuentry=<text>       set the menu entry.\n"
+"  --description=<text>     set the description to be used in the menu "
+"entry.\n"
+"  --info-file=<path>       specify info file to install in the directory.\n"
+"  --dir-file=<path>        specify file name of info directory file.\n"
+"  --infodir=<directory>    same as '--dir-file=<directory>/dir'.\n"
+"  --info-dir=<directory>   likewise.\n"
+"  --keep-old               do not replace entries nor remove empty ones.\n"
+"  --remove                 remove the entry specified by <filename> "
+"basename.\n"
+"  --remove-exactly         remove the exact <filename> entry.\n"
+"  --test                   enables test mode (no actions taken).\n"
+"  --debug                  enables debug mode (show more information).\n"
+"  --quiet                  do not show output messages.\n"
+"  --help                   show this help message.\n"
+"  --version                show the version.\n"
+msgstr ""
+"U¿ycie: %s [<opcje> ...] [--] <nazwa_pliku>\n"
+"\n"
+"Opcje:\n"
+"  --section <regexp> <tytu³>\n"
+"                           wstawia nowy wpis w sekcji pasuj±cej do <regex> "
+"lub\n"
+"                           tworzy nowy o zadanym <tytule>, je¶li nie "
+"istnieje.\n"
+"  --menuentry=<tekst>      ustawia wpis w menu.\n"
+"  --description=<tekst>    ustawia opis u¿ywany w wpisie w menu   --info-"
+"file=<¶cie¿ka>    okre¶la plik info do zainstalowanie w katalogu.\n"
+"  --dir-file=<¶cie¿ka>     okre¶la nazwê pliku katalogu info.\n"
+"  --infodir=<katalog>      to samo co '--dir-file=<katalog>/dir'.\n"
+"  --info-dir=<katalog>     jak wy¿ej.\n"
+"  --keep-old               nie zamienia wpisów i nie usuwa pustych.\n"
+"  --remove                 usuwa wpis pasuj±cy do bazowej <nazwy pliku>.\n"
+"  --remove-exactly         usuwa wpis ¶ci¶le pasuj±cy do <nazwy_pliku>.\n"
+"  --test                   w³±cza tryb testowy (nie wykonuje ¿adnych "
+"akcji).\n"
+"  --debug                  w³±cza tryb debugowania (pokazuje wiêcej info).\n"
+"  --quiet                  nie wy¶wietla ¿adnych komunikatów na wyj¶ciu.\n"
+"  --help                   wy¶wietla ten komunikat pomocy\n"
+"  --version                wy¶wietla informacje o wersji.\n"
+
+#: scripts/install-info.pl:97
+#, fuzzy, perl-format
+msgid "could not open stderr for output! %s"
+msgstr "Nie mo¿na otworzyæ wyj¶cia b³êdów! %s"
+
+#: scripts/install-info.pl:101
+#, perl-format
+msgid "%s: --section needs two more args"
+msgstr "%s: --section wymaga jeszcze dwu argumentów"
+
+#: scripts/install-info.pl:107
+#, fuzzy, perl-format
+msgid "%s: option --%s is deprecated (ignored)"
+msgstr "%s: przestarza³e %s (ignorowanie)"
+
+#: scripts/install-info.pl:133
+#, perl-format
+msgid "%s: --section ignored with --remove"
+msgstr "%s: --section ignorowany, bo podano --remove"
+
+#: scripts/install-info.pl:134
+#, perl-format
+msgid "%s: --description ignored with --remove"
+msgstr "%s: --description ignorowany, bo podano --remove"
+
+#: scripts/install-info.pl:137
+#, perl-format
+msgid "%s: test mode - dir file will not be updated"
+msgstr "%s: tryb testowy - plik dir nie zostanie zaktualizowany"
+
+#: scripts/install-info.pl:191
+#, perl-format
+msgid "%s: warning, ignoring confusing INFO-DIR-ENTRY in file."
+msgstr "%s: ostrze¿enie, ignorowanie myl±cego wpisu INFO-DIR-ENTRY w pliku."
+
+#: scripts/install-info.pl:200
+#, fuzzy
+msgid "invalid info entry"
+msgstr "%s: Niepoprawny wpis info"
+
+#: scripts/install-info.pl:226
+#, perl-format
+msgid ""
+"\n"
+"No `START-INFO-DIR-ENTRY' and no `This file documents'.\n"
+"%s: unable to determine description for `dir' entry - giving up\n"
+msgstr ""
+"\n"
+"Brak `START-INFO-DIR-ENTRY' oraz brak `This file documents'.\n"
+"%s: nie mo¿na znale¼æ opisu dla wpisu `dir' - przerywanie\n"
+
+#: scripts/install-info.pl:279
+#, perl-format
+msgid "%s: no file %s, retrieving backup file %s."
+msgstr "%s: brak pliku %s, pobieranie pliku kopii zapasowej %s."
+
+#: scripts/install-info.pl:282 scripts/install-info.pl:292
+#, perl-format
+msgid "%s: copying %s to %s failed, giving up: %s"
+msgstr "%s: b³±d kopiowania %s do %s, poddawanie siê: %s"
+
+#: scripts/install-info.pl:288
+#, perl-format
+msgid "%s: no backup file %s available, retrieving default file."
+msgstr "%s: brak pliku kopii zapasowej %s, pobieranie domy¶lnego pliku."
+
+#: scripts/install-info.pl:297
+#, perl-format
+msgid "%s: no backup file %s available."
+msgstr "%s: brak pliku kopii zapasowej %s"
+
+#: scripts/install-info.pl:298
+#, perl-format
+msgid "%s: no default file %s available, giving up."
+msgstr "%s: brak domy¶lnego pliku %s, poddawanie siê."
+
+#: scripts/install-info.pl:307
+#, perl-format
+msgid "try deleting %s?"
+msgstr "spróbowaæ usun±æ %s?"
+
+#: scripts/install-info.pl:348
+#, perl-format
+msgid "%s: existing entry for `%s' not replaced"
+msgstr "%s: istniej±cy wpis dla `%s' nie zosta³ zast±piony"
+
+#: scripts/install-info.pl:351
+#, perl-format
+msgid "%s: replacing existing dir entry for `%s'"
+msgstr "%s: zastêpowanie istniej±cego wpisu w pliku dir dla `%s'"
+
+#: scripts/install-info.pl:364
+#, perl-format
+msgid "%s: creating new section `%s'"
+msgstr "%s: tworzenie nowej sekcji `%s'"
+
+#: scripts/install-info.pl:367
+#, perl-format
+msgid "%s: no sections yet, creating Miscellaneous section too."
+msgstr ""
+"%s: nie ma jeszcze ¿adnych sekcji, tworzenie tak¿e sekcji \"Ró¿norodne\""
+
+#: scripts/install-info.pl:385
+#, perl-format
+msgid "%s: no section specified for new entry, placing at end"
+msgstr "%s: nie podano sekcji dla nowego wpisu, umieszczanie z ty³u"
+
+#: scripts/install-info.pl:422
+#, perl-format
+msgid "%s: deleting entry `%s ...'"
+msgstr "%s: usuwanie wpisu `%s ...'"
+
+#: scripts/install-info.pl:428
+#, perl-format
+msgid "%s: empty section `%s' not removed"
+msgstr "%s: nie usuniêto pustej sekcji `%s'"
+
+#: scripts/install-info.pl:431
+#, perl-format
+msgid "%s: deleting empty section `%s'"
+msgstr "%s: usuwanie pustej sekcji `%s'"
+
+#: scripts/install-info.pl:438
+#, perl-format
+msgid "%s: no entry for file `%s' and menu entry `%s'"
+msgstr "%s: brak wpisu dla pliku `%s' i wpisu w menu `%s'"
+
+#: scripts/install-info.pl:440
+#, perl-format
+msgid "%s: no entry for file `%s'"
+msgstr "%s: brak wpisu dla pliku `%s'"
+
+#: scripts/install-info.pl:493
+#, fuzzy, perl-format
+msgid "unable to install new %s: %s"
+msgstr "nie mo¿na zainstalowaæ %s jako %s: %s"
+
+#: scripts/install-info.pl:496
+#, fuzzy, perl-format
+msgid "unable to unlock %s: %s"
+msgstr "nie mo¿na zamkn±æ %s: %s"
+
+#: scripts/install-info.pl:498
+#, fuzzy, perl-format
+msgid "%s: could not backup %s in %s: %s"
+msgstr "%s: nie mo¿na utworzyæ kopii zapasowej %s w %s : %s"
+
+#: scripts/install-info.pl:515
+#, fuzzy, perl-format
+msgid "unable to read %s: %d"
+msgstr "nie mo¿na usun±æ %s: %s"
+
+#: scripts/install-info.pl:519
+#, perl-format
+msgid "dbg: %s"
+msgstr "dbg: %s"
+
+#: scripts/update-alternatives.pl:39
+msgid ""
+"\n"
+"Copyright (C) 1995 Ian Jackson.\n"
+"Copyright (C) 2000-2002 Wichert Akkerman."
+msgstr ""
+"\n"
+"Copyright (C) 1995 Ian Jackson.\n"
+"Copyright (C) 2000-2002 Wichert Akkerman."
+
+#: scripts/update-alternatives.pl:51
+#, perl-format
+msgid ""
+"Usage: %s [<option> ...] <command>\n"
+"\n"
+"Commands:\n"
+"  --install <link> <name> <path> <priority>\n"
+"    [--slave <link> <name> <path>] ...\n"
+"                           add a group of alternatives to the system.\n"
+"  --remove <name> <path>   remove <path> from the <name> group alternative.\n"
+"  --remove-all <name>      remove <name> group from the alternatives "
+"system.\n"
+"  --auto <name>            switch the master link <name> to automatic mode.\n"
+"  --display <name>         display information about the <name> group.\n"
+"  --list <name>            display all targets of the <name> group.\n"
+"  --config <name>          show alternatives for the <name> group and ask "
+"the\n"
+"                           user to select which one to use.\n"
+"  --set <name> <path>      set <path> as alternative for <name>.\n"
+"  --all                    call --config on all alternatives.\n"
+"\n"
+"<link> is the symlink pointing to /etc/alternatives/<name>.\n"
+"  (e.g. /usr/bin/pager)\n"
+"<name> is the master name for this link group.\n"
+"  (e.g. pager)\n"
+"<path> is the location of one of the alternative target files.\n"
+"  (e.g. /usr/bin/less)\n"
+"<priority> is an integer; options with higher numbers have higher priority "
+"in\n"
+"  automatic mode.\n"
+"\n"
+"Options:\n"
+"  --altdir <directory>     change the alternatives directory.\n"
+"  --admindir <directory>   change the administrative directory.\n"
+"  --test                   don't do anything, just demonstrate.\n"
+"  --verbose                verbose operation, more output.\n"
+"  --quiet                  quiet operation, minimal output.\n"
+"  --help                   show this help message.\n"
+"  --version                show the version.\n"
+msgstr ""
+"U¿ycie: %s [<opcja> ...] <polecenie>\n"
+"\n"
+"Polecenia:\n"
+"  --install <link> <nazwa> <¶cie¿ka> <priorytet>\n"
+"    [--slave <link> <nazwa> <¶cie¿ka>] ...\n"
+"                           dodaje grupê alternatyw do systemu.\n"
+"  --remove <nazwa> <¶cie¿ka> usuwa <¶cie¿kê> z grup alternatyw <nazwa>.\n"
+"  --remove-all <nazwa>     usuwa grupê <nazwa> z systemu alternatyw.\n"
+"  --auto <nazwa>           prze³±cza link g³ówny <nazwy> w tryb automat.\n"
+"  --display <nazwa>        wy¶wietla informacje o grupie <nazwa>.\n"
+"  --list <nazwa>           wy¶wietla wszystkie cele w grupie <nazwa>.\n"
+"  --config <nazwa>         pokazuje alternatywy w grupie <nazwa > i prosi\n"
+"                             u¿ytkownika o wybranie jednej z nich.\n"
+"  --set <nazwa> <¶cie¿ka>  ustawia <¶cie¿kê> jako alternatywê dla <nazwy>.\n"
+"  --all                    wywo³uje --config dla wszystkich alternatyw.\n"
+"\n"
+"<link> jest dowi±zaniem prowadz±cym do /etc/alternatives/<nazwa>.\n"
+"  (np. /usr/bin/pager)\n"
+"<nazwa> jest g³ówn± nazw± dla tej grupy dowi±zañ.\n"
+"  (np. pager)\n"
+"<¶cie¿ka> jest po³o¿eniem jednego z plików docelowych alternatywy.\n"
+"  (np. /usr/bin/less)\n"
+"<priorytet> jest liczb±, w trybie automatycznym wybierane s± opcje\n"
+"  o wiêkszym priorytecie\n"
+"\n"
+"Opcje:\n"
+"  --altdir <katalog>       zmienia katalog alternatyw.\n"
+"  --admindir <katalog>     zmienia katalog administracyjny.\n"
+"  --test                   nic nie robi, pokazuje, co zosta³oby zrobione.\n"
+"  --verbose                tryb g³o¶ny, wiêcej komunikatów na wyj¶ciu.\n"
+"  --quiet                  tryb cichy, komunikaty ograniczone do minimum.\n"
+"  --help                   wy¶wietla ten komunikat pomocy\n"
+"  --version                wy¶wietla informacje o wersji.\n"
+
+#: scripts/update-alternatives.pl:117
+#, perl-format
+msgid "unknown argument `%s'"
+msgstr "nieznany argument `%s'"
+
+#: scripts/update-alternatives.pl:130
+msgid "--install needs <link> <name> <path> <priority>"
+msgstr "--install wymaga podania <linku> <nazwy> <¶cie¿ki> <priorytetu>"
+
+#: scripts/update-alternatives.pl:132
+msgid "priority must be an integer"
+msgstr "priorytet musi byæ liczb±"
+
+#: scripts/update-alternatives.pl:136
+#, perl-format
+msgid "--%s needs <name> <path>"
+msgstr "--%s wymaga argumentów <nazwa> <¶cie¿ka>"
+
+#: scripts/update-alternatives.pl:141
+#, perl-format
+msgid "--%s needs <name>"
+msgstr "--%s wymaga <nazwy>"
+
+#: scripts/update-alternatives.pl:145
+msgid "--slave needs <link> <name> <path>"
+msgstr "--slave wymaga <linku> <nazwy> <¶cie¿ki>"
+
+#: scripts/update-alternatives.pl:147
+#, perl-format
+msgid "slave name %s duplicated"
+msgstr "podwojona nazwa podrzêdna %s"
+
+#: scripts/update-alternatives.pl:148
+#, perl-format
+msgid "slave link %s duplicated"
+msgstr "podwojone dowi±zanie podrzêdne %s"
+
+#: scripts/update-alternatives.pl:164
+#, perl-format
+msgid "name %s is both primary and slave"
+msgstr "nazwa %s jest zarówno g³ówna, jak i podrzêdna"
+
+#: scripts/update-alternatives.pl:165
+#, perl-format
+msgid "link %s is both primary and slave"
+msgstr "dowi±zanie %s jest zarówno g³ówne, jak i podrzêdne"
+
+#: scripts/update-alternatives.pl:167
+msgid ""
+"need --display, --config, --set, --install, --remove, --all, --remove-all or "
+"--auto"
+msgstr ""
+"nale¿y podaæ --display, --config, --set, --install, --remove, --all, --"
+"remove-all lub --auto"
+
+#: scripts/update-alternatives.pl:168
+msgid "--slave only allowed with --install"
+msgstr "--slave dopuszczalna tylko z --install"
+
+#: scripts/update-alternatives.pl:176
+msgid "manflag"
+msgstr "manflag"
+
+#: scripts/update-alternatives.pl:180
+#, perl-format
+msgid "duplicate slave %s"
+msgstr "podwójna warto¶æ dowi±zania symbolicznego %s"
+
+#: scripts/update-alternatives.pl:183
+#, perl-format
+msgid "slave link same as main link %s"
+msgstr "dowi±zanie podrzêdne takie samo jak dowi±zanie g³ówne %s"
+
+#: scripts/update-alternatives.pl:184
+#, perl-format
+msgid "duplicate slave link %s"
+msgstr "podwojone dowi±zanie podrzêdne %s"
+
+#: scripts/update-alternatives.pl:188
+#, perl-format
+msgid "duplicate path %s"
+msgstr "zduplikowana ¶cie¿ka %s"
+
+#: scripts/update-alternatives.pl:193
+#, perl-format
+msgid "priority %s %s"
+msgstr "priorytet %s %s"
+
+#: scripts/update-alternatives.pl:200
+#, perl-format
+msgid ""
+"Alternative for %s points to %s - which wasn't found.  Removing from list of "
+"alternatives."
+msgstr ""
+"Alternatywa dla %s wskazuje na %s, który nie zosta³ znaleziony. Usuwanie jej "
+"z listy alternatyw."
+
+#: scripts/update-alternatives.pl:216 scripts/update-alternatives.pl:265
+#: scripts/update-alternatives.pl:273
+#, perl-format
+msgid "No alternatives for %s."
+msgstr "Brak alternatyw dla %s."
+
+#: scripts/update-alternatives.pl:219
+#, perl-format
+msgid "%s - status is %s."
+msgstr "%s - status jest %s."
+
+#: scripts/update-alternatives.pl:221
+#, perl-format
+msgid " link currently points to %s"
+msgstr " link obecnie wskazuje na %s"
+
+#: scripts/update-alternatives.pl:223
+msgid " link currently absent"
+msgstr " obecnie brak dowi±zania"
+
+#: scripts/update-alternatives.pl:225
+#, perl-format
+msgid " link unreadable - %s"
+msgstr " nie mo¿na odczytaæ dowi±zania - %s"
+
+#: scripts/update-alternatives.pl:232
+#, perl-format
+msgid "%s - priority %s"
+msgstr "%s - priorytet %s"
+
+#: scripts/update-alternatives.pl:235
+#, perl-format
+msgid " slave %s: %s"
+msgstr " dowi±zanie podrzêdne %s: %s"
+
+#: scripts/update-alternatives.pl:239
+msgid "No versions available."
+msgstr "¯adna wersja nie jest dostêpna."
+
+#: scripts/update-alternatives.pl:241
+#, perl-format
+msgid "Current `best' version is %s."
+msgstr "Obecnie `najlepsz±' wersj± jest %s."
+
+#: scripts/update-alternatives.pl:300
+#, perl-format
+msgid "Setting up automatic selection of %s."
+msgstr "Ustawianie automatycznego wybierania %s"
+
+#: scripts/update-alternatives.pl:303 scripts/update-alternatives.pl:305
+#: scripts/update-alternatives.pl:413 scripts/update-alternatives.pl:415
+#: scripts/update-alternatives.pl:479 scripts/update-alternatives.pl:481
+#: scripts/update-alternatives.pl:483 scripts/update-alternatives.pl:485
+#: scripts/update-alternatives.pl:541 scripts/update-alternatives.pl:543
+#: scripts/update-alternatives.pl:609 scripts/update-alternatives.pl:645
+#, perl-format
+msgid "unable to remove %s: %s"
+msgstr "nie mo¿na usun±æ %s: %s"
+
+#: scripts/update-alternatives.pl:316
+#, perl-format
+msgid ""
+"%s has been changed (manually or by a script).\n"
+"Switching to manual updates only."
+msgstr ""
+"%s zosta³ zmieniony (rêcznie lub przez skrypt).\n"
+"Prze³±czanie do trybu rêcznych aktualizacji."
+
+#: scripts/update-alternatives.pl:328
+#, perl-format
+msgid ""
+"Checking available versions of %s, updating links in %s ...\n"
+"(You may modify the symlinks there yourself if desired - see `man ln'.)"
+msgstr ""
+"Sprawdzanie dostêpnych wersji %s, aktualizowanie dowi±zañ w %s...\n"
+"(Mo¿esz zmieniæ dowi±zania symboliczne samemu, je¶li chcesz - patrz `man "
+"ln')."
+
+#: scripts/update-alternatives.pl:334
+#, perl-format
+msgid "Renaming %s link from %s to %s."
+msgstr "Zmienianie nazwy dowi±zaniu %s z %s na %s."
+
+#: scripts/update-alternatives.pl:337 scripts/update-alternatives.pl:359
+#: scripts/update-alternatives.pl:439 scripts/update-alternatives.pl:514
+#, perl-format
+msgid "unable to rename %s to %s: %s"
+msgstr "nie mo¿na zmieniæ nazwy %s na %s: %s"
+
+#: scripts/update-alternatives.pl:354
+#, perl-format
+msgid "slave link name %s duplicated"
+msgstr "podwojona nazwa dowi±zania podrzêdnego %s"
+
+#: scripts/update-alternatives.pl:356
+#, perl-format
+msgid "Renaming %s slave link from %s to %s."
+msgstr "Zmienianie nazwy dowi±zaniu podrzêdnemu %s z %s na %s."
+
+#: scripts/update-alternatives.pl:370
+msgid "Removing manually selected alternative - switching to auto mode"
+msgstr "Usuwanie alternatywy wybranej rêcznie - prze³±czanie do trybu auto"
+
+#: scripts/update-alternatives.pl:384
+#, perl-format
+msgid "Alternative %s for %s not registered, not removing."
+msgstr "Alternatywa %s dla %s nie jest zarejestrowana, nie bêdzie usuniêta."
+
+#: scripts/update-alternatives.pl:410
+#, perl-format
+msgid "Discarding obsolete slave link %s (%s)."
+msgstr "Wyrzucanie przestarza³ego dowi±zania podrzêdnego %s (%s)"
+
+#: scripts/update-alternatives.pl:431
+#, perl-format
+msgid "Automatic updates of %s are disabled, leaving it alone."
+msgstr "Automatyczne aktualizacje %s s± wy³±czone, zostawianie go bez zmian."
+
+#: scripts/update-alternatives.pl:433
+#, perl-format
+msgid "To return to automatic updates use `update-alternatives --auto %s'."
+msgstr ""
+"Aby powróciæ do aktualizacji automatycznych, u¿yj `update-alternatives --"
+"auto %s'."
+
+#: scripts/update-alternatives.pl:437
+#, perl-format
+msgid "Recovering from previous failed update of %s ..."
+msgstr "Odtwarzanie z poprzedniej nieudanej aktualizacji %s ..."
+
+#: scripts/update-alternatives.pl:452
+#, perl-format
+msgid "unable to open %s for write: %s"
+msgstr "nie mo¿na otworzyæ %s do zapisu: %s"
+
+#: scripts/update-alternatives.pl:476
+#, perl-format
+msgid "Last package providing %s (%s) removed, deleting it."
+msgstr "Usuniêto ostatni pakiet dostarczaj±cy %s (%s), usuwanie jej."
+
+#: scripts/update-alternatives.pl:489
+#, perl-format
+msgid ""
+"warning: %s is supposed to be a symlink to %s\n"
+" (or nonexistent); however, readlink failed: %s"
+msgstr ""
+"ostrze¿enie: %s powinien byæ dowi±zaniem symbolicznym do %s\n"
+" (lub powinien nie istnieæ); jednak¿e readlink zwróci³ b³±d: %s"
+
+#: scripts/update-alternatives.pl:494 scripts/update-alternatives.pl:508
+#: scripts/update-alternatives.pl:528 scripts/update-alternatives.pl:536
+#, perl-format
+msgid "unable to ensure %s nonexistent: %s"
+msgstr "nie mo¿na usun±æ %s: %s"
+
+#: scripts/update-alternatives.pl:496 scripts/update-alternatives.pl:530
+#: scripts/update-alternatives.pl:553 scripts/update-alternatives.pl:595
+#: scripts/update-alternatives.pl:631 scripts/update-alternatives.pl:670
+#, perl-format
+msgid "unable to make %s a symlink to %s: %s"
+msgstr "nie mo¿na zrobiæ %s dowi±zaniem symbolicznym do %s: %s"
+
+#: scripts/update-alternatives.pl:498 scripts/update-alternatives.pl:518
+#: scripts/update-alternatives.pl:532 scripts/update-alternatives.pl:555
+#: scripts/update-alternatives.pl:597 scripts/update-alternatives.pl:633
+#: scripts/update-alternatives.pl:675
+#, perl-format
+msgid "unable to install %s as %s: %s"
+msgstr "nie mo¿na zainstalowaæ %s jako %s: %s"
+
+#: scripts/update-alternatives.pl:501 scripts/update-alternatives.pl:546
+#, perl-format
+msgid "Leaving %s (%s) pointing to %s."
+msgstr "Zostawianie %s (%s) wskazuj±cego na %s."
+
+#: scripts/update-alternatives.pl:504 scripts/update-alternatives.pl:549
+#, perl-format
+msgid "Updating %s (%s) to point to %s."
+msgstr "Aktualizowanie %s (%s), ¿eby wskazywa³ na %s."
+
+#: scripts/update-alternatives.pl:523
+#, perl-format
+msgid ""
+"warning: %s is supposed to be a slave symlink to\n"
+" %s, or nonexistent; however, readlink failed: %s"
+msgstr ""
+"ostrze¿enie: %s powinien byæ pobocznym dowi±zaniem do\n"
+" %s lub nie powinien istnieæ; jednak¿e readlink zwróci³ b³±d: %s"
+
+#: scripts/update-alternatives.pl:538 scripts/update-alternatives.pl:606
+#: scripts/update-alternatives.pl:642
+#, perl-format
+msgid "Removing %s (%s), not appropriate with %s."
+msgstr "Usuwanie %s (%s), nie odpowiednie dla %s."
+
+#: scripts/update-alternatives.pl:563
+#, perl-format
+msgid ""
+"There is only 1 program which provides %s\n"
+"(%s). Nothing to configure.\n"
+msgstr ""
+"Jest tylko jeden program, który dostarcza %s\n"
+"(%s). Nie ma nic do konfigurowania.\n"
+
+#: scripts/update-alternatives.pl:568
+#, perl-format
+msgid ""
+"There are %s alternatives which provide `%s'.\n"
+"\n"
+"  Selection    Alternative\n"
+"-----------------------------------------------\n"
+msgstr ""
+"Jest %s alternatyw dostarczaj±cych `%s'.\n"
+"\n"
+"  Wybór        Alternatywa\n"
+"-----------------------------------------------\n"
+
+#: scripts/update-alternatives.pl:578
+msgid "Press enter to keep the default[*], or type selection number: "
+msgstr ""
+"Naci¶nij Enter, aby zatrzymaæ warto¶æ domy¶ln± [*] albo wpisz wybrany numer:"
+
+#: scripts/update-alternatives.pl:592 scripts/update-alternatives.pl:629
+#, perl-format
+msgid "Using `%s' to provide `%s'."
+msgstr "U¿ywanie `%s' jako dostarczaj±cego `%s'."
+
+#: scripts/update-alternatives.pl:627
+#, perl-format
+msgid "Cannot find alternative `%s'."
+msgstr "Nie mo¿na znale¼æ alternatywy `%s'."
+
+#: scripts/update-alternatives.pl:650 scripts/update-alternatives.pl:653
+#, perl-format
+msgid "error writing stdout: %s"
+msgstr "b³±d zapisu na standardowe wyj¶cie: %s"
+
+#: scripts/update-alternatives.pl:652
+#, perl-format
+msgid "newlines prohibited in update-alternatives files (%s)"
+msgstr "znaki nowej linii s± zabronione w plikach update-alternatives (%s)"
+
+#: scripts/update-alternatives.pl:657
+#, perl-format
+msgid "error or eof reading %s for %s (%s)"
+msgstr "nie mo¿na odczytaæ %s dla %s (%s)"
+
+#: scripts/update-alternatives.pl:658
+#, perl-format
+msgid "missing newline after %s"
+msgstr "brakuj±cy znak nowej linii po %s"
+
+#: scripts/update-alternatives.pl:678
+#, perl-format
+msgid "Serious problem: %s"
+msgstr "Powa¿ny problem: %s"
+
+#~ msgid "unable to create %.250s"
+#~ msgstr "nie mo¿na utworzyæ %.250s"
+
+#~ msgid "`%s' field, reference to `%.255s': version contains ` '"
+#~ msgstr "pole `%s', w odniesieniu do `%.255s': numer wersji zawiera ` '"
+
+#~ msgid "%s: can't open %s: %s"
+#~ msgstr "%s: nie mo¿na otworzyæ %s: %s"
+
+#~ msgid "%s: can't create %s: %s"
+#~ msgstr "%s: nie mo¿na utworzyæ %s: %s"
+
+#~ msgid "%s: error writing %s: %s"
+#~ msgstr "%s: b³±d zapisu %s: %s"
+
+#~ msgid "%s: read %s: %s"
+#~ msgstr "%s: czytanie %s: %s"
+
+#~ msgid "%s: close %s after read: %s"
+#~ msgstr "%s:zamykanie %s po czytaniu: %s"
+
+#~ msgid "%s: error closing %s: %s"
+#~ msgstr "%s: b³±d zamykania %s: %s"
+
+#~ msgid "%s: can't backup old %s, giving up: %s"
+#~ msgstr "%s: nie mo¿na wykonaæ kopii starego %s, poddawanie siê: %s"
+
+#~ msgid "--admindir needs a directory argument"
+#~ msgstr "--admindir wymaga podania argumentu bêd±cego katalogiem"
+
+#~ msgid "--remove needs a single argument"
+#~ msgstr "--remove wymaga podania pojedynczego argumentu"
+
+#~ msgid "--truename needs a single argument"
+#~ msgstr "---truename wymaga podania pojedynczego argumentu"
+
+#~ msgid "dpkg-divert: %s"
+#~ msgstr "dpkg-divert: %s"
+
+#~ msgid "You need --help."
+#~ msgstr "Potrzebujesz --help."
+
+#~ msgid "dpkg-statoverride: %s"
+#~ msgstr "dpkg-statoverride: %s"
+
+#~ msgid "open %s: %s"
+#~ msgstr "otwieranie %s: %s"
+
+#~ msgid "read %s: %s"
+#~ msgstr "czytanie %s: %s"
+
+#~ msgid "create %s: %s"
+#~ msgstr "tworzenie %s: %s"
+
+#~ msgid "write %s: %s"
+#~ msgstr "zapisywanie %s: %s"
+
+#~ msgid "close %s: %s"
+#~ msgstr "zamykanie %s: %s"
+
+#~ msgid "install new %s: %s"
+#~ msgstr "instalowanie nowego %s: %s"
+
+#~ msgid "%s: unlock %s: %s"
+#~ msgstr "%s: odblokowanie %s: %s"
+
+#~ msgid "%s: read %s: %d"
+#~ msgstr "%s: czytanie %s: %d"
+
+#~ msgid "update-alternatives: %s"
+#~ msgstr "update-alternatives: %s"
+
+#~ msgid "--admindir needs a <directory> argument"
+#~ msgstr "--admindir wymaga podania argumentu <katalog>"
+
+#~ msgid "failed to open %s: %s"
+#~ msgstr "b³±d otwierania %s: %s"
+
+#~ msgid "unable to install %s as %s"
+#~ msgstr "nie mo¿na zainstalowaæ %s jako %s"
